@@ -1,0 +1,41 @@
+/* UTILS */
+@import url("./utils/fonts.css");
+@import url("./utils/flex.css");
+@import url("./utils/lists.css");
+
+/* COMPONENTS */
+@import url("./components/nav.css");
+
+:root {
+  --primary-color-xlight: #f1f0ff;
+  --primary-color-light: #e5dffd;
+  --primary-color: rgb(83 76 202);
+  --primary-color-trans: rgba(149, 132, 250, 0.72);
+  --primary-color-dark: rgb(76 63 181);
+  --primary-color-xdark: #2b1055;
+  --primary-color-sat: #9a47ff;
+  --grey-dark: rgb(90, 90, 90);
+  --grey-xdark: #333;
+  --crimson-red: rgb(255, 77, 77);
+  --blue: #495ed1;
+  --blue-light: #7597de;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+  font-size: 62.5%;
+  color: var(--grey-xdark);
+}
+
+main {
+  min-height: 90vh;
+  width: 90%;
+  margin: auto;
+}
