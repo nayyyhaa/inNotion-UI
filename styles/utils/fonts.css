@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;500&display=swap");
+
+#logo {
+  font-family: "Great Vibes", cursive;
+  color: white;
+  font-size: 3rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  color: rgb(54, 54, 54);
+}
+
+h4,
+h5 {
+  font-weight: 400;
+}
+
+sub,
+label {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--dark-grey);
+}
+
+svg,
+i {
+  font-size: 1.75rem;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+h2,
+input {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1.5rem;
+  letter-spacing: 0.0125em;
+}
+
+span,
+li,
+a {
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: 0.0125em;
+}
+
+.h5 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 0.0125em;
+}
+
+.colored-txt {
+  color: var(--primary-color-sat);
+  position: relative;
+}
+
+.colored-txt.bg:before {
+    position: absolute;
+    content: "";
+    width: 90%;
+    height: 20px;
+    bottom: -15%;
+    left: 15%;
+    background: var(--primary-color-light);
+    z-index: -1;
+}
+
+.wt-text {
+  color: white;
+}
+
+.up-case {
+  text-transform: uppercase;
+}
