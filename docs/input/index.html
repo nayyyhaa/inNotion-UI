@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <link rel="stylesheet" href="https://innotion-ui-library.netlify.app/in-notion.css" />
+    <link rel="stylesheet" href="../../in-notion.css" />
+    <link rel="shortcut icon" href="../../assets/favicon.ico" type="image/x-icon" />
+    <script src="../../scripts/app.js" defer></script>
+    <script src="../../scripts/dark-mode.js" defer></script>
+    <script src="../../scripts/form.js" defer></script>
+    <title>inNotion UI | Docs</title>
+  </head>
+  <body class="content">
+    <div class="grid-sidebar-layout">
+      <div class="header sticky-header">
+        <nav class="navbar row-flex">
+          <div class="docs-hamburger action-close icon-btn rd-bdr grid-ctr colored-txt">
+            <i class="fa fa-book" aria-hidden="true"></i>
+          </div>
+          <a href="/"
+            ><h3 id="logo">in.notion <span class="text-stroke txt-shd">UI</span></h3></a
+          >
+          <ul class="nav-items row-flex no-bullet">
+            <li class="btn nav-link-btn h3 m-v-2 m-h-3"><a href="/">Installation</a></li>
+            <li class="btn nav-link-btn h3 m-v-2 m-h-3"><a href="index.html">Docs</a></li>
+            <li class="btn nav-link-btn h3 m-v-2 m-h-3"><a href="#connect">Connect</a></li>
+          </ul>
+          <div class="dark-mode action-close icon-btn rd-bdr grid-ctr colored-txt"></div>
+          <div class="hamburger action-close icon-btn rd-bdr grid-ctr colored-txt">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+          </div>
+        </nav>
+      </div>
+      <div class="side-bar box-shd">
+        <h2 class="title row-flex p-v-4">
+          Components
+          <p class="action-close icon-btn sidebar-close rd-bdr grid-ctr colored-txt">
+            <i class="fa fa-close" aria-hidden="true"></i>
+          </p>
+        </h2>
+        <ul class="sidebar-items col-flex">
+          <a class="sidebar-item grid-ctr p-2 h3" href="../alert/"><li>Alert</li></a>
+          <a class="sidebar-item grid-ctr p-2 h3" href="../avatar/"><li>Avatar</li></a>
+          <a class="sidebar-item grid-ctr p-2 h3" href="../badge/"><li>Badge</li></a>
+          <a class="sidebar-item grid-ctr p-2 h3" href="../button/"><li>Buttons</li></a>
+          <a class="sidebar-item grid-ctr p-2 h3" href="../card/"><li>Card</li></a>
+          <a class="sidebar-item grid-ctr p-2 h3" href="../image/"><li>Image</li></a>
+          <a class="sidebar-item active-sidebar grid-ctr p-2 h3" href="../input/"><li>Input</li></a>
+        </ul>
+      </div>
+      <main class="docs-content m-b-5">
+        <h1 class="title colored-txt h1 m-v-4"><span class="circle"></span>Form Inputs</h1>
+        <h3>Text fields let users enter and edit text.</h3>
+        <section>
+          <!-- Basic TextField -->
+          <h2 class="title h2 m-v-2 colored-bg">Basic TextField</h2>
+          <p>
+            The Input element can be used inside a form with <code>form-card</code> inside
+            <code>&lt;form&gt;</code> tag. For input component add <code>field</code> class to the enclosing element.
+            This is a complete form control including a label, input, and help text. It comes with following variants.
+          </p>
+          <div class="container colored-container col-flex">
+            <div class="demo w-95p row-flex">
+              <form class="card form-card left-text row-flex text-wrap box-shd w-80p p-h-1 p-v-2 m-2">
+                <!-- Default Input -->
+                <div class="field col-flex m-1">
+                  <label class="m-v-1" for="name">Default</label>
+                  <input type="text" class="input p-07" id="name" required />
+                </div>
+                <!-- Move over label Input -->
+                <div class="field col-flex m-1 m-t-3">
+                  <input type="text" class="input p-07" id="name" required />
+                  <label class="placeholder m-v-1" for="name">Move over label</label>
+                </div>
+                <!-- Password Input -->
+                <div class="field col-flex m-1">
+                  <label class="m-v-1" for="password">Password</label>
+                  <input type="password" class="input p-07" id="password" />
+                </div>
+                <!-- Number Input -->
+                <div class="field col-flex m-1">
+                  <label class="m-v-1" for="number">Number</label>
+                  <input type="number" class="input p-07" id="number" />
+                </div>
+                <!-- Date Input -->
+                <div class="field col-flex m-1">
+                  <label class="m-v-1" for="date">Date</label>
+                  <input type="date" class="input p-07" id="date" />
+                </div>
+                <!-- Search Input -->
+                <div class="field col-flex m-1">
+                  <label class="m-v-1" for="search-text">Search Text</label>
+                  <input type="search" class="input reset-ip p-07" placeholder="search here" id="search-text" />
+                </div>
+                <!-- Disabled Input -->
+                <div class="field col-flex m-1">
+                  <label class="m-v-1" for="disabled">Disabled</label>
+                  <input type="text" class="input disabled disabled-ip p-07" value="can't touch" id="disabled" />
+                </div>
+                <!-- Read Only Input -->
+                <div class="field col-flex m-1">
+                  <label class="m-v-1" for="read-only">Read Only</label>
+                  <input type="text" class="input disabled p-07" value="can't change" id="read-only" />
+                </div>
+                <!-- Text Area Input -->
+                <div class="field col-flex m-1">
+                  <label class="m-v-1" for="text-area">Text Area</label>
+                  <textarea type="textarea" class="input p-07" id="text-area"></textarea>
+                </div>
+                <!-- Default Input with Helper Text -->
+                <div class="field col-flex m-1">
+                  <label class="m-v-1" for="helper-text">Helper Text</label>
+                  <input type="text" class="input p-07" placeholder="Helper Text" id="helper-text" />
+                  <small class="colored-txt">Some helper text</small>
+                </div>
+              </form>
+            </div>
+          </div>
+          <h3 class="title">Code Snippets</h3>
+          <div class="container code-container colored-container col-flex">
+            <iframe
+              class="code-snipet"
+              src="https://carbon.now.sh/embed?bg=rgba%28195%2C185%2C255%2C1%29&t=verminal&wt=none&l=htmlmixed&width=693&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=true&fl=1&fm=dm&fs=13.5px&lh=121%25&si=false&es=4x&wm=false&code=%253C%21--%2520Default%2520Input%2520--%253E%250A%253Cdiv%2520class%253D%2522field%2520col-flex%2520m-1%2522%253E%250A%2520%2520%253Clabel%2520class%253D%2522m-v-1%2522%2520for%253D%2522name%2522%253EDefault%253C%252Flabel%253E%250A%2520%2520%253Cinput%2520type%253D%2522text%2522%2520class%253D%2522input%2520p-07%2522%2520id%253D%2522name%2522%2520required%2520%252F%253E%250A%253C%252Fdiv%253E%250A%253C%21--%2520Move%2520over%2520label%2520Input%2520--%253E%250A%253Cdiv%2520class%253D%2522field%2520col-flex%2520m-1%2520m-t-3%2522%253E%250A%2520%2520%253Cinput%2520type%253D%2522text%2522%2520class%253D%2522input%2520p-07%2522%2520id%253D%2522name%2522%2520required%2520%252F%253E%250A%2520%2520%253Clabel%2520class%253D%2522placeholder%2520m-v-1%2522%2520for%253D%2522name%2522%253EMove%2520over%2520label%253C%252Flabel%253E%250A%253C%252Fdiv%253E%250A%253C%21--%2520Password%2520Input%2520--%253E%250A%253Cdiv%2520class%253D%2522field%2520col-flex%2520m-1%2522%253E%250A%2520%2520%253Clabel%2520class%253D%2522m-v-1%2522%2520for%253D%2522password%2522%253EPassword%253C%252Flabel%253E%250A%2520%2520%253Cinput%2520type%253D%2522password%2522%2520class%253D%2522input%2520p-07%2522%2520id%253D%2522password%2522%2520%252F%253E%250A%253C%252Fdiv%253E%250A%253C%21--%2520Number%2520Input%2520--%253E%250A%253Cdiv%2520class%253D%2522field%2520col-flex%2520m-1%2522%253E%250A%2520%2520%253Clabel%2520class%253D%2522m-v-1%2522%2520for%253D%2522number%2522%253ENumber%253C%252Flabel%253E%250A%2520%2520%253Cinput%2520type%253D%2522number%2522%2520class%253D%2522input%2520p-07%2522%2520id%253D%2522number%2522%2520%252F%253E%250A%253C%252Fdiv%253E%250A%253C%21--%2520Date%2520Input%2520--%253E%250A%253Cdiv%2520class%253D%2522field%2520col-flex%2520m-1%2522%253E%250A%2520%2520%253Clabel%2520class%253D%2522m-v-1%2522%2520for%253D%2522date%2522%253EDate%253C%252Flabel%253E%250A%2520%2520%253Cinput%2520type%253D%2522date%2522%2520class%253D%2522input%2520p-07%2522%2520id%253D%2522date%2522%2520%252F%253E%250A%253C%252Fdiv%253E%250A%253C%21--%2520Search%2520Input%2520--%253E%250A%253Cdiv%2520class%253D%2522field%2520col-flex%2520m-1%2522%253E%250A%2520%2520%253Clabel%2520class%253D%2522m-v-1%2522%2520for%253D%2522search-text%2522%253ESearch%2520Text%253C%252Flabel%253E%250A%2520%2520%253Cinput%2520type%253D%2522search%2522%2520class%253D%2522input%2520reset-ip%2520p-07%2522%2520placeholder%253D%2522search%2520here%2522%2520id%253D%2522search-text%2522%2520%252F%253E%250A%253C%252Fdiv%253E%250A%253C%21--%2520Disabled%2520Input%2520--%253E%250A%253Cdiv%2520class%253D%2522field%2520col-flex%2520m-1%2522%253E%250A%2520%2520%253Clabel%2520class%253D%2522m-v-1%2522%2520for%253D%2522disabled%2522%253EDisabled%253C%252Flabel%253E%250A%2520%2520%253Cinput%2520type%253D%2522text%2522%2520class%253D%2522input%2520disabled%2520disabled-ip%2520p-07%2522%2520value%253D%2522can%27t%2520touch%2522%2520id%253D%2522disabled%2522%2520%252F%253E%250A%253C%252Fdiv%253E%250A%253C%21--%2520Read%2520Only%2520Input%2520--%253E%250A%253Cdiv%2520class%253D%2522field%2520col-flex%2520m-1%2522%253E%250A%2520%2520%253Clabel%2520class%253D%2522m-v-1%2522%2520for%253D%2522read-only%2522%253ERead%2520Only%253C%252Flabel%253E%250A%2520%2520%253Cinput%2520type%253D%2522text%2522%2520class%253D%2522input%2520disabled%2520p-07%2522%2520value%253D%2522can%27t%2520change%2522%2520id%253D%2522read-only%2522%2520%252F%253E%250A%253C%252Fdiv%253E%250A%253C%21--%2520Text%2520Area%2520Input%2520--%253E%250A%253Cdiv%2520class%253D%2522field%2520col-flex%2520m-1%2522%253E%250A%2520%2520%253Clabel%2520class%253D%2522m-v-1%2522%2520for%253D%2522text-area%2522%253EText%2520Area%253C%252Flabel%253E%250A%2520%2520%253Ctextarea%2520type%253D%2522textarea%2522%2520class%253D%2522input%2520p-07%2522%2520id%253D%2522text-area%2522%253E%253C%252Ftextarea%253E%250A%253C%252Fdiv%253E%250A%253C%21--%2520Default%2520Input%2520with%2520Helper%2520Text%2520--%253E%250A%253Cdiv%2520class%253D%2522field%2520col-flex%2520m-1%2522%253E%250A%2520%2520%253Clabel%2520class%253D%2522m-v-1%2522%2520for%253D%2522helper-text%2522%253EHelper%2520Text%253C%252Flabel%253E%250A%2520%2520%253Cinput%2520type%253D%2522text%2522%2520class%253D%2522input%2520p-07%2522%2520placeholder%253D%2522Helper%2520Text%2522%2520id%253D%2522helper-text%2522%2520%252F%253E%250A%2520%2520%253Csmall%2520class%253D%2522colored-txt%2522%253ESome%2520helper%2520text%253C%252Fsmall%253E%250A%253C%252Fdiv%253E"
+              style="width: 770px; height: 890px; border: 0; transform: scale(1); overflow: hidden"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+
+          <!-- Form with Error Validations -->
+          <h2 class="title h2 m-v-2 colored-bg">Form with Error Validations</h2>
+          <p>
+            Form validation can ve one by using <code>validate-form</code> class inside <code>&lt;form&gt;</code> tag.
+            Respective error and success message is given by using <code>form-validation-msg success-msg</code> &
+            <code>form-validation-msg error-msg</code> classes. Refer to JavaScript code for the functionality.
+          </p>
+          <div class="container colored-container col-flex">
+            <div class="demo w-95p row-flex">
+              <form class="card form-card validate-form left-text row-flex text-wrap box-shd w-40rm p-2 m-2" novalidate>
+                <div class="field col-flex full-wd m-1">
+                  <label class="m-v-1" for="username">Username<span class="mandatory-field">*</span></label>
+                  <input type="text" class="input p-07" id="username" required />
+                  <small class="form-validation-msg success-msg green-txt"
+                    ><i class="fa fa-check-circle-o" aria-hidden="true"></i>Valid field</small
+                  >
+                  <small class="form-validation-msg error-msg red-txt"
+                    ><i class="fa fa-exclamation-circle" aria-hidden="true"></i>Please enter valid input</small
+                  >
+                </div>
+                <div class="field col-flex full-wd m-1">
+                  <label class="m-v-1" for="upassword">Password<span class="mandatory-field">*</span></label>
+                  <input type="password" class="input p-07" id="upassword" required />
+                  <small class="form-validation-msg success-msg green-txt"
+                    ><i class="fa fa-check-circle-o" aria-hidden="true"></i>Valid field</small
+                  >
+                  <small class="form-validation-msg error-msg red-txt"
+                    ><i class="fa fa-exclamation-circle" aria-hidden="true"></i>Please enter valid input</small
+                  >
+                </div>
+
+                <!-- will check number validation later -->
+                <!-- <div class="field col-flex full-wd m-1">
+                        <label class="m-v-1" for="ph-number">Phone no.</label>
+                        <input type="number" class="p-07" id="ph-number" pattern="[1-9][0-9]{9}$" required/>
+                        <small class="form-validation-msg success-msg green-txt"><i class="fa fa-check-circle-o" aria-hidden="true"></i>Valid field</small>
+                        <small class="form-validation-msg error-msg red-txt"><i class="fa fa-exclamation-circle" aria-hidden="true"></i>Please enter valid input</small>
+                    </div> -->
+                <div class="field col-flex full-wd m-1">
+                  <label class="m-v-1" for="products"
+                    >Select Prize (from options):<span class="mandatory-field">*</span></label
+                  >
+                  <select name="products" class="p-07" id="products" required>
+                    <option class="p-07" value="Macbook 2021">Macbook</option>
+                    <option class="p-07" value="Iphone 14">Iphone</option>
+                  </select>
+                </div>
+                <div class="field full-wd m-1">
+                  <input class="checkbox-ip" type="checkbox" class="p-2" id="terms" required />
+                  <label class="m-v-1" for="terms"
+                    >Agree to terms & conditions?<span class="mandatory-field">*</span></label
+                  >
+                  <small class="form-validation-msg success-msg green-txt"
+                    ><i class="fa fa-check-circle-o" aria-hidden="true"></i>Valid field</small
+                  >
+                  <small class="form-validation-msg error-msg red-txt"
+                    ><i class="fa fa-exclamation-circle" aria-hidden="true"></i>Please tick the checkbox</small
+                  >
+                </div>
+                <div class="alert-box info-alert row-flex m-1 p-1">
+                  <p class="alert-msg form-alert">
+                    <i class="fa fa-info-circle" aria-hidden="true"></i>
+                    This is a random important message about claiming prize on this website.
+                  </p>
+                </div>
+                <button type="submit" class="btn primary-btn m-1">
+                  <span class="p-r-1">Submit</span><i class="fa fa-paper-plane" aria-hidden="true"></i>
+                </button>
+                <button class="btn primary-outline-btn m-1">Cancel</button>
+              </form>
+            </div>
+          </div>
+          <h3 class="title">Code Snippets</h3>
+          <div class="container colored-container col-flex">
+            <p class="m-v-2"><code>HTML</code> snippet</p>
+            <iframe
+              class="code-snipet"
+              src="https://carbon.now.sh/embed?bg=rgba%28195%2C185%2C255%2C1%29&t=verminal&wt=none&l=htmlmixed&width=693&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=true&fl=1&fm=dm&fs=13.5px&lh=121%25&si=false&es=4x&wm=false&code=%253Cform%2520class%253D%2522card%2520form-card%2520validate-form%2520left-text%2520row-flex%2520text-wrap%2520box-shd%2520w-40rm%2520p-2%2520m-2%2522%2520novalidate%253E%250A%2520%2520%253Cdiv%2520class%253D%2522field%2520col-flex%2520full-wd%2520m-1%2522%253E%250A%2520%2520%2520%2520%253Clabel%2520for%253D%2522username%2522%253EUsername%253Cspan%2520class%253D%2522mandatory-field%2522%253E*%253C%252Fspan%253E%253C%252Flabel%253E%250A%2520%2520%2520%2520%253Cinput%2520type%253D%2522text%2522%2520class%253D%2522input%2520p-07%2522%2520id%253D%2522username%2522%2520required%2520%252F%253E%250A%2520%2520%2520%2520%253Csmall%2520class%253D%2522form-validation-msg%2520success-msg%2520green-txt%2522%250A%2520%2520%2520%2520%2520%2520%253E%253Ci%2520class%253D%2522fa%2520fa-check-circle-o%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253EValid%2520field%253C%252Fsmall%250A%2520%2520%2520%2520%253E%250A%2520%2520%2520%2520%253Csmall%2520class%253D%2522form-validation-msg%2520error-msg%2520red-txt%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-exclamation-circle%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253EPlease%2520enter%2520valid%2520input%253C%252Fsmall%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522field%2520col-flex%2520full-wd%2520m-1%2522%253E%250A%2520%2520%2520%2520%253Clabel%2520for%253D%2522upassword%2522%253EPassword%253Cspan%2520class%253D%2522mandatory-field%2522%253E*%253C%252Fspan%253E%253C%252Flabel%253E%250A%2520%2520%2520%2520%253Cinput%2520type%253D%2522password%2522%2520class%253D%2522input%2520p-07%2522%2520id%253D%2522upassword%2522%2520required%2520%252F%253E%250A%2520%2520%2520%2520%253Csmall%2520class%253D%2522form-validation-msg%2520success-msg%2520green-txt%2522%250A%2520%2520%2520%2520%2520%2520%253E%253Ci%2520class%253D%2522fa%2520fa-check-circle-o%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253EValid%2520field%253C%252Fsmall%253E%250A%2520%2520%2520%2520%253Csmall%2520class%253D%2522form-validation-msg%2520error-msg%2520red-txt%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-exclamation-circle%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253EPlease%2520enter%2520valid%2520input%253C%252Fsmall%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522field%2520col-flex%2520full-wd%2520m-1%2522%253E%250A%2520%2520%2520%2520%253Clabel%2520for%253D%2522products%2522%253E%250A%2520%2520%2520%2520%2520%2520Select%2520Prize%2520%28from%2520options%29%253A%253Cspan%2520class%253D%2522mandatory-field%2522%253E*%253C%252Fspan%253E%253C%252Flabel%253E%250A%2520%2520%2520%2520%253Cselect%2520name%253D%2522products%2522%2520class%253D%2522p-07%2522%2520id%253D%2522products%2522%2520required%253E%250A%2520%2520%2520%2520%2520%2520%253Coption%2520class%253D%2522p-07%2522%2520value%253D%2522Macbook%25202021%2522%253EMacbook%253C%252Foption%253E%250A%2520%2520%2520%2520%2520%2520%253Coption%2520class%253D%2522p-07%2522%2520value%253D%2522Iphone%252014%2522%253EIphone%253C%252Foption%253E%250A%2520%2520%2520%2520%253C%252Fselect%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522field%2520full-wd%2520m-1%2522%253E%250A%2520%2520%2520%2520%253Cinput%2520class%253D%2522checkbox-ip%2522%2520type%253D%2522checkbox%2522%2520class%253D%2522p-2%2522%2520id%253D%2522terms%2522%2520required%2520%252F%253E%250A%2520%2520%2520%2520%253Clabel%2520for%253D%2522terms%2522%253EAgree%2520to%2520terms%2520%2526%2520conditions%253F%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522mandatory-field%2522%253E*%253C%252Fspan%253E%253C%252Flabel%253E%250A%2520%2520%2520%2520%253Csmall%2520class%253D%2522form-validation-msg%2520success-msg%2520green-txt%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-check-circle-o%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253EValid%2520field%253C%252Fsmall%253E%250A%2520%2520%2520%2520%253Csmall%2520class%253D%2522form-validation-msg%2520error-msg%2520red-txt%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-exclamation-circle%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253EPlease%2520tick%2520the%2520checkbox%253C%252Fsmall%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522alert-box%2520info-alert%2520row-flex%2520m-1%2520p-1%2522%253E%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522alert-msg%2520form-alert%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-info-circle%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520This%2520is%2520a%2520random%2520important%2520message%2520about%2520claiming%2520prize%2520on%2520this%2520website.%250A%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cbutton%2520type%253D%2522submit%2522%2520class%253D%2522btn%2520primary-btn%2520m-1%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522p-r-1%2522%253ESubmit%253C%252Fspan%253E%253Ci%2520class%253D%2522fa%2520fa-paper-plane%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253E%250A%2520%2520%253C%252Fbutton%253E%250A%2520%2520%253Cbutton%2520class%253D%2522btn%2520primary-outline-btn%2520m-1%2522%253ECancel%253C%252Fbutton%253E%250A%253C%252Fform%253E"
+              style="width: 1024px; height: 473px; border: 0; transform: scale(1); overflow: hidden"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+
+            <p class="m-v-2"><code>JS</code> snippet</p>
+            <iframe
+              class="code-snipet"
+              src="https://carbon.now.sh/embed?bg=rgba%28195%2C185%2C255%2C1%29&t=verminal&wt=none&l=javascript&width=693&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=true&fl=1&fm=dm&fs=13.5px&lh=121%25&si=false&es=4x&wm=false&code=%252F*-----------FORM%2520VALIDATION---------------------*%252F%250A%250Aconst%2520validateForm%2520%253D%2520document.querySelectorAll%28%2522.validate-form%2522%29%253B%250A%250AvalidateForm.forEach%28%28form%29%2520%253D%253E%2520%257B%250A%2520%2520form.addEventListener%28%250A%2520%2520%2520%2520%2522submit%2522%252C%250A%2520%2520%2520%2520%28e%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520%2520%2520if%2520%28%21form.checkValidity%28%29%29%2520e.preventDefault%28%29%253B%250A%2520%2520%2520%2520%2520%2520e.preventDefault%28%29%253B%250A%2520%2520%2520%2520%2520%2520form.classList.add%28%2522form-validated%2522%29%253B%250A%2520%2520%2520%2520%257D%252C%250A%2520%2520%2520%2520false%250A%2520%2520%29%253B%250A%257D%29%253B"
+              style="width: 1024px; height: 473px; border: 0; transform: scale(1); overflow: hidden"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+
+          <div class="row-flex m-t-3">
+            <a href="../image/" class="cursor colored-txt bg"
+              ><i class="p-h-2 fa fa-arrow-left" aria-hidden="true"></i>Previous</a
+            >
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
