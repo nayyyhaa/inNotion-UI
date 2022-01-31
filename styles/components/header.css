@@ -1,0 +1,32 @@
+.site-header {
+  position: relative;
+  flex-wrap: wrap-reverse;
+  min-height: 90vh;
+  background: url("../../assets/background.png");
+  object-fit: cover;
+  background-size: cover;
+}
+
+.site-header::after {
+  content: "";
+  position: absolute;
+  background: linear-gradient(transparent, white);
+  bottom: 0rem;
+  height: 10rem;
+  width:100%;
+  z-index: 2;
+}
+
+.introduction {
+  margin: 5rem 0;
+}
+
+
+@media screen and (max-width: 500px) {
+  .site-header {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
+

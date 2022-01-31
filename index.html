@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <link rel="stylesheet" href="https://innotion-ui-library.netlify.app/in-notion.css" />
     <link rel="stylesheet" href="in-notion.css" />
     <script src="scripts/app.js" defer></script>
     <title>inNotion UI | Home</title>
@@ -12,14 +13,66 @@
   <body>
     <div class="header sticky-header">
       <nav class="navbar row-flex">
-        <h3 id="logo">in.notion</h3>
-        <div class="hamburger"><i class="fa fa-bars" aria-hidden="true"></i></div>
+        <a href="/"><h3 id="logo">in.notion <span class="text-stroke txt-shd">UI</span></h3></a>
         <ul class="nav-items row-flex no-bullet">
-          <li><a href="#home">Home</a></li>
-          <li><a href="docs/">Docs</a></li>
-          <li><a href="#connect">Connect</a></li>
+          <li class="btn nav-link-btn h3 m-v-2 m-h-3"><a href="#installation">Installation</a></li>
+          <li class="btn nav-link-btn h3 m-v-2 m-h-3"><a href="docs/alert/">Docs</a></li>
+          <li class="btn nav-link-btn h3 m-v-2 m-h-3"><a href="#connect">Connect</a></li>
         </ul>
+        <div class="hamburger action-close icon-btn rd-bdr grid-ctr colored-txt"><i class="fa fa-bars" aria-hidden="true"></i></div>
       </nav>
     </div>
+    <header class="site-header row-flex p-t-3 p-h-1 m-b-5">
+      <div class="introduction">
+        <h1 class="title lg-text">Welcome to <span class="colored-txt lg-text bg h1">inNotion <span class="text-stroke">UI<span></span></h1>
+        <p class="description h3">Your customised UI design.</p>
+        <a href="#installation"><button class="btn primary-btn m-v-2">Installation</button></a>
+        <a href="docs/alert/"><button class="btn primary-outline-btn m-2">Get Started &gt;&gt;</button></a>
+      </div>
+      <div class="box-style grid-ctr box-shd h1 colored-txt">:)</div>
+    </header>
+    <main>
+      <section id="installation" class="section installation-section centered-text m-t-3">
+        <h2 class="title colored-txt h1 m-v-2"><span class="circle"></span>Installation Guide</h2>
+        <div class="container colored-container row-flex p-v-2 p-h-3 m-b-5">
+          <div class="description m-v-2">
+            <p>Copy and paste the code in the <code>head</code> tag of your <code>html</code> document. So that you can style your components by just adding class names to your html elements.</p>
+            <p>To know about the styled components, their variations, read the documentation.</p>
+            <a href="docs/alert/"><button class="btn primary-btn m-v-3">Get Started &gt;&gt;</button></a>
+          </div>
+          <iframe class="code-snipet m-v-1" class="code-snipet"
+            src="https://carbon.now.sh/embed?bg=rgba%28195%2C185%2C255%2C1%29&t=verminal&wt=sharp&l=htmlmixed&width=500&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=dm&fs=13.5px&lh=158%25&si=false&es=4x&wm=false&code=%253Clink%250A%2520%2520rel%253D%2522stylesheet%2522%250A%2520%2520href%253D%2522https%253A%252F%252Finnotion-ui-library.netlify.app%252Fin-notion.css%2522%250A%252F%253E%250A"
+            style="width: 482px; height: 185px; border:0; transform: scale(1); overflow:hidden;"
+            sandbox="allow-scripts allow-same-origin">
+          </iframe>
+        </div>
+      </section>
+    </main>
+    <footer class="footer p-2 col-flex" id="connect">
+        <header class="contact-head -head">
+            <h2 class="title h2">Contact Us ☎️</h2>
+        </header>
+        <div class="contact-content -content">
+            <div class="contact-socials">
+                <a class="icon-btn action-close rd-bdr p-1" href="mailto:nehaguptang.ng@gmail.com">
+                    <i class="fa fa-envelope" title="envelope" alt="envelope"></i>
+                </a>
+                <a class="icon-btn action-close rd-bdr p-1" href="https://www.github.com/nayyyhaa">
+                    <i class="fa fa-github" title="github" alt="github"></i>
+                </a>
+                <a class="icon-btn action-close rd-bdr p-1" href="https://www.linkedin.com/in/nayyyhaa/">
+                    <i class="fa fa-linkedin" title="linkedin" alt="linkedin"></i>
+                </a>
+                <a class="icon-btn action-close rd-bdr p-1" href="https://www.twitter.com/nayyyhaa">
+                    <i class="fa fa-twitter" title="twitter" alt="twitter"></i>
+                </a>
+                <a class="icon-btn action-close rd-bdr p-1" href="https://www.instagram.com/nehacode">
+                    <i class="fa fa-instagram" title="instagram" alt="instagram"></i>
+                </a>
+            </div>
+            
+        </div>
+        <h3>Made with ❤️ by Neha Gupta</h3>
+    </footer>
   </body>
 </html>
