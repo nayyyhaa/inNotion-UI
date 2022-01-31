@@ -1,4 +1,4 @@
-/*----------NAV BAR------------*/
+/*----------NAV BAR + DOCS------------*/
 
 //hamburger
 let hamburgerBars = document.querySelector(".hamburger .fa");
@@ -11,7 +11,7 @@ let sidebar = document.querySelector(".side-bar");
 let sidebarClose = document.querySelector(".sidebar-close");
 
 //nav funtions
-function toogleNavBar() {
+const toogleNavBar = () => {
   navItems.classList.toggle("show-nav");
   hamburgerBars.className = hamburgerBars.className == "fa fa-bars" ? "fa fa-times" : "fa fa-bars";
   if (sidebar.classList.contains("show-sidebar")) toogleSidebar();
@@ -24,7 +24,7 @@ links.forEach((link) => {
 });
 
 //docs icon functions
-function toogleSidebar() {
+const toogleSidebar = () => {
   sidebar.classList.toggle("show-sidebar");
 }
 

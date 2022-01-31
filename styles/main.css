@@ -15,9 +15,17 @@
 @import url("./components/side-bar.css");
 @import url("./components/footer.css");
 
+/* dark mode */
+@import url("./utils/dark-mode.css");
+
 :root {
   --COLOR-PRIMARY-TRANS: #2a37f0a9;
+  --COLOR-OFFWHITE: #e6e6e6;
+  --COLOR-PRIMARY-XXDARK: #2e1437;
+  --COLOR-PRIMARY-XXXDARK: #120318;
+  --COLOR-PRIMARY-MID: #8e7cf9;
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -30,10 +38,6 @@ main {
   min-height: 80vh;
   line-height: 2.5rem;
   animation: opening 0.5s ease-in forwards;
-}
-
-.copy-to-clipboard-button:hover {
-  cursor: pointer;
 }
 
 .code-snipet {
@@ -50,7 +54,21 @@ main {
   top: 0;
 }
 
+.icon-btn,
+.card-btn {
+  transition: all 0.2s ease-in;
+}
+
+.placeholder {
+  bottom: -0.5rem;
+}
+
+.title {
+  line-height: 4.5rem;
+}
+
 /* animations */
+
 @keyframes opening {
   from {
     opacity: 0;
@@ -71,5 +89,12 @@ main {
 @media screen and (max-width: 600px) {
   * {
     font-size: 55%;
+  }
+  .dark-mode {
+    position: relative;
+    left: 13%;
+  }
+  .field {
+    width: 100%;
   }
 }
