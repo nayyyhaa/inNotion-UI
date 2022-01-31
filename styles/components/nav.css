@@ -7,6 +7,7 @@
 .header {
   background: var(--COLOR-PRIMARY-TRANS);
   backdrop-filter: blur(2rem);
+  -webkit-backdrop-filter: blur(2rem);
   box-shadow: inset 0px -1px 1px #e7ebf0;
 }
 
@@ -56,6 +57,7 @@
     top: calc(var(--height) * -1);
     background: var(--COLOR-PRIMARY);
     backdrop-filter: blur(9rem);
+  -webkit-backdrop-filter: blur(9rem);
     transition: all 1s ease 0s;
   }
 

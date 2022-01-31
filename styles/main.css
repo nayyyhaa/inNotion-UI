@@ -1,6 +1,5 @@
 /* UTILS */
 @import url("./utils/fonts.css");
-@import url("./utils/flex.css");
 @import url("./utils/lists.css");
 @import url("./utils/img.css");
 @import url("./utils/grid.css");
@@ -17,7 +16,7 @@
 @import url("./components/footer.css");
 
 :root {
-  --COLOR-PRIMARY-TRANS: #2a37f06c;
+  --COLOR-PRIMARY-TRANS: #2a37f0a9;
 }
 * {
   margin: 0;
