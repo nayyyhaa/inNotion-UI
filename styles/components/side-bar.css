@@ -1,9 +1,9 @@
 .side-bar {
   position: fixed;
-  width: 22%;
-  top: 10%;
+  width: 20%;
+  top: 8rem;
   left: 0;
-  height: 100%;
+  height: 80vh;
   background-color: var(--COLOR-PRIMARY-XXLIGHT);
   overflow-y: scroll;
   transition: all 0.5s ease;
@@ -12,7 +12,7 @@
 .sidebar-item {
   width: 100%;
   color: var(--COLOR-PRIMARY);
-  height: 5vh;
+  min-height: 5vh;
   cursor: pointer;
 }
 

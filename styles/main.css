@@ -45,9 +45,14 @@ main {
   cursor: pointer;
 }
 
+.card-text-overlay {
+  width: 100%;
+  top: 0;
+}
+
 /* animations */
 @keyframes opening {
-  from{
+  from {
     opacity: 0;
   }
   to {
