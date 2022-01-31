@@ -1,0 +1,30 @@
+.grid-sidebar-layout {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-areas:
+    "header header header"
+    "sidebar content content";
+}
+
+.header {
+  grid-area: header;
+}
+
+.side-bar {
+  grid-area: sidebar;
+  min-height: 100vh;
+  z-index: 10;
+}
+
+.docs-content {
+  grid-area: content;
+  min-height: 100vh;
+}
+
+@media screen and (max-width: 600px) {
+  .grid-sidebar-layout {
+    grid-template-areas:
+      "header header header"
+      "content content content";
+  }
+}

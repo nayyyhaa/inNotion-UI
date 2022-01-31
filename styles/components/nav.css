@@ -1,13 +1,13 @@
-.hamburger {
+.hamburger,
+.docs-hamburger {
   display: none;
   pointer-events: none;
 }
 
 .header {
-  background: var(--primary-color-trans);
-  backdrop-filter: blur(20px);
+  background: var(--COLOR-PRIMARY-TRANS);
+  backdrop-filter: blur(2rem);
   box-shadow: inset 0px -1px 1px #e7ebf0;
-  color: white;
 }
 
 .navbar {
@@ -17,16 +17,16 @@
   justify-content: space-between;
 }
 
-.navbar li a {
-  color: white;
-  padding: 0.5rem 1rem;
-  transition: all 0.1s ease-in;
+.nav-link-btn {
+  border-radius: unset;
+  color: var(--COLOR-PRIMARY);
+  padding: 0;
+  transition: all 0.2s ease;
 }
 
-.navbar li a:hover {
-  color: var(--primary-color-xdark);
-  background: white;
-  border-radius: 0.2rem;
+.nav-link-btn a:hover {
+  color: var(--COLOR-PRIMARY-DARK);
+  border-bottom: 0.25rem solid white;
 }
 
 /* sticky header */
@@ -36,12 +36,13 @@
   z-index: 10;
 }
 
-@media screen and (max-width: 800px) {
-    
-  .hamburger {
-    display: block;
+@media screen and (max-width: 600px) {
+  .hamburger,
+  .docs-hamburger {
+    display: grid;
     pointer-events: visible;
     cursor: pointer;
+    color: var(--COLOR-PRIMARY);
     z-index: 3;
   }
 
@@ -53,11 +54,21 @@
     height: var(--height);
     left: 0;
     top: calc(var(--height) * -1);
-    background: var(--primary-color-sat);
+    background: var(--COLOR-PRIMARY);
+    backdrop-filter: blur(9rem);
     transition: all 1s ease 0s;
   }
 
-  .show {
+  .nav-link-btn a:hover {
+    color: white;
+  }
+
+  .show-nav {
+    display: flex;
     top: 0;
+  }
+
+  .show-nav ~ .hamburger {
+    color: white;
   }
 }
