@@ -10,8 +10,8 @@
   content: "";
   position: absolute;
   background: linear-gradient(transparent, white);
-  bottom: 0;
-  height: 18rem;
+  bottom: 0rem;
+  height: 10rem;
   width:100%;
   z-index: 2;
 }
