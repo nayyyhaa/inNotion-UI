@@ -43,8 +43,12 @@
     display: grid;
     pointer-events: visible;
     cursor: pointer;
-    color: var(--COLOR-PRIMARY);
+    color: white;
     z-index: 3;
+  }
+
+  .docs-hamburger {
+    z-index: 0;
   }
 
   .nav-items {
