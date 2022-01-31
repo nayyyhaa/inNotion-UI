@@ -94,7 +94,7 @@ main {
   background: var(--COLOR-PRIMARY-XXXDARK);
 }
 .dark .primary-btn {
-  background: var(--COLOR-PRIMARY-XXDARK);
+  background: var(--COLOR-PRIMARY-DARK);
 }
 
 .dark .box-shd {
@@ -157,11 +157,8 @@ main {
 }
 
 .dark .primary-outline-btn {
-  border: 0.2rem solid var(--COLOR-PRIMARY-XXDARK);
-  color: var(--COLOR-PRIMARY-XXDARK);
-}
-
-.dark .primary-outline-btn:hover {
+  border: 0.2rem solid var(--COLOR-PRIMARY-DARK);
+  color: var(--COLOR-PRIMARY-DARK);
   background: var(--COLOR-COMPLEMENTARY-LIGHT);
 }
 
@@ -197,5 +194,8 @@ main {
   .dark-mode {
     position: relative;
     left: 13%;
+  }
+  .field {
+    width: 100%;
   }
 }
