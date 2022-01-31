@@ -16,6 +16,7 @@
   margin: auto;
   min-height: 10vh;
   justify-content: space-between;
+  animation: opening 1s ease-in-out forwards;
 }
 
 .nav-link-btn {
