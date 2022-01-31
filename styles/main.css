@@ -29,6 +29,7 @@ main {
   width: 90%;
   min-height: 80vh;
   line-height: 2.5rem;
+  animation: opening 0.5s ease-in forwards;
 }
 
 .copy-to-clipboard-button:hover {
@@ -42,6 +43,16 @@ main {
 
 .cursor {
   cursor: pointer;
+}
+
+/* animations */
+@keyframes opening {
+  from{
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* Media Queries */
