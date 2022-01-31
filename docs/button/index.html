@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <link rel="stylesheet" href="https://innotion-ui-library.netlify.app/in-notion.css" />
+    <link rel="stylesheet" href="../../in-notion.css" />
+    <script src="../../scripts/app.js" defer></script>
+    <title>inNotion UI | Docs</title>
+  </head>
+  <body>
+    <div class="grid-sidebar-layout">
+      <div class="header sticky-header">
+        <nav class="navbar row-flex">
+          <div class="docs-hamburger action-close icon-btn rd-bdr grid-ctr colored-txt">
+            <i class="fa fa-book" aria-hidden="true"></i>
+          </div>
+          <a href="/"
+            ><h3 id="logo">in.notion <span class="text-stroke txt-shd">UI</span></h3></a
+          >
+          <ul class="nav-items row-flex no-bullet">
+            <li class="btn nav-link-btn h3 m-v-2 m-h-3"><a href="/">Installation</a></li>
+            <li class="btn nav-link-btn h3 m-v-2 m-h-3"><a href="index.html">Docs</a></li>
+            <li class="btn nav-link-btn h3 m-v-2 m-h-3"><a href="#connect">Connect</a></li>
+          </ul>
+          <div class="hamburger action-close icon-btn rd-bdr grid-ctr colored-txt">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+          </div>
+        </nav>
+      </div>
+      <div class="side-bar box-shd">
+        <h2 class="title row-flex p-v-4">
+          Components
+          <p class="action-close icon-btn sidebar-close rd-bdr grid-ctr colored-txt">
+            <i class="fa fa-close" aria-hidden="true"></i>
+          </p>
+        </h2>
+        <ul class="sidebar-items col-flex">
+          <a class="sidebar-item grid-ctr p-4 h3" href="../alert/"><li>Alert</li></a>
+          <a class="sidebar-item grid-ctr p-4 h3" href="../avatar/"><li>Avatar</li></a>
+          <a class="sidebar-item grid-ctr p-4 h3" href="../badge/"><li>Badge</li></a>
+          <a class="sidebar-item active-sidebar grid-ctr p-4 h3" href="../button/"><li>Buttons</li></a>
+          <a class="sidebar-item grid-ctr p-4 h3" href="../card/"><li>Card</li></a>
+          <a class="sidebar-item grid-ctr p-4 h3" href="../image/"><li>Image</li></a>
+          <a class="sidebar-item grid-ctr p-4 h3" href="../input/"><li>Input</li></a>
+        </ul>
+      </div>
+      <main class="docs-content m-b-5">
+        <h1 class="title colored-txt h1 m-v-4"><span class="circle"></span>Button</h1>
+        <h3>
+          Buttons are also called as call to action. We have range of buttons and their states. You may use
+          <code>&lt;a&gt;</code> tag or <code>&lt;button&gt;</code> element, you need to add respective classes, and you
+          are good to go.
+        </h3>
+        <section>
+          <!-- Primary Buttons-->
+          <h2 class="title h2 m-v-2 colored-bg">Primary Buttons</h2>
+          <p>
+            Primary buttons comes with 5 variants: basic primary button, outlined button, primary link button, icon
+            button & button with icon. Just include `btn primary-btn` to your <code>&lt;a&gt;</code> tag or
+            <code>&lt;button&gt;</code> element.
+          </p>
+          <div class="container colored-container col-flex">
+            <div class="demo w-95p row-flex">
+              <!-- Primary Buttons-->
+              <button class="btn primary-btn m-1">Primary Button</button>
+              <button class="btn primary-outline-btn m-1">Primary Outline</button>
+              <button class="btn primary-link-btn m-1">Primary Link</button>
+              <button class="btn primary-icon-btn m-1"><i class="fa fa-envelope-open" aria-hidden="true"></i></button>
+              <button class="btn primary-btn m-1">
+                <i class="fa fa-heart" aria-hidden="true"></i><span class="p-l-1">Icon on button</span>
+              </button>
+            </div>
+          </div>
+          <h3 class="title">Code Snippets</h3>
+          <div class="container code-container colored-container col-flex">
+            <iframe
+              class="code-snipet"
+              src="https://carbon.now.sh/embed?bg=rgba%28195%2C185%2C255%2C1%29&t=verminal&wt=none&l=htmlmixed&width=693&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=true&fl=1&fm=dm&fs=13.5px&lh=121%25&si=false&es=4x&wm=false&code=%253C%21--%2520Primary%2520Buttons--%253E%250A%253Cbutton%2520class%253D%2522btn%2520primary-btn%2520m-1%2522%253EPrimary%2520Button%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520primary-outline-btn%2520m-1%2522%253EPrimary%2520Outline%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520primary-link-btn%2520m-1%2522%253EPrimary%2520Link%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520primary-icon-btn%2520m-1%2522%253E%253Ci%2520class%253D%2522fa%2520fa-envelope-open%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520primary-btn%2520m-1%2522%253E%250A%2520%2520%253Ci%2520class%253D%2522fa%2520fa-heart%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253E%253Cspan%2520class%253D%2522p-l-1%2522%253EButton%2520w%252F%2520icon%253C%252Fspan%253E%250A%253C%252Fbutton%253E"
+              style="width: 822px; height: 188px; border: 0; transform: scale(1); overflow: hidden"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+
+          <!-- Colored Buttons -->
+          <h2 class="title h2 m-v-2 colored-bg">Colored Buttons</h2>
+          <p>
+            Color of buttons can be changed as well. You need to include class
+            <code>error-btn</code>, <code>info-btn</code>, <code>warning-btn</code>, &<code>success-btn</code> to change
+            color.
+          </p>
+          <div class="container colored-container col-flex">
+            <div class="demo w-95p row-flex">
+              <!-- Colored Buttons -->
+              <button class="btn error-btn m-1">Error</button>
+              <button class="btn info-btn m-1">Info</button>
+              <button class="btn warning-btn m-1">Warning</button>
+              <button class="btn success-btn m-1">Success</button>
+              <button class="btn blue-bg">
+                <span class="p-r-1">Send</span><i class="fa fa-paper-plane" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+          <h3 class="title">Code Snippets</h3>
+          <div class="container code-container colored-container col-flex">
+            <iframe
+              class="code-snipet"
+              src="https://carbon.now.sh/embed?bg=rgba%28195%2C185%2C255%2C1%29&t=verminal&wt=none&l=htmlmixed&width=693&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=true&fl=1&fm=dm&fs=13.5px&lh=121%25&si=false&es=4x&wm=false&code=%253C%21--%2520Colored%2520Buttons%2520--%253E%250A%253Cbutton%2520class%253D%2522btn%2520error-btn%2520m-1%2522%253EError%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520info-btn%2520m-1%2522%253EInfo%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520warning-btn%2520m-1%2522%253EWarning%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520success-btn%2520m-1%2522%253ESuccess%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520blue-bg%2522%253E%250A%2520%2520%253Cspan%2520class%253D%2522p-r-1%2522%253ESend%253C%252Fspan%253E%253Ci%2520class%253D%2522fa%2520fa-paper-plane%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253E%250A%253C%252Fbutton%253E"
+              style="width: 682px; height: 188px; border: 0; transform: scale(1); overflow: hidden"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+
+          <!-- Disabled Buttons -->
+          <h2 class="title h2 m-v-2 colored-bg">Disabled Buttons</h2>
+          <p>To disable the button, you need to include class <code>disabled-btn</code>.</p>
+          <div class="container colored-container col-flex">
+            <div class="demo w-95p row-flex">
+              <!-- Disabled Buttons -->
+              <button class="btn primary-btn disabled-btn m-1">Primary Button</button>
+              <button class="btn primary-outline-btn disabled-btn m-1">Primary Outline</button>
+              <button class="btn primary-link-btn disabled-btn m-1">Primary Link</button>
+              <button class="btn primary-icon-btn disabled-btn m-1">
+                <i class="fa fa-envelope-open" aria-hidden="true"></i>
+              </button>
+              <button class="btn blue-bg disabled-btn">
+                <span class="p-r-1">Send</span><i class="fa fa-paper-plane" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+          <h3 class="title">Code Snippets</h3>
+          <div class="container code-container colored-container col-flex">
+            <iframe
+              class="code-snipet"
+              src="https://carbon.now.sh/embed?bg=rgba%28195%2C185%2C255%2C1%29&t=verminal&wt=none&l=htmlmixed&width=693&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=true&fl=1&fm=dm&fs=13.5px&lh=121%25&si=false&es=4x&wm=false&code=%253C%21--%2520Disabled%2520Buttons%2520--%253E%250A%253Cbutton%2520class%253D%2522btn%2520primary-btn%2520disabled-btn%2520m-1%2522%253EPrimary%2520Button%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520primary-outline-btn%2520disabled-btn%2520m-1%2522%253EPrimary%2520Outline%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520primary-link-btn%2520disabled-btn%2520m-1%2522%253EPrimary%2520Link%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520primary-icon-btn%2520disabled-btn%2520m-1%2522%253E%250A%2520%2520%253Ci%2520class%253D%2522fa%2520fa-envelope-open%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253E%250A%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520blue-bg%2520disabled-btn%2522%253E%250A%2520%2520%253Cspan%2520class%253D%2522p-r-1%2522%253ESend%253C%252Fspan%253E%253Ci%2520class%253D%2522fa%2520fa-paper-plane%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253E%250A%253C%252Fbutton%253E"
+              style="width: 682px; height: 220px; border: 0; transform: scale(1); overflow: hidden"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+
+          <!-- Floating Action Buttons -->
+          <h2 class="title h2 m-v-2 colored-bg">Floating Action Button</h2>
+          <p>
+            Floating-action buttons can be customized by adding the font-awesome icon of your choice. This button will
+            be fixed to right-bottom corner. Just include <code>floating-btn</code> class to you button.
+          </p>
+          <div class="container colored-container col-flex">
+            <div class="demo w-95p row-flex">
+              <!-- Floating Action Button -->
+              <button class="btn primary-btn floating-btn grid-ctr m-1">
+                <i class="fa fa-plus" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+          <h3 class="title">Code Snippets</h3>
+          <div class="container code-container colored-container col-flex">
+            <iframe
+              class="code-snipet"
+              src="https://carbon.now.sh/embed?bg=rgba%28195%2C185%2C255%2C1%29&t=verminal&wt=none&l=htmlmixed&width=693&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=true&fl=1&fm=dm&fs=13.5px&lh=121%25&si=false&es=4x&wm=false&code=%253C%21--%2520Floating%2520Action%2520Button%2520--%253E%250A%253Cbutton%2520class%253D%2522btn%2520primary-btn%2520floating-btn%2520grid-ctr%2520m-1%2522%253E%250A%2520%2520%253Ci%2520class%253D%2522fa%2520fa-plus%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253E%250A%253C%252Fbutton%253E"
+              style="width: 481px; height: 122px; border: 0; transform: scale(1); overflow: hidden"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+
+          <div class="row-flex m-t-3">
+            <a href="../badge/" class="cursor colored-txt bg"
+              ><i class="p-h-2 fa fa-arrow-left" aria-hidden="true"></i>Previous</a
+            >
+            <a href="../card/" class="cursor colored-txt bg"
+              >Next<i class="p-h-2 fa fa-arrow-right" aria-hidden="true"></i
+            ></a>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

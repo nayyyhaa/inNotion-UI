@@ -28,6 +28,7 @@
 main {
   width: 90%;
   min-height: 80vh;
+  line-height: 2.5rem;
 }
 
 .copy-to-clipboard-button:hover {
