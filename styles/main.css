@@ -1,7 +1,6 @@
 /* UTILS */
 @import url("./utils/fonts.css");
 @import url("./utils/lists.css");
-@import url("./utils/img.css");
 @import url("./utils/grid.css");
 @import url("./utils/gutter.css");
 @import url("./utils/size.css");
@@ -10,7 +9,6 @@
 @import url("./components/nav.css");
 @import url("./components/blob.css");
 @import url("./components/header.css");
-@import url("./components/button.css");
 @import url("./components/container.css");
 @import url("./components/side-bar.css");
 @import url("./components/footer.css");
