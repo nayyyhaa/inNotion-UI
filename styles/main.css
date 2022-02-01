@@ -22,6 +22,7 @@
   --COLOR-PRIMARY-XXDARK: #2e1437;
   --COLOR-PRIMARY-XXXDARK: #120318;
   --COLOR-PRIMARY-MID: #8e7cf9;
+  --COLOR-CODE-EDITOR: #070318f7;
 }
 
 * {
@@ -42,7 +43,7 @@
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: rgba(155, 155, 155, 0.616);
+  background-color: var(--COLOR-PRIMARY);
   border-radius: 20px;
   border: transparent;
 }
@@ -55,13 +56,25 @@ main {
 }
 
 .code-snipet {
-  width: 95%;
-  height: 30vh;
+  max-width: 95%;
   border: 0;
   transform: scale(1);
   white-space: pre-line;
-  overflow: scroll;
   border-radius: 1rem;
+  overflow: auto;
+  font-size: 1.6rem;
+}
+
+.hljs, .hljs span {
+  font-family: "Inconsolata", sans-serif;
+}
+
+.hljs {
+  background: var(--COLOR-CODE-EDITOR);
+}
+
+.hljs-attr {
+  color: var(--BLUE-XLIGHT);
 }
 
 .cursor {

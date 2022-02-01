@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- -------- Highlight JS -----------  -->
+    <link
+      rel="stylesheet"
+      href="	https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/tomorrow-night.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js" defer></script>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
     <link rel="stylesheet" href="https://innotion-ui-library.netlify.app/in-notion.css" />
     <link rel="stylesheet" href="../../in-notion.css" />
@@ -121,13 +128,60 @@
           </div>
           <h3 class="title">Code Snippets</h3>
           <div class="container code-container colored-container col-flex">
-            <iframe
-              class="code-snipet"
-              src="https://carbon.now.sh/embed?bg=rgba%28195%2C185%2C255%2C1%29&t=verminal&wt=none&l=htmlmixed&width=693&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=true&fl=1&fm=dm&fs=13.5px&lh=121%25&si=false&es=4x&wm=false&code=%253C%21--%2520Horizontal%2520cards%2520--%253E%250A%250A%253C%21--%2520reader%2520card%2520--%253E%250A%253Cdiv%2520class%253D%2522card%2520hz-card%2520left-text%2520box-shd%2520col-flex%2520w-35rm%2520m-2%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card-header%2520flex-start%2520row-flex%2520text-wrap%2520full-wd%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522card-img%2520sq-img%2522%2520src%253D%2522..%252F..%252Fassets%252Fdream.jpg%2522%2520alt%253D%2522dream%2520state%2522%2520%252F%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-header-text%2520p-1%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ch2%2520class%253D%2522card-title%2520h3%2522%253EDream%2520State%253C%252Fh2%253E%250A%2520%2520%2520%2520%2520%2520%253Csub%253EHallucination%2520or%2520reality%253F%253C%252Fsub%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card-actions%2520row-flex%2520full-wd%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-btns%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-btn%2520card-btn-text%2522%253EREAD%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-btn%2520card-btn-text%2522%253EBOOKMARK%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-icons%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-icon-btn%2520icon-btn%2520rd-bdr%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-heart-o%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-icon-btn%2520icon-btn%2520rd-bdr%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-share-alt%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-icon-btn%2520icon-btn%2520rd-bdr%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-ellipsis-v%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%250A%253C%21--%2520music%2520card%2520--%253E%250A%253Cdiv%2520class%253D%2522card%2520hz-card%2520media-card%2520left-text%2520box-shd%2520w-35rm%2520h-15rm%2520m-2%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522row-flex%2520text-wrap%2520full-wd%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-header-text%2520col-flex%2520h-15rm%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ch2%2520class%253D%2522card-title%2520h3%2522%253EDreamify%253C%252Fh2%253E%250A%2520%2520%2520%2520%2520%2520%253Csub%2520class%253D%2522h5%2522%253ENene%2520%2526%2520the%2520notion%253C%252Fsub%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522play-actions%2520p-v-1%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-icon-btn%2520icon-btn%2520rd-bdr%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-step-backward%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-icon-btn%2520icon-btn%2520rd-bdr%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-play%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-icon-btn%2520icon-btn%2520rd-bdr%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-step-forward%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522card-img%2520h-15rm%2520w-40p%2522%2520src%253D%2522..%252F..%252Fassets%252Fdream.jpg%2522%2520alt%253D%2522dream%2520state%2522%252F%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A"
-              sandbox="allow-scripts allow-same-origin"
-              loading="lazy"
-            >
-            </iframe>
+            <pre class="code-snipet m-v-1 p-1">
+              <code class="html fs-s">
+               <!-- Horizontal cards -->
+                <!-- reader card -->
+                <div class="card hz-card left-text box-shd col-flex w-35rm m-2">
+                  <div class="card-header flex-start row-flex text-wrap full-wd">
+                    <img class="card-img sq-img" src="../../assets/dream.jpg" alt="dream state" />
+                    <div class="card-header-text p-1">
+                      <h2 class="card-title h3">Dream State</h2>
+                      <sub>Hallucination or reality?</sub>
+                    </div>
+                  </div>
+                  <div class="card-actions row-flex full-wd">
+                    <div class="card-btns">
+                      <button class="card-btn card-btn-text">READ</button>
+                      <button class="card-btn card-btn-text">BOOKMARK</button>
+                    </div>
+                    <div class="card-icons">
+                      <button class="card-icon-btn icon-btn rd-bdr">
+                        <i class="fa fa-heart-o" aria-hidden="true"></i>
+                      </button>
+                      <button class="card-icon-btn icon-btn rd-bdr">
+                        <i class="fa fa-share-alt" aria-hidden="true"></i>
+                      </button>
+                      <button class="card-icon-btn icon-btn rd-bdr">
+                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- music card -->
+                <div class="card hz-card media-card left-text box-shd w-35rm h-15rm m-2">
+                  <div class="row-flex text-wrap full-wd">
+                    <div class="card-header-text col-flex h-15rm">
+                      <h2 class="card-title h3">Dreamify</h2>
+                      <sub class="h5">Nene & the notion</sub>
+                      <div class="play-actions p-v-1">
+                        <button class="card-icon-btn icon-btn rd-bdr">
+                          <i class="fa fa-step-backward" aria-hidden="true"></i>
+                        </button>
+                        <button class="card-icon-btn icon-btn rd-bdr">
+                          <i class="fa fa-play" aria-hidden="true"></i>
+                        </button>
+                        <button class="card-icon-btn icon-btn rd-bdr">
+                          <i class="fa fa-step-forward" aria-hidden="true"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <img class="card-img h-15rm w-40p" src="../../assets/dream.jpg" alt="dream state" />
+                  </div>
+                </div>
+              </code>
+            </pre>
           </div>
 
           <h3 class="title h3 m-v-2">Vertical Card</h3>
@@ -163,13 +217,35 @@
           </div>
           <h3 class="title">Code Snippets</h3>
           <div class="container code-container colored-container col-flex">
-            <iframe
-              class="code-snipet"
-              src="https://carbon.now.sh/embed?bg=rgba%28195%2C185%2C255%2C1%29&t=verminal&wt=none&l=htmlmixed&width=693&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=true&fl=1&fm=dm&fs=13.5px&lh=121%25&si=false&es=4x&wm=false&code=%2520%253C%21--%2520Vertical%2520card%2520--%253E%250A%253Cdiv%2520class%253D%2522card%2520vd-card%2520left-text%2520col-flex%2520flex-start%2520box-shd%2520w-30rm%2520m-2%2522%253E%250A%2520%2520%253Cimg%2520class%253D%2522card-img%2520full-wd%2522%2520src%253D%2522..%252F..%252Fassets%252Fdream.jpg%2522%2520alt%253D%2522dream%2520state%2522%2520%252F%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card-header-text%2520text-wrap%2520p-1%2522%253E%250A%2520%2520%2520%2520%253Ch2%2520class%253D%2522card-title%2520h3%2522%253EDream%2520State%253C%252Fh2%253E%250A%2520%2520%2520%2520%253Csub%253EHallucination%2520or%2520reality%253F%253C%252Fsub%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card-actions%2520row-flex%2520full-wd%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-btns%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-btn%2520card-btn-text%2522%253EREAD%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-btn%2520card-btn-text%2522%253EBOOKMARK%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-icons%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-icon-btn%2520icon-btn%2520rd-bdr%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-heart-o%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-icon-btn%2520icon-btn%2520rd-bdr%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-share-alt%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-icon-btn%2520icon-btn%2520rd-bdr%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-ellipsis-v%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
-              sandbox="allow-scripts allow-same-origin"
-              loading="lazy"
-            >
-            </iframe>
+            <pre class="code-snipet m-v-1 p-1">
+              <code class="html fs-s">
+                <!-- Vertical card -->
+                <div class="card vd-card left-text col-flex flex-start box-shd w-30rm m-2">
+                  <img class="card-img full-wd" src="../../assets/dream.jpg" alt="dream state" />
+                  <div class="card-header-text text-wrap p-1">
+                    <h2 class="card-title h3">Dream State</h2>
+                    <sub>Hallucination or reality?</sub>
+                  </div>
+                  <div class="card-actions row-flex full-wd">
+                    <div class="card-btns">
+                      <button class="card-btn card-btn-text">READ</button>
+                      <button class="card-btn card-btn-text">BOOKMARK</button>
+                    </div>
+                    <div class="card-icons">
+                      <button class="card-icon-btn icon-btn rd-bdr">
+                        <i class="fa fa-heart-o" aria-hidden="true"></i>
+                      </button>
+                      <button class="card-icon-btn icon-btn rd-bdr">
+                        <i class="fa fa-share-alt" aria-hidden="true"></i>
+                      </button>
+                      <button class="card-icon-btn icon-btn rd-bdr">
+                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </code>
+            </pre>
           </div>
 
           <!-- Cards with Badge -->
@@ -230,13 +306,59 @@
           </div>
           <h3 class="title">Code Snippets</h3>
           <div class="container code-container colored-container col-flex">
-            <iframe
-              class="code-snipet"
-              src="https://carbon.now.sh/embed?bg=rgba%28195%2C185%2C255%2C1%29&t=verminal&wt=none&l=htmlmixed&width=693&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=true&fl=1&fm=dm&fs=13.5px&lh=121%25&si=false&es=4x&wm=false&code=%2520%253C%21--%2520Horizontal%2520cards%2520--%253E%250A%253Cdiv%2520class%253D%2522card%2520hz-card%2520media-card%2520left-text%2520row-flex%2520text-wrap%2520box-shd%2520w-40rm%2520h-25rm%2520m-2%2522%253E%250A%2520%2520%253Cimg%2520class%253D%2522card-img%2520h-25rm%2520w-35p%2522%2520src%253D%2522..%252F..%252Fassets%252Fshirt.jpg%2522%2520alt%253D%2522shirt%2522%2520%252F%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card-header-text%2520h-25rm%2520col-flex%2522%253E%250A%2520%2520%2520%2520%253Ch2%2520class%253D%2522card-title%2520colored-txt%2520h3%2522%253EPeachtone%2520Shirt%253C%252Fh2%253E%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522h6%2522%253ETrendy%2520fashion%2520for%2520summer%2520season.%253Cbr%2520%252F%253E%253Csmall%253ESold%2520by%253A%2520Nene%2520Stores%253C%252Fsmall%253E%253C%252Fp%253E%250A%2520%2520%2520%2520%253Csub%2520class%253D%2522h5%2520m-v-2%2522%253ELinen%2520shirt%2520for%2520women.%253C%252Fsub%253E%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-actions%2520card-btns%2520row-flex%2520full-wd%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520primary-btn%2520p-1%2520m-r-1%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-shopping-cart%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253E%253Cspan%2520class%253D%2522p-l-1%2522%253EAdd%2520to%2520cart%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-icons%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-icon-btn%2520icon-btn%2520rd-bdr%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-heart-o%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-icon-btn%2520icon-btn%2520rd-bdr%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-ellipsis-v%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cspan%2520class%253D%2522badge%2520md-badge%2520txt-badge%2520badge-card-tr%2520wt-text%2520grid-ctr%2520blue-badge%2522%253ENEW%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%250A%253C%21--%2520Vertical%2520card%2520--%253E%250A%253Cdiv%2520class%253D%2522card%2520vd-card%2520left-text%2520col-flex%2520flex-start%2520box-shd%2520w-30rm%2520m-2%2522%253E%250A%2520%2520%253Cimg%2520class%253D%2522card-img%2520full-wd%2522%2520src%253D%2522..%252F..%252Fassets%252Fshirt.jpg%2522%2520alt%253D%2522shirt%2522%2520%252F%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card-header-text%2520text-wrap%2520p-1%2522%253E%250A%2520%2520%2520%2520%253Ch2%2520class%253D%2522card-title%2520colored-txt%2520h3%2522%253EPeachtone%2520Shirt%253C%252Fh2%253E%250A%2520%2520%2520%2520%253Csub%253ETrendy%2520fashion%2520for%2520summer%2520season.%253C%252Fsub%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card-actions%2520row-flex%2520full-wd%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-btns%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520primary-btn%2520m-r-1%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-shopping-cart%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253E%253Cspan%2520class%253D%2522p-l-1%2522%253EAdd%2520to%2520cart%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-icons%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-icon-btn%2520icon-btn%2520rd-bdr%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-heart-o%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-icon-btn%2520icon-btn%2520rd-bdr%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-share-alt%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cspan%2520class%253D%2522badge%2520md-badge%2520txt-badge%2520badge-card-tr%2520wt-text%2520grid-ctr%2520green-badge%2522%253EMost%2520Popular%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
-              sandbox="allow-scripts allow-same-origin"
-              loading="lazy"
-            >
-            </iframe>
+            <pre class="code-snipet m-v-1 p-1">
+              <code class="html fs-s">
+                 <!-- Horizontal cards -->
+                <div class="card hz-card media-card left-text row-flex text-wrap box-shd w-40rm h-25rm m-2">
+                  <img class="card-img h-25rm w-35p" src="../../assets/shirt.jpg" alt="shirt" />
+                  <div class="card-header-text h-25rm col-flex">
+                    <h2 class="card-title colored-txt h3">Peachtone Shirt</h2>
+                    <p class="h6">Trendy fashion for summer season.<br /><small>Sold by: Nene Stores</small></p>
+                    <sub class="h5 m-v-2">Linen shirt for women.</sub>
+
+                    <div class="card-actions card-btns row-flex full-wd">
+                      <button class="btn primary-btn p-1 m-r-1">
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i><span class="p-l-1">Add to cart</span>
+                      </button>
+                      <div class="card-icons">
+                        <button class="card-icon-btn icon-btn rd-bdr">
+                          <i class="fa fa-heart-o" aria-hidden="true"></i>
+                        </button>
+                        <button class="card-icon-btn icon-btn rd-bdr">
+                          <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <span class="badge md-badge txt-badge badge-card-tr wt-text grid-ctr blue-badge">NEW</span>
+                </div>
+
+                <!-- Vertical card -->
+                <div class="card vd-card left-text col-flex flex-start box-shd w-30rm m-2">
+                  <img class="card-img full-wd" src="../../assets/shirt.jpg" alt="shirt" />
+                  <div class="card-header-text text-wrap p-1">
+                    <h2 class="card-title colored-txt h3">Peachtone Shirt</h2>
+                    <sub>Trendy fashion for summer season.</sub>
+                  </div>
+                  <div class="card-actions row-flex full-wd">
+                    <div class="card-btns">
+                      <button class="btn primary-btn m-r-1">
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i><span class="p-l-1">Add to cart</span>
+                      </button>
+                    </div>
+                    <div class="card-icons">
+                      <button class="card-icon-btn icon-btn rd-bdr">
+                        <i class="fa fa-heart-o" aria-hidden="true"></i>
+                      </button>
+                      <button class="card-icon-btn icon-btn rd-bdr">
+                        <i class="fa fa-share-alt" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <span class="badge md-badge txt-badge badge-card-tr wt-text grid-ctr green-badge">Most Popular</span>
+                </div>
+              </code>
+            </pre>
           </div>
 
           <!-- Text Overlay Card -->
@@ -300,13 +422,58 @@
           </div>
           <h3 class="title">Code Snippets</h3>
           <div class="container code-container colored-container col-flex">
-            <iframe
-              class="code-snipet"
-              src="https://carbon.now.sh/embed?bg=rgba%28195%2C185%2C255%2C1%29&t=verminal&wt=none&l=htmlmixed&width=693&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=true&fl=1&fm=dm&fs=13.5px&lh=121%25&si=false&es=4x&wm=false&code=%253C%21--%2520Vertical%2520overlay%2520text%2520card%2520--%253E%250A%253Cdiv%2520class%253D%2522card%2520vd-card%2520left-text%2520col-flex%2520flex-start%2520box-shd%2520w-30rm%2520m-2%2522%253E%250A%2520%2520%253Cimg%2520class%253D%2522card-img%2520full-wd%2522%2520src%253D%2522..%252F..%252Fassets%252Fshirt.jpg%2522%2520alt%253D%2522shirt%2522%2520%252F%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card-header-text%2520card-text-overlay%2520text-wrap%2520p-1%2522%253E%250A%2520%2520%2520%2520%253Ch2%2520class%253D%2522card-title%2520h3%2522%253EPeachtone%2520Shirt%253C%252Fh2%253E%250A%2520%2520%2520%2520%253Csub%253ELinen%2520shirt%2520for%2520women.%253C%252Fsub%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card-actions%2520row-flex%2520full-wd%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-btns%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520primary-btn%2520m-r-1%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-shopping-cart%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253E%253Cspan%2520class%253D%2522p-l-1%2522%253EAdd%2520to%2520cart%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-icons%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-icon-btn%2520icon-btn%2520rd-bdr%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-heart-o%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-icon-btn%2520icon-btn%2520rd-bdr%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-share-alt%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%250A%253C%21--%2520Disabled%2520Vertical%2520card%2520--%253E%250A%253Cdiv%2520class%253D%2522card%2520vd-card%2520disabled%2520left-text%2520col-flex%2520flex-start%2520box-shd%2520w-30rm%2520m-2%2522%253E%250A%2520%2520%253Cimg%2520class%253D%2522card-img%2520full-wd%2522%2520src%253D%2522..%252F..%252Fassets%252Fshirt.jpg%2522%2520alt%253D%2522shirt%2522%2520%252F%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card-header-text%2520text-wrap%2520p-1%2522%253E%250A%2520%2520%2520%2520%253Ch2%2520class%253D%2522card-title%2520colored-txt%2520h3%2522%253EPeachtone%2520Shirt%253C%252Fh2%253E%250A%2520%2520%2520%2520%253Csub%253ELinen%2520shirt%2520for%2520women.%253C%252Fsub%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card-actions%2520row-flex%2520full-wd%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-btns%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520primary-btn%2520m-r-1%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-shopping-cart%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253E%253Cspan%2520class%253D%2522p-l-1%2522%253EAdd%2520to%2520cart%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-icons%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-icon-btn%2520icon-btn%2520rd-bdr%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-heart-o%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-icon-btn%2520icon-btn%2520rd-bdr%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-share-alt%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522h3%2520card-overlay%2520grid-ctr%2522%253ESold%2520out%21%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
-              sandbox="allow-scripts allow-same-origin"
-              loading="lazy"
-            >
-            </iframe>
+            <pre class="code-snipet m-v-1 p-1">
+              <code class="html fs-s">
+                <!-- Vertical overlay text card -->
+                <div class="card vd-card left-text col-flex flex-start box-shd w-30rm m-2">
+                  <img class="card-img full-wd" src="../../assets/shirt.jpg" alt="shirt" />
+                  <div class="card-header-text card-text-overlay text-wrap p-1">
+                    <h2 class="card-title h3">Peachtone Shirt</h2>
+                    <sub>Linen shirt for women.</sub>
+                  </div>
+                  <div class="card-actions row-flex full-wd">
+                    <div class="card-btns">
+                      <button class="btn primary-btn m-r-1">
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i><span class="p-l-1">Add to cart</span>
+                      </button>
+                    </div>
+                    <div class="card-icons">
+                      <button class="card-icon-btn icon-btn rd-bdr">
+                        <i class="fa fa-heart-o" aria-hidden="true"></i>
+                      </button>
+                      <button class="card-icon-btn icon-btn rd-bdr">
+                        <i class="fa fa-share-alt" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Disabled Vertical card -->
+                <div class="card vd-card disabled left-text col-flex flex-start box-shd w-30rm m-2">
+                  <img class="card-img full-wd" src="../../assets/shirt.jpg" alt="shirt" />
+                  <div class="card-header-text text-wrap p-1">
+                    <h2 class="card-title colored-txt h3">Peachtone Shirt</h2>
+                    <sub>Linen shirt for women.</sub>
+                  </div>
+                  <div class="card-actions row-flex full-wd">
+                    <div class="card-btns">
+                      <button class="btn primary-btn m-r-1">
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i><span class="p-l-1">Add to cart</span>
+                      </button>
+                    </div>
+                    <div class="card-icons">
+                      <button class="card-icon-btn icon-btn rd-bdr">
+                        <i class="fa fa-heart-o" aria-hidden="true"></i>
+                      </button>
+                      <button class="card-icon-btn icon-btn rd-bdr">
+                        <i class="fa fa-share-alt" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="h3 card-overlay grid-ctr">Sold out!</div>
+                </div>
+              </code>
+            </pre>
           </div>
 
           <!-- Dismiss & Text only Card -->
@@ -357,13 +524,49 @@
           </div>
           <h3 class="title">Code Snippets</h3>
           <div class="container code-container colored-container col-flex">
-            <iframe
-              class="code-snipet"
-              src="https://carbon.now.sh/embed?bg=rgba%28195%2C185%2C255%2C1%29&t=verminal&wt=none&l=htmlmixed&width=693&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=true&fl=1&fm=dm&fs=13.5px&lh=121%25&si=false&es=4x&wm=false&code=%253C%21--%2520Dismiss%2520Card%2520--%253E%250A%253Cdiv%2520class%253D%2522card%2520dismiss-card%2520hz-card%2520left-text%2520box-shd%2520col-flex%2520w-35rm%2520m-2%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card-header%2520card-header-text%2520text-wrap%2520full-wd%2520p-v-1%2520p-l-2%2522%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-icon-btn%2520icon-btn%2520rd-bdr%2520close-btn%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-times%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253Ch2%2520class%253D%2522card-title%2520colored-txt%2520h3%2522%253EGreat%21%253C%252Fh2%253E%250A%2520%2520%2520%2520%253Csub%253EYour%2520request%2520has%2520been%2520sent.%253Cbr%2520%252F%253EWould%2520you%2520like%2520to%2520contiue%253F%253C%252Fsub%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card-actions%2520card-btns%2520row-flex%2520full-wd%2520p-0%2522%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520card-accept-btn%2520success-btn%2522%253EYes%252C%2520please%21%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520card-dismiss-btn%2520error-btn%2522%253EDismiss%253C%252Fbutton%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%250A%253C%21--%2520Text%2520only%2520Card%2520--%253E%250A%253Cdiv%2520class%253D%2522card%2520hz-card%2520left-text%2520box-shd%2520col-flex%2520w-35rm%2520m-2%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card-header%2520card-header-text%2520text-wrap%2520full-wd%2520p-1%2522%253E%250A%2520%2520%2520%2520%253Ch2%2520class%253D%2522card-title%2520colored-txt%2520h3%2520m-v-1%2522%253ENene%2520Book%253C%252Fh2%253E%250A%2520%2520%2520%2520%253Csub%253EInspirational%2520book.%2520Dives%2520deep%2520into%2520the%2520questions%2520about%2520human%27s%2520existence.%253C%252Fsub%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card-actions%2520row-flex%2520full-wd%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-btns%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-btn%2520card-btn-text%2522%253EREAD%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-btn%2520card-btn-text%2522%253EBOOKMARK%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-icons%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-icon-btn%2520icon-btn%2520rd-bdr%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-heart-o%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-icon-btn%2520icon-btn%2520rd-bdr%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-share-alt%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-icon-btn%2520icon-btn%2520rd-bdr%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-ellipsis-v%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
-              sandbox="allow-scripts allow-same-origin"
-              loading="lazy"
-            >
-            </iframe>
+            <pre class="code-snipet m-v-1 p-1">
+              <code class="html fs-s">
+                <!-- Dismiss Card -->
+                <div class="card dismiss-card hz-card left-text box-shd col-flex w-35rm m-2">
+                  <div class="card-header card-header-text text-wrap full-wd p-v-1 p-l-2">
+                    <button class="card-icon-btn icon-btn rd-bdr close-btn">
+                      <i class="fa fa-times" aria-hidden="true"></i>
+                    </button>
+                    <h2 class="card-title colored-txt h3">Great!</h2>
+                    <sub>Your request has been sent.<br />Would you like to contiue?</sub>
+                  </div>
+                  <div class="card-actions card-btns row-flex full-wd p-0">
+                    <button class="btn card-accept-btn success-btn">Yes, please!</button>
+                    <button class="btn card-dismiss-btn error-btn">Dismiss</button>
+                  </div>
+                </div>
+
+                <!-- Text only Card -->
+                <div class="card hz-card left-text box-shd col-flex w-35rm m-2">
+                  <div class="card-header card-header-text text-wrap full-wd p-1">
+                    <h2 class="card-title colored-txt h3 m-v-1">Nene Book</h2>
+                    <sub>Inspirational book. Dives deep into the questions about human's existence.</sub>
+                  </div>
+                  <div class="card-actions row-flex full-wd">
+                    <div class="card-btns">
+                      <button class="card-btn card-btn-text">READ</button>
+                      <button class="card-btn card-btn-text">BOOKMARK</button>
+                    </div>
+                    <div class="card-icons">
+                      <button class="card-icon-btn icon-btn rd-bdr">
+                        <i class="fa fa-heart-o" aria-hidden="true"></i>
+                      </button>
+                      <button class="card-icon-btn icon-btn rd-bdr">
+                        <i class="fa fa-share-alt" aria-hidden="true"></i>
+                      </button>
+                      <button class="card-icon-btn icon-btn rd-bdr">
+                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </code>
+            </pre>
           </div>
 
           <div class="row-flex m-t-3">

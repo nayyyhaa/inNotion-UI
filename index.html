@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- -------- Highlight JS -----------  -->
+    <link rel="stylesheet" href="	https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/tomorrow-night.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js" defer></script>
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
     <link rel="stylesheet" href="https://innotion-ui-library.netlify.app/in-notion.css" />
     <link rel="stylesheet" href="in-notion.css" />
@@ -35,7 +39,7 @@
       <div class="box-style grid-ctr box-shd h1 colored-txt">:)</div>
     </header>
     <main>
-      <section id="installation" class="section installation-section centered-text m-t-3">
+      <section id="installation" class="section installation-section centered-text grid-ctr">
         <h2 class="title colored-txt h1 m-v-2"><span class="circle"></span>Installation Guide</h2>
         <div class="container colored-container row-flex p-v-2 p-h-3 m-b-5">
           <div class="description m-v-2">
@@ -43,10 +47,11 @@
             <p>To know about the styled components, their variations, read the documentation.</p>
             <a href="docs/alert/"><button class="btn primary-btn m-v-3">Get Started &gt;&gt;</button></a>
           </div>
-          <iframe class="code-snipet m-v-1" class="code-snipet"
-            src="https://carbon.now.sh/embed?bg=rgba%28195%2C185%2C255%2C1%29&t=verminal&wt=sharp&l=htmlmixed&width=500&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=dm&fs=13.5px&lh=158%25&si=false&es=4x&wm=false&code=%253Clink%250A%2520%2520rel%253D%2522stylesheet%2522%250A%2520%2520href%253D%2522https%253A%252F%252Finnotion-ui-library.netlify.app%252Fin-notion.css%2522%250A%252F%253E%250A"
-            sandbox="allow-scripts allow-same-origin" loading="lazy">
-          </iframe>
+           <pre class="code-snipet m-v-1 p-1">
+              <code class="html fs-s">
+                <link rel="stylesheet" href="https://innotion-ui-library.netlify.app/in-notion.css" />
+              </code>
+            </pre>
         </div>
       </section>
     </main>

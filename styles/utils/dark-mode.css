@@ -33,7 +33,7 @@
 }
 
 .dark .box-shd {
-  box-shadow: 0.2rem 0.2rem 3rem #a8a8a8;
+  box-shadow: 0 3px 5px -1px rgba(241, 241, 241, 0.2), 0 6px 10px 0 rgba(236, 236, 236, 0.14), 0 1px 18px 0 rgba(231, 231, 231, 0.12);
 }
 
 .dark .disabled-ip {

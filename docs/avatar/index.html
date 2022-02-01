@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- -------- Highlight JS -----------  -->
+    <link
+      rel="stylesheet"
+      href="	https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/tomorrow-night.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js" defer></script>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
     <link rel="stylesheet" href="https://innotion-ui-library.netlify.app/in-notion.css" />
     <link rel="stylesheet" href="../../in-notion.css" />
@@ -83,13 +90,23 @@
           </div>
           <h3 class="title">Code Snippets</h3>
           <div class="container code-container colored-container col-flex">
-            <iframe
-              class="code-snipet"
-              src="https://carbon.now.sh/embed?bg=rgba%28195%2C185%2C255%2C1%29&t=verminal&wt=none&l=htmlmixed&width=587&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=true&fl=1&fm=dm&fs=13.5px&lh=121%25&si=false&es=4x&wm=false&code=%253C%21--%2520Image%2520Avatar%2520--%253E%250A%253Cdiv%2520class%253D%2522avatar%2520sm-avatar%2520box-shd%2520m-v-1%2522%253E%250A%2520%2520%253Cimg%2520src%253D%2522..%252F..%252Fassets%252Fuser1.jpg%2522%2520alt%253D%2522user%2522%2520%252F%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520md-avatar%2520box-shd%2520m-v-1%2522%253E%250A%2520%2520%253Cimg%2520src%253D%2522..%252F..%252Fassets%252Fuser2.jpg%2522%2520alt%253D%2522user%2522%2520%252F%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520lg-avatar%2520box-shd%2520m-v-1%2522%253E%250A%2520%2520%253Cimg%2520src%253D%2522..%252F..%252Fassets%252Fuser3.jpg%2522%2520alt%253D%2522user%2522%2520%252F%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520xlg-avatar%2520box-shd%2520m-v-1%2522%253E%250A%2520%2520%253Cimg%2520src%253D%2522..%252F..%252Fassets%252Fuser4.jpg%2522%2520alt%253D%2522user%2522%2520%252F%253E%250A%253C%252Fdiv%253E"
-              sandbox="allow-scripts allow-same-origin"
-              loading="lazy"
-            >
-            </iframe>
+            <pre class="code-snipet m-v-1 p-1">
+              <code class="html fs-s">
+                <!-- Image Avatar -->
+                <div class="avatar sm-avatar box-shd m-v-1">
+                  <img src="user1.jpg" alt="user" />
+                </div>
+                <div class="avatar md-avatar box-shd m-v-1">
+                  <img src="user2.jpg" alt="user" />
+                </div>
+                <div class="avatar lg-avatar box-shd m-v-1">
+                  <img src="user3.jpg" alt="user" />
+                </div>
+                <div class="avatar xlg-avatar box-shd m-v-1">
+                  <img src="user4.jpg" alt="user" />
+                </div>
+              </code>
+            </pre>
           </div>
 
           <!-- Text Avatar -->
@@ -108,13 +125,15 @@
           </div>
           <h3 class="title">Code Snippets</h3>
           <div class="container code-container colored-container col-flex">
-            <iframe
-              class="code-snipet"
-              src="https://carbon.now.sh/embed?bg=rgba%28195%2C185%2C255%2C1%29&t=verminal&wt=none&l=htmlmixed&width=693&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=true&fl=1&fm=dm&fs=13.5px&lh=121%25&si=false&es=4x&wm=false&code=%253C%21--%2520Text%2520Avatar%2520--%253E%250A%253Cdiv%2520class%253D%2522avatar%2520grid-ctr%2520sm-avatar%2520box-shd%2520red-badge%2520m-v-1%2522%253ENG%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520grid-ctr%2520md-avatar%2520box-shd%2520yellow-badge%2520m-v-1%2522%253ENG%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520grid-ctr%2520lg-avatar%2520box-shd%2520green-badge%2520m-v-1%2522%253ENG%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520grid-ctr%2520xlg-avatar%2520box-shd%2520blue-badge%2520m-v-1%2522%253ENG%253C%252Fdiv%253E"
-              sandbox="allow-scripts allow-same-origin"
-              loading="lazy"
-            >
-            </iframe>
+            <pre class="code-snipet m-v-1 p-1">
+              <code class="html fs-s">
+                <!-- Text Avatar -->
+                <div class="avatar grid-ctr sm-avatar box-shd red-badge m-v-1">NG</div>
+                <div class="avatar grid-ctr md-avatar box-shd yellow-badge m-v-1">NG</div>
+                <div class="avatar grid-ctr lg-avatar box-shd green-badge m-v-1">NG</div>
+                <div class="avatar grid-ctr xlg-avatar box-shd blue-badge m-v-1">NG</div>
+              </code>
+            </pre>
           </div>
 
           <!-- Icon Avatar -->
@@ -141,13 +160,23 @@
           </div>
           <h3 class="title">Code Snippets</h3>
           <div class="container code-container colored-container col-flex">
-            <iframe
-              class="code-snipet"
-              src="https://carbon.now.sh/embed?bg=rgba%28195%2C185%2C255%2C1%29&t=verminal&wt=none&l=htmlmixed&width=693&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=true&fl=1&fm=dm&fs=13.5px&lh=121%25&si=false&es=4x&wm=false&code=%253C%21--%2520Icon%2520Avatar%2520--%253E%250A%253Cdiv%2520class%253D%2522avatar%2520grid-ctr%2520sm-avatar%2520red-badge%2520box-shd%2520m-v-1%2522%253E%250A%2509%253Ci%2520class%253D%2522fa%2520fa-paper-plane%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520grid-ctr%2520md-avatar%2520yellow-badge%2520box-shd%2520m-v-1%2522%253E%250A%2509%253Ci%2520class%253D%2522fa%2520fa-envelope%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520grid-ctr%2520lg-avatar%2520green-badge%2520box-shd%2520m-v-1%2522%253E%250A%2509%253Ci%2520class%253D%2522fa%2520fa-heart-o%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520grid-ctr%2520xlg-avatar%2520blue-badge%2520box-shd%2520m-v-1%2522%253E%250A%2509%253Ci%2520class%253D%2522fa%2520fa-address-card%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E"
-              sandbox="allow-scripts allow-same-origin"
-              loading="lazy"
-            >
-            </iframe>
+            <pre class="code-snipet m-v-1 p-1">
+              <code class="html fs-s">
+                <!-- Icon Avatar -->
+                <div class="avatar grid-ctr sm-avatar red-badge box-shd m-v-1">
+                  <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                </div>
+                <div class="avatar grid-ctr md-avatar yellow-badge box-shd m-v-1">
+                  <i class="fa fa-envelope" aria-hidden="true"></i>
+                </div>
+                <div class="avatar grid-ctr lg-avatar green-badge box-shd m-v-1">
+                  <i class="fa fa-heart-o" aria-hidden="true"></i>
+                </div>
+                <div class="avatar grid-ctr xlg-avatar blue-badge box-shd m-v-1">
+                  <i class="fa fa-address-card" aria-hidden="true"></i>
+                </div>
+              </code>
+            </pre>
           </div>
 
           <div class="row-flex m-t-3">
