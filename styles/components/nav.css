@@ -27,7 +27,7 @@
 }
 
 .nav-link-btn a:hover {
-  color: var(--COLOR-PRIMARY-DARK);
+  color: var(--COLOR-COMPLEMENTARY-LIGHT);
   border-bottom: 0.25rem solid white;
 }
 
@@ -64,10 +64,6 @@
     backdrop-filter: blur(9rem);
     -webkit-backdrop-filter: blur(9rem);
     transition: all 1s ease 0s;
-  }
-
-  .nav-link-btn a:hover {
-    color: white;
   }
 
   .show-nav {

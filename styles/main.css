@@ -31,6 +31,22 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(155, 155, 155, 0.5) transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(155, 155, 155, 0.616);
+  border-radius: 20px;
+  border: transparent;
 }
 
 main {
@@ -41,8 +57,13 @@ main {
 }
 
 .code-snipet {
-  width: 100% !important;
-  overflow: scroll !important;
+  width: 95%;
+  height: 30vh;
+  border: 0;
+  transform: scale(1);
+  white-space: pre-line;
+  overflow: scroll;
+  border-radius: 1rem;
 }
 
 .cursor {
@@ -63,7 +84,8 @@ main {
   bottom: -0.5rem;
 }
 
-.title {
+.title,
+h1 {
   line-height: 4.5rem;
 }
 
@@ -82,7 +104,7 @@ main {
 
 @media screen and (max-width: 900px) {
   .code-snipet {
-    width: 80% !important;
+    width: 85vw;
   }
 }
 

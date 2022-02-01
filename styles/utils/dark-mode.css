@@ -36,10 +36,6 @@
   box-shadow: 0.2rem 0.2rem 3rem #a8a8a8;
 }
 
-.dark .nav-link-btn a:hover {
-  color: var(--COLOR-COMPLEMENTARY-LIGHT);
-}
-
 .dark .disabled-ip {
   background: var(--COLOR-OFFWHITE);
 }
@@ -48,17 +44,27 @@
 .dark label,
 .dark .h6,
 .dark small,
-.dark .icon-btn,
 .dark .sidebar-item {
   color: var(--COLOR-OFFWHITE);
+}
+
+.dark .primary-icon-btn,
+.dark .card-icon-btn {
+  color: var(--COLOR-COMPLEMENTARY-LIGHT);
 }
 
 .dark .side-bar {
   background-color: var(--COLOR-PRIMARY-XXDARK);
 }
 
-.dark .box-style {
+.dark .box-style,
+.dark .card-icon-btn:hover {
   color: var(--COLOR-PRIMARY-DARK);
+}
+
+.dark .close-btn:hover {
+  color: var(--RED);
+  background: var(--RED-LIGHT);
 }
 
 .dark .site-header::after {
@@ -81,10 +87,6 @@
   background: var(--COLOR-PRIMARY-DARK);
 }
 
-.dark .icon-btn:hover {
-  color: var(--COLOR-GREY-DARK);
-}
-
 .dark .docs-hamburger:hover {
   color: var(--COLOR-OFFWHITE);
 }
@@ -104,5 +106,5 @@
 .dark .dark-mode::before {
   content: "\f185";
   font-family: "FontAwesome";
-  color: black;
+  color: var(--COLOR-PRIMARY-XXDARK);
 }
