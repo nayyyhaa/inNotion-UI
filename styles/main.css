@@ -31,7 +31,7 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
   scrollbar-width: thin;
-  scrollbar-color: rgba(155, 155, 155, 0.5) transparent;
+  scrollbar-color: var(--COLOR-PRIMARY) transparent;
 }
 
 *::-webkit-scrollbar {
@@ -46,6 +46,14 @@
   background-color: var(--COLOR-PRIMARY);
   border-radius: 20px;
   border: transparent;
+}
+
+.dark *{
+  scrollbar-color: var(--COLOR-COMPLEMENTARY-XLIGHT) transparent;
+}
+
+.dark *::-webkit-scrollbar-thumb {
+  background: var(--COLOR-COMPLEMENTARY-XLIGHT);
 }
 
 main {
