@@ -56,7 +56,7 @@ main {
 }
 
 .code-snipet {
-  max-width: 95%;
+  max-width: 98%;
   border: 0;
   transform: scale(1);
   white-space: pre-line;
@@ -71,6 +71,7 @@ main {
 
 .hljs {
   background: var(--COLOR-CODE-EDITOR);
+  border-radius: 1rem;
 }
 
 .hljs-attr {
@@ -112,12 +113,6 @@ h1 {
 }
 
 /* Media Queries */
-
-@media screen and (max-width: 900px) {
-  .code-snipet {
-    width: 85vw;
-  }
-}
 
 @media screen and (max-width: 600px) {
   * {
