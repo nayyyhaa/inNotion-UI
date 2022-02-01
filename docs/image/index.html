@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- -------- Highlight JS -----------  -->
+    <link
+      rel="stylesheet"
+      href="	https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/tomorrow-night.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js" defer></script>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
     <link rel="stylesheet" href="https://innotion-ui-library.netlify.app/in-notion.css" />
     <link rel="stylesheet" href="../../in-notion.css" />
@@ -25,7 +32,6 @@
           <ul class="nav-items row-flex no-bullet">
             <li class="btn nav-link-btn h3 m-v-2 m-h-3"><a href="/">Installation</a></li>
             <li class="btn nav-link-btn h3 m-v-2 m-h-3"><a href="index.html">Docs</a></li>
-            <li class="btn nav-link-btn h3 m-v-2 m-h-3"><a href="#connect">Connect</a></li>
           </ul>
           <div class="dark-mode action-close icon-btn rd-bdr grid-ctr colored-txt"></div>
           <div class="hamburger action-close icon-btn rd-bdr grid-ctr colored-txt">
@@ -64,22 +70,25 @@
           <div class="container colored-container col-flex">
             <div class="demo w-95p row-flex">
               <!-- Round images -->
-              <img class="img-round h-10rm w-10rm" src="../../assets/ocean.jpg" alt="ocean" />
-              <img class="img-round h-15rm w-15rm" src="../../assets/night.jpg" alt="night" />
+              <img class="img-round h-10rm w-10rm m-1" src="../../assets/ocean.jpg" alt="ocean" />
+              <img class="img-round h-15rm w-15rm m-1" src="../../assets/night.jpg" alt="night" />
               <!-- Curved bordered images -->
-              <img class="img-border-curve h-10rm w-10rm" src="../../assets/ocean.jpg" alt="ocean" />
-              <img class="img-border-curve h-15rm w-15rm" src="../../assets/night.jpg" alt="night" />
+              <img class="img-border-curve h-10rm w-10rm m-1" src="../../assets/ocean.jpg" alt="ocean" />
+              <img class="img-border-curve h-15rm w-15rm m-1" src="../../assets/night.jpg" alt="night" />
             </div>
           </div>
           <h3 class="title">Code Snippets</h3>
           <div class="container code-container colored-container col-flex">
-            <iframe
-              class="code-snipet"
-              src="https://carbon.now.sh/embed?bg=rgba%28195%2C185%2C255%2C1%29&t=verminal&wt=none&l=htmlmixed&width=693&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=true&fl=1&fm=dm&fs=13.5px&lh=121%25&si=false&es=4x&wm=false&code=%253C%21--%2520Round%2520images%2520--%253E%250A%253Cimg%2520class%253D%2522img-round%2520h-10rm%2520w-10rm%2522%2520src%253D%2522ocean.jpg%2522%2520alt%253D%2522ocean%2522%2520%252F%253E%250A%253Cimg%2520class%253D%2522img-round%2520h-15rm%2520w-15rm%2522%2520src%253D%2522night.jpg%2522%2520alt%253D%2522night%2522%2520%252F%253E%250A%253C%21--%2520Curved%2520bordered%2520images%2520--%253E%250A%253Cimg%2520class%253D%2522img-border-curve%2520h-10rm%2520w-10rm%2522%2520src%253D%2522ocean.jpg%2522%2520alt%253D%2522ocean%2522%2520%252F%253E%250A%253Cimg%2520class%253D%2522img-border-curve%2520h-15rm%2520w-15rm%2522%2520src%253D%2522night.jpg%2522%2520alt%253D%2522night%2522%2520%252F%253E"
-              style="width: 599px; height: 155px; border: 0; transform: scale(1); overflow: hidden"
-              sandbox="allow-scripts allow-same-origin"
-            >
-            </iframe>
+            <pre class="code-snipet m-v-1 p-1">
+              <code class="html fs-s">
+               <!-- Round images -->
+                <img class="img-round h-10rm w-10rm m-1" src="../../assets/ocean.jpg" alt="ocean" />
+                <img class="img-round h-15rm w-15rm m-1" src="../../assets/night.jpg" alt="night" />
+                <!-- Curved bordered images -->
+                <img class="img-border-curve h-10rm w-10rm m-1" src="../../assets/ocean.jpg" alt="ocean" />
+                <img class="img-border-curve h-15rm w-15rm m-1" src="../../assets/night.jpg" alt="night" />
+              </code>
+            </pre>
           </div>
 
           <!-- Responsive Image -->
@@ -94,13 +103,12 @@
           </div>
           <h3 class="title">Code Snippets</h3>
           <div class="container code-container colored-container col-flex">
-            <iframe
-              class="code-snipet"
-              src="https://carbon.now.sh/embed?bg=rgba%28195%2C185%2C255%2C1%29&t=verminal&wt=none&l=htmlmixed&width=693&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=true&fl=1&fm=dm&fs=13.5px&lh=121%25&si=false&es=4x&wm=false&code=%253Cimg%2520class%253D%2522responsive-img%2522%2520src%253D%2522..%252F..%252Fassets%252Fscene.jpg%2522%2520alt%253D%2522scene%2522%2520%252F%253E"
-              style="width: 577px; height: 74px; border: 0; transform: scale(1); overflow: hidden"
-              sandbox="allow-scripts allow-same-origin"
-            >
-            </iframe>
+            <pre class="code-snipet m-v-1 p-1">
+              <code class="html fs-s">
+              <!-- Responsive Image -->
+                <img class="responsive-img" src="../../assets/scene.jpg" alt="scene" />
+              </code>
+            </pre>
           </div>
 
           <div class="row-flex m-t-3">

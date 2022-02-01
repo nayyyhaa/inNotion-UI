@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- -------- Highlight JS -----------  -->
+    <link
+      rel="stylesheet"
+      href="	https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/tomorrow-night.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js" defer></script>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
     <link rel="stylesheet" href="https://innotion-ui-library.netlify.app/in-notion.css" />
     <link rel="stylesheet" href="../../in-notion.css" />
@@ -26,7 +33,6 @@
           <ul class="nav-items row-flex no-bullet">
             <li class="btn nav-link-btn h3 m-v-2 m-h-3"><a href="/">Installation</a></li>
             <li class="btn nav-link-btn h3 m-v-2 m-h-3"><a href="index.html">Docs</a></li>
-            <li class="btn nav-link-btn h3 m-v-2 m-h-3"><a href="#connect">Connect</a></li>
           </ul>
           <div class="dark-mode action-close icon-btn rd-bdr grid-ctr colored-txt"></div>
           <div class="hamburger action-close icon-btn rd-bdr grid-ctr colored-txt">
@@ -88,13 +94,27 @@
           </div>
           <h3 class="title">Code Snippets</h3>
           <div class="container code-container colored-container col-flex">
-            <iframe
-              class="code-snipet"
-              src="https://carbon.now.sh/embed?bg=rgba%28195%2C185%2C255%2C1%29&t=verminal&wt=none&l=htmlmixed&width=693&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=true&fl=1&fm=dm&fs=13.5px&lh=121%25&si=false&es=4x&wm=false&code=%253C%21--%2520Avatar%2520Badge%2520--%253E%250A%253Cdiv%2520class%253D%2522badge-wrapper%2520avatar%2520sm-avatar%2520box-shd%2520m-v-1%2522%253E%250A%2520%2520%253Cimg%2520class%253D%2522rd-bdr%2522%2520src%253D%2522..%252F..%252Fassets%252Fuser1.jpg%2522%2520alt%253D%2522user%2522%2520%252F%253E%250A%2520%2520%253Cspan%2520class%253D%2522badge%2520sm-badge%2520badge-br%2520wt-text%2520grid-ctr%2520red-bg%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522badge-wrapper%2520avatar%2520md-avatar%2520grid-ctr%2520yellow-badge%2520box-shd%2520m-v-1%2522%253E%250A%2520%2520NG%250A%2520%2520%253Cspan%2520class%253D%2522badge%2520md-badge%2520badge-br%2520wt-text%2520grid-ctr%2520yellow-bg%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522badge-wrapper%2520avatar%2520lg-avatar%2520box-shd%2520m-v-1%2522%253E%250A%2520%2520%253Cimg%2520class%253D%2522rd-bdr%2522%2520src%253D%2522..%252F..%252Fassets%252Fuser4.jpg%2522%2520alt%253D%2522user%2522%2520%252F%253E%250A%2520%2520%253Cspan%2520class%253D%2522badge%2520badge-br%2520wt-text%2520grid-ctr%2520green-bg%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522badge-wrapper%2520avatar%2520xlg-avatar%2520%2520grid-ctr%2520green-badge%2520box-shd%2520m-v-1%2522%253E%250A%2520%2520NG%250A%2520%2520%253Cspan%2520class%253D%2522badge%2520lg-badge%2520badge-br%2520wt-text%2520grid-ctr%2520wt-bg%2522%253EX%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
-              style="width: 1024px; height: 473px; border: 0; transform: scale(1); overflow: hidden"
-              sandbox="allow-scripts allow-same-origin"
-            >
-            </iframe>
+            <pre class="code-snipet m-v-1 p-1">
+              <code class="html fs-s">
+                 <!-- Avatar Badge -->
+                <div class="badge-wrapper avatar sm-avatar box-shd m-v-1">
+                  <img class="rd-bdr" src="user1.jpg" alt="user" />
+                  <span class="badge sm-badge badge-br wt-text grid-ctr red-bg"></span>
+                </div>
+                <div class="badge-wrapper avatar md-avatar grid-ctr yellow-badge box-shd m-v-1">
+                  NG
+                  <span class="badge md-badge badge-br wt-text grid-ctr yellow-bg"></span>
+                </div>
+                <div class="badge-wrapper avatar lg-avatar box-shd m-v-1">
+                  <img class="rd-bdr" src="user4.jpg" alt="user" />
+                  <span class="badge badge-br wt-text grid-ctr green-bg"></span>
+                </div>
+                <div class="badge-wrapper avatar xlg-avatar grid-ctr green-badge box-shd m-v-1">
+                  NG
+                  <span class="badge lg-badge badge-br wt-text grid-ctr wt-bg">X</span>
+                </div>
+              </code>
+            </pre>
           </div>
 
           <!-- Badge on Icons -->
@@ -123,13 +143,23 @@
           </div>
           <h3 class="title">Code Snippets</h3>
           <div class="container code-container colored-container col-flex">
-            <iframe
-              class="code-snipet"
-              src="https://carbon.now.sh/embed?bg=rgba%28195%2C185%2C255%2C1%29&t=verminal&wt=none&l=htmlmixed&width=693&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=true&fl=1&fm=dm&fs=13.5px&lh=121%25&si=false&es=4x&wm=false&code=%253C%21--%2520Badge%2520on%2520Icons%2520--%253E%250A%253Cbutton%2520class%253D%2522badge-wrapper%2520primary-icon-btn%2520m-v-1%2522%253E%250A%2520%2520%253Ci%2520class%253D%2522fa%2520fa-paper-plane%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253E%250A%2520%2520%253Cspan%2520class%253D%2522badge%2520wt-text%2520grid-ctr%2520blue-bg%2522%253E19%252B%253C%252Fspan%253E%250A%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522badge-wrapper%2520primary-icon-btn%2520m-v-1%2522%253E%250A%2520%2520%253Ci%2520class%253D%2522fa%2520fa-envelope%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253E%250A%2520%2520%253Cspan%2520class%253D%2522badge%2520wt-text%2520grid-ctr%2520red-bg%2522%253E19%252B%253C%252Fspan%253E%250A%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522badge-wrapper%2520primary-icon-btn%2520m-v-1%2522%253E%250A%2520%2520%253Ci%2520class%253D%2522fa%2520fa-heart-o%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253E%250A%2520%2520%253Cspan%2520class%253D%2522badge%2520wt-text%2520grid-ctr%2520green-bg%2522%253E19%252B%253C%252Fspan%253E%250A%253C%252Fbutton%253E"
-              style="width: 482px; height: 270px; border: 0; transform: scale(1); overflow: hidden"
-              sandbox="allow-scripts allow-same-origin"
-            >
-            </iframe>
+            <pre class="code-snipet m-v-1 p-1">
+              <code class="html fs-s">
+                <!-- Badge on Icons -->
+                <button class="badge-wrapper primary-icon-btn m-v-1">
+                  <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                  <span class="badge wt-text grid-ctr blue-bg">19+</span>
+                </button>
+                <button class="badge-wrapper primary-icon-btn m-v-1">
+                  <i class="fa fa-envelope" aria-hidden="true"></i>
+                  <span class="badge wt-text grid-ctr red-bg">19+</span>
+                </button>
+                <button class="badge-wrapper primary-icon-btn m-v-1">
+                  <i class="fa fa-heart-o" aria-hidden="true"></i>
+                  <span class="badge wt-text grid-ctr green-bg">19+</span>
+                </button>
+              </code>
+            </pre>
           </div>
 
           <!-- Badge on Button -->
@@ -160,22 +190,47 @@
           <h3 class="title">Code Snippets</h3>
           <div class="container colored-container col-flex">
             <p class="m-v-2"><code>HTML</code> snippet</p>
-            <iframe
-              class="code-snipet"
-              src="https://carbon.now.sh/embed?bg=rgba%28195%2C185%2C255%2C1%29&t=verminal&wt=none&l=htmlmixed&width=693&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=true&fl=1&fm=dm&fs=13.5px&lh=121%25&si=false&es=4x&wm=false&code=%253C%21--%2520Badge%2520on%2520Button%2520--%253E%250A%253Cbutton%2520class%253D%2522badge-wrapper%2520btn-badge%2520btn%2520primary-btn%2520m-2%2522%253E%250A%2520%2520Button%250A%2520%2520%253Cspan%2520class%253D%2522badge%2520wt-text%2520grid-ctr%2520blue-badge%2522%253E99%252B%253C%252Fspan%253E%250A%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522badge-wrapper%2520btn-badge%2520toogle-badge-btn%2520btn%2520primary-btn%2520m-2%2522%253E%250A%2520%2520Toggle%2520Badge%250A%2520%2520%253Cspan%2520class%253D%2522badge%2520wt-text%2520grid-ctr%2520yellow-badge%2522%253E9%253C%252Fspan%253E%250A%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522badge-wrapper%2520btn-badge%2520toogle-icon-badge-btn%2520btn%2520primary-btn%2520m-2%2522%253E%250A%2520%2520%253Ci%2520class%253D%2522fa%2520fa-heart-o%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253E%250A%2520%2520%253Cspan%2520class%253D%2522badge%2520badge-tl%2520wt-text%2520grid-ctr%2520green-badge%2522%253E14%253C%252Fspan%253E%250A%253C%252Fbutton%253E"
-              style="width: 660px; height: 270px; border: 0; transform: scale(1); overflow: hidden"
-              sandbox="allow-scripts allow-same-origin"
-            >
-            </iframe>
+            <pre class="code-container code-snipet m-v-1 p-1">
+              <code class="html fs-s">
+                <!-- Badge on Button -->
+                <button class="badge-wrapper btn-badge btn primary-btn m-2">
+                  Button
+                  <span class="badge wt-text grid-ctr blue-badge">99+</span>
+                </button>
+                <button class="badge-wrapper btn-badge toogle-badge-btn btn primary-btn m-2">
+                  Toggle Badge
+                  <span class="badge wt-text grid-ctr yellow-badge">9</span>
+                </button>
+                <button class="badge-wrapper btn-badge toogle-icon-badge-btn btn primary-btn m-2">
+                  <i class="fa fa-heart-o" aria-hidden="true"></i>
+                  <span class="badge badge-tl wt-text grid-ctr green-badge">14</span>
+                </button>
+              </code>
+            </pre>
 
             <p class="m-v-2"><code>JS</code> snippet</p>
-            <iframe
-              class="code-snipet"
-              src="https://carbon.now.sh/embed?bg=rgba%28195%2C185%2C255%2C1%29&t=verminal&wt=none&l=javascript&width=693&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=true&fl=1&fm=dm&fs=13.5px&lh=121%25&si=false&es=4x&wm=false&code=%252F*-----------TOGGLE%2520%252B%2520HEART%2520BADGE---------------------*%252F%250A%250A%252F%252F%2520toggle%2520badge%250Aconst%2520toggleBadgeBtn%2520%253D%2520document.querySelector%28%2522.toogle-badge-btn%2522%29%253B%250Aconst%2520toggleBadge%2520%253D%2520document.querySelector%28%2522.toogle-badge-btn%2520.badge%2522%29%253B%250A%250AtoggleBadgeBtn.addEventListener%28%2522click%2522%252C%2520%28%29%2520%253D%253E%2520%257B%250A%2520%2520toggleBadge.classList.toggle%28%2522hide%2522%29%253B%250A%257D%29%253B%250A%250A%252F%252F%2520toggle%2520icon%2520badge%250Aconst%2520toggleIconBadgeBtn%2520%253D%2520document.querySelector%28%2522.toogle-icon-badge-btn%2522%29%253B%250Aconst%2520iconBadgeBtn%2520%253D%2520document.querySelector%28%2522.toogle-icon-badge-btn%2520i%2522%29%253B%250Aconst%2520toggleIconBadge%2520%253D%2520document.querySelector%28%2522.toogle-icon-badge-btn%2520.badge%2522%29%253B%250A%250AtoggleIconBadgeBtn.addEventListener%28%2522click%2522%252C%2520%28%29%2520%253D%253E%2520%257B%250A%2520%2520let%2520isLiked%2520%253D%2520iconBadgeBtn.classList.contains%28%2522fa-heart-o%2522%29%253B%250A%2520%2520iconBadgeBtn.className%2520%253D%2520isLiked%2520%253F%2520%2522fa%2520fa-heart%2522%2520%253A%2520%2522fa%2520fa-heart-o%2522%253B%250A%2520%2520toggleIconBadge.textContent%2520%253D%2520isLiked%2520%253F%2520%252BtoggleIconBadge.innerText%2520%252B%25201%2520%253A%2520%252BtoggleIconBadge.innerText%2520-%25201%253B%250A%257D%29%253B"
-              style="width: 1024px; height: 473px; border: 0; transform: scale(1); overflow: hidden"
-              sandbox="allow-scripts allow-same-origin"
-            >
-            </iframe>
+            <pre class="code-container code-snipet m-v-1 p-1">
+              <code class="javascript fs-s">
+                // toggle badge
+                const toggleBadgeBtn = document.querySelector(".toogle-badge-btn");
+                const toggleBadge = document.querySelector(".toogle-badge-btn .badge");
+
+                toggleBadgeBtn.addEventListener("click", () => {
+                  toggleBadge.classList.toggle("hide");
+                });
+
+                // icon badge count
+                const toggleIconBadgeBtn = document.querySelector(".toogle-icon-badge-btn");
+                const iconBadgeBtn = document.querySelector(".toogle-icon-badge-btn i");
+                const toggleIconBadge = document.querySelector(".toogle-icon-badge-btn .badge");
+
+                toggleIconBadgeBtn.addEventListener("click", () => {
+                  let isLiked = iconBadgeBtn.classList.contains("fa-heart-o");
+                  iconBadgeBtn.className = isLiked ? "fa fa-heart" : "fa fa-heart-o";
+                  toggleIconBadge.textContent = isLiked ? +toggleIconBadge.innerText + 1 : +toggleIconBadge.innerText - 1;
+                });
+              </code>
+            </pre>
           </div>
 
           <!-- Badge with text -->
@@ -184,19 +239,19 @@
           <div class="container colored-container col-flex">
             <div class="demo w-95p col-flex flex-start left-text">
               <!-- Badge with text -->
-              <h1 class="badge-wrapper m-2">
+              <h1 class="badge-wrapper m-v-1">
                 Text heading with a large badge
                 <span class="badge lg-badge txt-badge wt-text grid-ctr blue-badge">NEW</span>
               </h1>
-              <h2 class="badge-wrapper m-2">
+              <h2 class="badge-wrapper m-v-1">
                 Text heading with a medium badge
                 <span class="badge md-badge txt-badge wt-text grid-ctr blue-badge">NEW</span>
               </h2>
-              <h6 class="badge-wrapper m-2">
+              <h6 class="badge-wrapper m-v-1">
                 Text heading with a small badge
                 <span class="badge sm-badge txt-badge wt-text grid-ctr blue-badge">NEW</span>
               </h6>
-              <p class="badge-wrapper m-2">
+              <p class="badge-wrapper m-v-1">
                 Paragraph heading with a default badge
                 <span class="badge txt-badge wt-text grid-ctr blue-badge">NEW</span>
               </p>
@@ -204,13 +259,27 @@
           </div>
           <h3 class="title">Code Snippets</h3>
           <div class="container code-container colored-container col-flex">
-            <iframe
-              class="code-snipet"
-              src="https://carbon.now.sh/embed?bg=rgba%28195%2C185%2C255%2C1%29&t=verminal&wt=none&l=htmlmixed&width=693&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=true&fl=1&fm=dm&fs=13.5px&lh=121%25&si=false&es=4x&wm=false&code=%253C%21--%2520Badge%2520with%2520text%2520--%253E%250A%253Ch1%2520class%253D%2522badge-wrapper%2520m-2%2522%253E%250A%2520%2520Text%2520heading%2520with%2520a%2520large%2520badge%250A%2520%2520%253Cspan%2520class%253D%2522badge%2520lg-badge%2520txt-badge%2520wt-text%2520grid-ctr%2520blue-badge%2522%253ENEW%253C%252Fspan%253E%250A%253C%252Fh1%253E%250A%253Ch2%2520class%253D%2522badge-wrapper%2520m-2%2522%253E%250A%2520%2520Text%2520heading%2520with%2520a%2520medium%2520badge%250A%2520%2520%253Cspan%2520class%253D%2522badge%2520md-badge%2520txt-badge%2520wt-text%2520grid-ctr%2520blue-badge%2522%253ENEW%253C%252Fspan%253E%250A%253C%252Fh2%253E%250A%253Ch6%2520class%253D%2522badge-wrapper%2520m-2%2522%253E%250A%2520%2520Text%2520heading%2520with%2520a%2520small%2520badge%250A%2520%2520%253Cspan%2520class%253D%2522badge%2520sm-badge%2520txt-badge%2520wt-text%2520grid-ctr%2520blue-badge%2522%253ENEW%253C%252Fspan%253E%250A%253C%252Fh6%253E%250A%253Cp%2520class%253D%2522badge-wrapper%2520m-2%2522%253E%250A%2520%2520Paragraph%2520heading%2520with%2520a%2520default%2520badge%250A%2520%2520%253Cspan%2520class%253D%2522badge%2520txt-badge%2520wt-text%2520grid-ctr%2520blue-badge%2522%253ENEW%253C%252Fspan%253E%250A%253C%252Fp%253E"
-              style="width: 637px; height: 335px; border: 0; transform: scale(1); overflow: hidden"
-              sandbox="allow-scripts allow-same-origin"
-            >
-            </iframe>
+            <pre class="code-snipet m-v-1 p-1">
+              <code class="html fs-s">
+                <!-- Badge with text -->
+                <h1 class="badge-wrapper m-v-1">
+                  Text heading with a large badge
+                  <span class="badge lg-badge txt-badge wt-text grid-ctr blue-badge">NEW</span>
+                </h1>
+                <h2 class="badge-wrapper m-v-1">
+                  Text heading with a medium badge
+                  <span class="badge md-badge txt-badge wt-text grid-ctr blue-badge">NEW</span>
+                </h2>
+                <h6 class="badge-wrapper m-v-1">
+                  Text heading with a small badge
+                  <span class="badge sm-badge txt-badge wt-text grid-ctr blue-badge">NEW</span>
+                </h6>
+                <p class="badge-wrapper m-v-1">
+                  Paragraph heading with a default badge
+                  <span class="badge txt-badge wt-text grid-ctr blue-badge">NEW</span>
+                </p>
+              </code>
+            </pre>
           </div>
 
           <div class="row-flex m-t-3">

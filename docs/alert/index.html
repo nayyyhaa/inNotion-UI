@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- -------- Highlight JS -----------  -->
+    <link
+      rel="stylesheet"
+      href="	https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/tomorrow-night.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js" defer></script>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
     <link rel="stylesheet" href="https://innotion-ui-library.netlify.app/in-notion.css" />
     <link rel="stylesheet" href="../../in-notion.css" />
@@ -26,7 +33,6 @@
           <ul class="nav-items row-flex no-bullet">
             <li class="btn nav-link-btn h3 m-v-2 m-h-3"><a href="/">Installation</a></li>
             <li class="btn nav-link-btn h3 m-v-2 m-h-3"><a href="index.html">Docs</a></li>
-            <li class="btn nav-link-btn h3 m-v-2 m-h-3"><a href="#connect">Connect</a></li>
           </ul>
           <div class="dark-mode action-close icon-btn rd-bdr grid-ctr colored-txt"></div>
           <div class="hamburger action-close icon-btn rd-bdr grid-ctr colored-txt">
@@ -97,13 +103,41 @@
           </div>
           <h3 class="title">Code Snippets</h3>
           <div class="container code-container colored-container col-flex">
-            <iframe
-              class="code-snipet"
-              src="https://carbon.now.sh/embed?bg=rgba%28195%2C185%2C255%2C1%29&t=verminal&wt=none&l=htmlmixed&width=842&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=true&fl=1&fm=dm&fs=13.5px&lh=121%25&si=false&es=4x&wm=false&code=%2520%253C%21--%2520Info%2520Alert%2520--%253E%250A%253Cdiv%2520class%253D%2522alert-box%2520filled-alert%2520info-alert%2520row-flex%2520m-1%2520p-1%2522%253E%250A%2520%2520%253Cp%2520class%253D%2522alert-msg%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-info-circle%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520This%2520is%2520an%2520info%2520alert%21%250A%2520%2520%253C%252Fp%253E%250A%253C%252Fdiv%253E%250A%250A%253C%21--%2520Success%2520Alert%2520--%253E%250A%253Cdiv%2520class%253D%2522alert-box%2520filled-alert%2520success-alert%2520row-flex%2520m-1%2520p-1%2522%253E%250A%2520%2520%253Cp%2520class%253D%2522alert-msg%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-check-circle-o%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520This%2520is%2520an%2520success%2520alert%21%250A%2520%2520%253C%252Fp%253E%250A%253C%252Fdiv%253E%250A%250A%253C%21--%2520Warning%2520Alert%2520--%253E%250A%253Cdiv%2520class%253D%2522alert-box%2520filled-alert%2520warning-alert%2520row-flex%2520m-1%2520p-1%2522%253E%250A%2520%2520%253Cp%2520class%253D%2522alert-msg%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-exclamation-triangle%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520This%2520is%2520an%2520warning%2520alert%21%250A%2520%2520%253C%252Fp%253E%250A%253C%252Fdiv%253E%250A%250A%253C%21--%2520Error%2520Alert%2520--%253E%250A%253Cdiv%2520class%253D%2522alert-box%2520filled-alert%2520error-alert%2520row-flex%2520m-1%2520p-1%2522%253E%250A%2520%2520%253Cp%2520class%253D%2522alert-msg%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-exclamation-circle%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520This%2520is%2520a%2520error%2520alert%21%250A%2520%2520%253C%252Fp%253E%250A%253C%252Fdiv%253E"
-              style="width: 632px; height: 563px; border: 0; transform: scale(1); overflow: hidden"
-              sandbox="allow-scripts allow-same-origin"
-            >
-            </iframe>
+            <pre class="code-snipet m-v-1 p-1">
+              <code class="html fs-s">
+                <!-- Info Alert -->
+              <div class="alert-box filled-alert info-alert row-flex m-1 p-1">
+                <p class="alert-msg">
+                  <i class="fa fa-info-circle" aria-hidden="true"></i>
+                  This is an info alert!
+                </p>
+              </div>
+
+              <!-- Success Alert -->
+              <div class="alert-box filled-alert success-alert row-flex m-1 p-1">
+                <p class="alert-msg">
+                  <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+                  This is an success alert!
+                </p>
+              </div>
+
+              <!-- Warning Alert -->
+              <div class="alert-box filled-alert warning-alert row-flex m-1 p-1">
+                <p class="alert-msg">
+                  <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+                  This is an warning alert!
+                </p>
+              </div>
+
+              <!-- Error Alert -->
+              <div class="alert-box filled-alert error-alert row-flex m-1 p-1">
+                <p class="alert-msg">
+                  <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                  This is a error alert!
+                </p>
+              </div>
+              </code>
+            </pre>
           </div>
 
           <!-- Outlined Alerts -->
@@ -150,20 +184,53 @@
           </div>
           <h3 class="title">Code Snippets</h3>
           <div class="container code-container colored-container col-flex">
-            <iframe
-              class="code-snipet"
-              src="https://carbon.now.sh/embed?bg=rgba%28195%2C185%2C255%2C1%29&t=verminal&wt=none&l=htmlmixed&width=693&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=true&fl=1&fm=dm&fs=13.5px&lh=121%25&si=false&es=4x&wm=false&code=%253C%21--%2520Primary%2520Alert%2520--%253E%250A%253Cdiv%2520class%253D%2522alert-box%2520primary-alert%2520row-flex%2520m-1%2520p-1%2522%253E%250A%2520%2520%253Cp%2520class%253D%2522alert-msg%2522%253EThis%2520is%2520a%2520primary%2520alert%21%253C%252Fp%253E%250A%253C%252Fdiv%253E%250A%250A%253C%21--%2520Info%2520Alert%2520--%253E%250A%253Cdiv%2520class%253D%2522alert-box%2520info-alert%2520row-flex%2520m-1%2520p-1%2522%253E%250A%2520%2520%253Cp%2520class%253D%2522alert-msg%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-info-circle%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520This%2520is%2520an%2520info%2520alert%21%250A%2520%2520%253C%252Fp%253E%250A%253C%252Fdiv%253E%250A%250A%253C%21--%2520Success%2520Alert%2520--%253E%250A%253Cdiv%2520class%253D%2522alert-box%2520success-alert%2520row-flex%2520m-1%2520p-1%2522%253E%250A%2520%2520%253Cp%2520class%253D%2522alert-msg%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-check-circle-o%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520This%2520is%2520an%2520success%2520alert%2520%25E2%2580%2594%2520check%2520it%2520out%21%250A%2520%2520%253C%252Fp%253E%250A%253C%252Fdiv%253E%250A%250A%253C%21--%2520Warning%2520Alert%2520--%253E%250A%253Cdiv%2520class%253D%2522alert-box%2520warning-alert%2520row-flex%2520m-1%2520p-1%2522%253E%250A%2520%2520%253Cp%2520class%253D%2522alert-msg%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-exclamation-triangle%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520This%2520%250A%253C%252Fdiv%253E%250A%250A%253C%21--%2520Error%2520Alert%2520--%253E%250A%253Cdiv%2520class%253D%2522alert-box%2520error-alert%2520row-flex%2520m-1%2520p-1%2522%253E%250A%2520%2520%253Cp%2520class%253D%2522alert-msg%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-exclamation-circle%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520This%2520is%2520a%2520error%2520alert%2520%25E2%2580%2594%2520check%2520it%2520out%21%250A%2520%2520%253C%252Fp%253E%250A%253C%252Fdiv%253E"
-              style="width: 533px; height: 628px; border: 0; transform: scale(1); overflow: hidden"
-              sandbox="allow-scripts allow-same-origin"
-            >
-            </iframe>
+            <pre class="code-snipet m-v-1 p-1">
+              <code class="html fs-s">
+                <!-- Primary Alert -->
+                <div class="alert-box primary-alert row-flex m-1 p-1">
+                  <p class="alert-msg">This is a primary alert!</p>
+                </div>
+
+                <!-- Info Alert -->
+                <div class="alert-box info-alert row-flex m-1 p-1">
+                  <p class="alert-msg">
+                    <i class="fa fa-info-circle" aria-hidden="true"></i>
+                    This is an info alert!
+                  </p>
+                </div>
+
+                <!-- Success Alert -->
+                <div class="alert-box success-alert row-flex m-1 p-1">
+                  <p class="alert-msg">
+                    <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+                    This is an success alert!
+                  </p>
+                </div>
+
+                <!-- Warning Alert -->
+                <div class="alert-box warning-alert row-flex m-1 p-1">
+                  <p class="alert-msg">
+                    <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+                    This is an warning alert!
+                  </p>
+                </div>
+
+                <!-- Error Alert -->
+                <div class="alert-box error-alert row-flex m-1 p-1">
+                  <p class="alert-msg">
+                    <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                    This is a error alert!
+                  </p>
+                </div>
+              </code>
+            </pre>
           </div>
 
           <!-- Transition Alerts -->
           <h2 class="title h2 m-v-2 colored-bg">Demo transition alert with close button</h2>
           <p>
             You can use a transition component such as <code>transition-alert</code> to transition the appearance of the
-            alert.
+            alert. Click on close icon to see the transition.
           </p>
           <div class="container colored-container col-flex">
             <div class="demo w-95p row-flex">
@@ -188,22 +255,44 @@
 
           <div class="container colored-container col-flex">
             <p class="m-v-2"><code>HTML</code> snippet</p>
-            <iframe
-              class="code-snipet"
-              src="https://carbon.now.sh/embed?bg=rgba%28195%2C185%2C255%2C1%29&t=verminal&wt=none&l=htmlmixed&width=693&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=true&fl=1&fm=dm&fs=13.5px&lh=121%25&si=false&es=4x&wm=false&code=%253C%21--%2520Transition%2520alert%2520--%253E%250A%253Cdiv%2520class%253D%2522alert-box%2520transition-alert%2520success-alert%2520row-flex%2520m-1%2520p-1%2522%253E%250A%2520%2520%253Cp%2520class%253D%2522alert-msg%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-check-circle-o%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520This%2520is%2520an%2520success%2520alert%21%250A%2520%2520%253C%252Fp%253E%250A%2520%2520%253Cdiv%2520class%253D%2522alert-action%2522%253E%250A%2520%2520%2520%2520%253Ca%2520class%253D%2522action-link%2522%253EACTION%21%253C%252Fa%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522action-close%2520icon-btn%2520demo-close%2520p-1%2520rd-bdr%2520centered-text%2520fa%2520fa-times%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
-              style="width: 852px; height: 237px; border: 0; transform: scale(1); overflow: hidden"
-              sandbox="allow-scripts allow-same-origin"
-            >
-            </iframe>
+            <pre class="code-container code-snipet m-v-1 p-1">
+              <code class="html fs-s">
+                <!-- Transition alert -->
+                <div class="alert-box transition-alert success-alert row-flex m-1 p-1">
+                  <p class="alert-msg">
+                    <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+                    This is an success alert!
+                  </p>
+                  <div class="alert-action">
+                    <a class="action-link">ACTION!</a>
+                    <i class="action-close icon-btn demo-close p-1 rd-bdr centered-text fa fa-times" aria-hidden="true" ></i>
+                  </div>
+                </div>
+              </code>
+            </pre>
 
             <p class="m-v-2"><code>JS</code> snippet</p>
-            <iframe
-              class="code-snipet"
-              src="https://carbon.now.sh/embed?bg=rgba%28195%2C185%2C255%2C1%29&t=verminal&wt=none&l=javascript&width=693&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=true&fl=1&fm=dm&fs=13.5px&lh=121%25&si=false&es=4x&wm=false&code=%252F*----------TRANSITION%2520ALERT------------*%252F%250Aconst%2520transitionAlert%2520%253D%2520document.querySelector%28%2522.transition-alert%2522%29%253B%250Aconst%2520demoClose%2520%253D%2520document.querySelector%28%2522.demo-close%2522%29%253B%250Aconst%2520reopenBtn%2520%253D%2520document.querySelector%28%2522.reopen-alert%2522%29%253B%250A%250AdemoClose.addEventListener%28%2522click%2522%252C%2520%28%29%2520%253D%253E%2520%257B%250A%2520%2520transitionAlert.classList.add%28%2522removeTransition%2522%29%253B%250A%2520%2520transitionAlert.addEventListener%28%2522transitionend%2522%252C%2520%28e%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520transitionAlert.style.display%2520%253D%2520%2522none%2522%253B%250A%2520%2520%257D%29%253B%250A%257D%29%253B%250A%250AreopenBtn.addEventListener%28%2522click%2522%252C%2520%28%29%2520%253D%253E%2520%257B%250A%2520%2520transitionAlert.classList.remove%28%2522removeTransition%2522%29%253B%250A%2520%2520transitionAlert.style.display%2520%253D%2520%2522flex%2522%253B%250A%257D%29%253B"
-              style="width: 556px; height: 318px; border: 0; transform: scale(1); overflow: hidden"
-              sandbox="allow-scripts allow-same-origin"
-            >
-            </iframe>
+            <pre class="code-container code-snipet m-v-1 p-1">
+              <code class="javascript fs-s">
+                /*----------TRANSITION ALERT------------*/
+                const transitionAlert = document.querySelector(".transition-alert");
+                const demoClose = document.querySelector(".demo-close");
+                const reopenBtn = document.querySelector(".reopen-alert");
+
+                demoClose.addEventListener("click", () => {
+                  transitionAlert.classList.add("removeTransition");
+                  transitionAlert.addEventListener("transitionend", (e) => {
+                    transitionAlert.style.display = "none";
+                  });
+                });
+
+                reopenBtn.addEventListener("click", () => {
+                  transitionAlert.classList.remove("removeTransition");
+                  transitionAlert.style.display = "flex";
+                });
+
+              </code>
+            </pre>
           </div>
 
           <div class="row-flex m-t-3">
