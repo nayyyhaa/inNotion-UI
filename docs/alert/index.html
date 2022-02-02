@@ -24,7 +24,7 @@
     <div class="grid-sidebar-layout">
       <div class="header sticky-header">
         <nav class="navbar row-flex">
-          <div class="docs-hamburger action-close icon-btn rd-bdr grid-ctr colored-txt">
+          <div class="docs-hamburger icon-toggle icon-btn rd-bdr grid-ctr colored-txt">
             <i class="fa fa-book" aria-hidden="true"></i>
           </div>
           <a href="/"
@@ -34,8 +34,8 @@
             <li class="btn nav-link-btn h3 m-v-2 m-h-3"><a href="/">Installation</a></li>
             <li class="btn nav-link-btn h3 m-v-2 m-h-3"><a href="index.html">Docs</a></li>
           </ul>
-          <div class="dark-mode action-close icon-btn rd-bdr grid-ctr colored-txt"></div>
-          <div class="hamburger action-close icon-btn rd-bdr grid-ctr colored-txt">
+          <div class="dark-mode icon-toggle icon-btn rd-bdr grid-ctr colored-txt"></div>
+          <div class="hamburger icon-toggle icon-btn rd-bdr grid-ctr colored-txt">
             <i class="fa fa-bars" aria-hidden="true"></i>
           </div>
         </nav>
@@ -43,11 +43,11 @@
       <div class="side-bar box-shd">
         <h2 class="title row-flex p-v-4">
           Components
-          <p class="action-close icon-btn sidebar-close rd-bdr grid-ctr colored-txt">
+          <p class="icon-toggle icon-btn sidebar-close rd-bdr grid-ctr colored-txt">
             <i class="fa fa-close" aria-hidden="true"></i>
           </p>
         </h2>
-        <ul class="sidebar-items col-flex">
+        <ul class="sidebar-items no-bullet col-flex">
           <a class="sidebar-item active-sidebar grid-ctr p-2 h3" href="../alert/"><li>Alert</li></a>
           <a class="sidebar-item grid-ctr p-2 h3" href="../avatar/"><li>Avatar</li></a>
           <a class="sidebar-item grid-ctr p-2 h3" href="../badge/"><li>Badge</li></a>
@@ -57,7 +57,7 @@
           <a class="sidebar-item grid-ctr p-2 h3" href="../input/"><li>Input</li></a>
         </ul>
       </div>
-      <main class="docs-content m-b-5">
+      <main class="m-auto docs-content m-b-5">
         <h1 class="title colored-txt h1 m-v-4"><span class="circle"></span>Alert</h1>
         <h3>
           Alerts are used to attract user's attention for important information without interrupting the user's flow.
@@ -66,10 +66,10 @@
           <!-- Basic Alerts -->
           <h2 class="title h2 m-v-2 colored-bg">Basic alerts</h2>
           <p>The alert offers four severity levels that set a distinctive icon and color.</p>
-          <div class="container colored-container col-flex">
+          <div class="container colored-container m-v-4 col-flex">
             <div class="demo w-95p row-flex">
               <!-- Info Alert -->
-              <div class="alert-box filled-alert info-alert row-flex m-1 p-1">
+              <div class="alert-box info-alert row-flex m-1 p-1">
                 <p class="alert-msg">
                   <i class="fa fa-info-circle" aria-hidden="true"></i>
                   This is an info alert!
@@ -77,7 +77,7 @@
               </div>
 
               <!-- Success Alert -->
-              <div class="alert-box filled-alert success-alert row-flex m-1 p-1">
+              <div class="alert-box success-alert row-flex m-1 p-1">
                 <p class="alert-msg">
                   <i class="fa fa-check-circle-o" aria-hidden="true"></i>
                   This is an success alert!
@@ -85,7 +85,7 @@
               </div>
 
               <!-- Warning Alert -->
-              <div class="alert-box filled-alert warning-alert row-flex m-1 p-1">
+              <div class="alert-box warning-alert row-flex m-1 p-1">
                 <p class="alert-msg">
                   <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
                   This is an warning alert!
@@ -93,7 +93,7 @@
               </div>
 
               <!-- Error Alert -->
-              <div class="alert-box filled-alert error-alert row-flex m-1 p-1">
+              <div class="alert-box error-alert row-flex m-1 p-1">
                 <p class="alert-msg">
                   <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
                   This is a error alert!
@@ -102,11 +102,11 @@
             </div>
           </div>
           <h3 class="title">Code Snippets</h3>
-          <div class="container code-container colored-container col-flex">
+          <div class="container code-container colored-container m-v-4 col-flex">
             <pre class="code-snipet m-v-1 p-1">
               <code class="html fs-s">
                 <!-- Info Alert -->
-              <div class="alert-box filled-alert info-alert row-flex m-1 p-1">
+              <div class="alert-box  info-alert row-flex m-1 p-1">
                 <p class="alert-msg">
                   <i class="fa fa-info-circle" aria-hidden="true"></i>
                   This is an info alert!
@@ -114,7 +114,7 @@
               </div>
 
               <!-- Success Alert -->
-              <div class="alert-box filled-alert success-alert row-flex m-1 p-1">
+              <div class="alert-box  success-alert row-flex m-1 p-1">
                 <p class="alert-msg">
                   <i class="fa fa-check-circle-o" aria-hidden="true"></i>
                   This is an success alert!
@@ -122,7 +122,7 @@
               </div>
 
               <!-- Warning Alert -->
-              <div class="alert-box filled-alert warning-alert row-flex m-1 p-1">
+              <div class="alert-box  warning-alert row-flex m-1 p-1">
                 <p class="alert-msg">
                   <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
                   This is an warning alert!
@@ -130,7 +130,7 @@
               </div>
 
               <!-- Error Alert -->
-              <div class="alert-box filled-alert error-alert row-flex m-1 p-1">
+              <div class="alert-box  error-alert row-flex m-1 p-1">
                 <p class="alert-msg">
                   <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
                   This is a error alert!
@@ -142,7 +142,7 @@
 
           <!-- Outlined Alerts -->
           <h2 class="title h2 m-v-2 colored-bg">Outlined alerts</h2>
-          <div class="container colored-container col-flex">
+          <div class="container colored-container m-v-4 col-flex">
             <div class="demo w-95p row-flex">
               <!-- Primary Alert -->
               <div class="alert-box primary-alert row-flex m-1 p-1">
@@ -183,7 +183,7 @@
             </div>
           </div>
           <h3 class="title">Code Snippets</h3>
-          <div class="container code-container colored-container col-flex">
+          <div class="container code-container colored-container m-v-4 col-flex">
             <pre class="code-snipet m-v-1 p-1">
               <code class="html fs-s">
                 <!-- Primary Alert -->
@@ -232,7 +232,7 @@
             You can use a transition component such as <code>transition-alert</code> to transition the appearance of the
             alert. Click on close icon to see the transition.
           </p>
-          <div class="container colored-container col-flex">
+          <div class="container colored-container m-v-4 col-flex">
             <div class="demo w-95p row-flex">
               <!-- Transition alert -->
               <div class="alert-box transition-alert success-alert row-flex m-1 p-1">
@@ -243,7 +243,7 @@
                 <div class="alert-action">
                   <a class="action-link">ACTION!</a>
                   <i
-                    class="action-close icon-btn demo-close p-1 rd-bdr centered-text fa fa-times"
+                    class="icon-toggle icon-btn demo-close p-1 rd-bdr centered-text fa fa-times"
                     aria-hidden="true"
                   ></i>
                 </div>
@@ -253,7 +253,7 @@
           </div>
           <h3 class="title">Code Snippets</h3>
 
-          <div class="container colored-container col-flex">
+          <div class="container colored-container m-v-4 col-flex">
             <p class="m-v-2"><code>HTML</code> snippet</p>
             <pre class="code-container code-snipet m-v-1 p-1">
               <code class="html fs-s">
@@ -265,7 +265,7 @@
                   </p>
                   <div class="alert-action">
                     <a class="action-link">ACTION!</a>
-                    <i class="action-close icon-btn demo-close p-1 rd-bdr centered-text fa fa-times" aria-hidden="true" ></i>
+                    <i class="icon-toggle icon-btn demo-close p-1 rd-bdr centered-text fa fa-times" aria-hidden="true" ></i>
                   </div>
                 </div>
               </code>
@@ -295,7 +295,7 @@
             </pre>
           </div>
 
-          <div class="row-flex m-t-3">
+          <div class="row-flex m-t-3 m-b-5">
             <a href="../avatar/" class="cursor colored-txt bg"
               >Next<i class="p-h-2 fa fa-arrow-right" aria-hidden="true"></i
             ></a>

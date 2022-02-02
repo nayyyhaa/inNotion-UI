@@ -1,67 +1,12 @@
 /* UTILS */
 @import url("./utils/fonts.css");
-@import url("./utils/lists.css");
 @import url("./utils/grid.css");
-@import url("./utils/gutter.css");
-@import url("./utils/size.css");
 
 /* COMPONENTS */
-@import url("./components/nav.css");
 @import url("./components/blob.css");
 @import url("./components/header.css");
-@import url("./components/container.css");
 @import url("./components/side-bar.css");
 @import url("./components/footer.css");
-
-/* dark mode */
-@import url("./utils/dark-mode.css");
-
-:root {
-  --COLOR-PRIMARY-TRANS: #2a37f0a9;
-  --COLOR-OFFWHITE: #e6e6e6;
-  --COLOR-PRIMARY-XXDARK: #2e1437;
-  --COLOR-PRIMARY-XXXDARK: #120318;
-  --COLOR-PRIMARY-MID: #8e7cf9;
-  --COLOR-CODE-EDITOR: #070318f7;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-  scrollbar-width: thin;
-  scrollbar-color: var(--COLOR-PRIMARY) transparent;
-}
-
-*::-webkit-scrollbar {
-  width: 0.5rem;
-}
-
-*::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-*::-webkit-scrollbar-thumb {
-  background-color: var(--COLOR-PRIMARY);
-  border-radius: 20px;
-  border: transparent;
-}
-
-.dark *{
-  scrollbar-color: var(--COLOR-COMPLEMENTARY-XLIGHT) transparent;
-}
-
-.dark *::-webkit-scrollbar-thumb {
-  background: var(--COLOR-COMPLEMENTARY-XLIGHT);
-}
-
-main {
-  width: 90%;
-  min-height: 80vh;
-  line-height: 2.5rem;
-  animation: opening 0.5s ease-in forwards;
-}
 
 .code-snipet {
   max-width: 98%;
@@ -86,51 +31,6 @@ main {
   color: var(--BLUE-XLIGHT);
 }
 
-.cursor {
-  cursor: pointer;
-}
-
-.card-text-overlay {
-  width: 100%;
-  top: 0;
-}
-
-.icon-btn,
-.card-btn {
-  transition: all 0.2s ease-in;
-}
-
-.placeholder {
-  bottom: -0.5rem;
-}
-
-.title,
 h1 {
   line-height: 4.5rem;
-}
-
-/* animations */
-
-@keyframes opening {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-/* Media Queries */
-
-@media screen and (max-width: 600px) {
-  * {
-    font-size: 55%;
-  }
-  .dark-mode {
-    position: relative;
-    left: 13%;
-  }
-  .field {
-    width: 100%;
-  }
 }

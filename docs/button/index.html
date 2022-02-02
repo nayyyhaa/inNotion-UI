@@ -23,7 +23,7 @@
     <div class="grid-sidebar-layout">
       <div class="header sticky-header">
         <nav class="navbar row-flex">
-          <div class="docs-hamburger action-close icon-btn rd-bdr grid-ctr colored-txt">
+          <div class="docs-hamburger icon-toggle icon-btn rd-bdr grid-ctr colored-txt">
             <i class="fa fa-book" aria-hidden="true"></i>
           </div>
           <a href="/"
@@ -33,8 +33,8 @@
             <li class="btn nav-link-btn h3 m-v-2 m-h-3"><a href="/">Installation</a></li>
             <li class="btn nav-link-btn h3 m-v-2 m-h-3"><a href="index.html">Docs</a></li>
           </ul>
-          <div class="dark-mode action-close icon-btn rd-bdr grid-ctr colored-txt"></div>
-          <div class="hamburger action-close icon-btn rd-bdr grid-ctr colored-txt">
+          <div class="dark-mode icon-toggle icon-btn rd-bdr grid-ctr colored-txt"></div>
+          <div class="hamburger icon-toggle icon-btn rd-bdr grid-ctr colored-txt">
             <i class="fa fa-bars" aria-hidden="true"></i>
           </div>
         </nav>
@@ -42,11 +42,11 @@
       <div class="side-bar box-shd">
         <h2 class="title row-flex p-v-4">
           Components
-          <p class="action-close icon-btn sidebar-close rd-bdr grid-ctr colored-txt">
+          <p class="icon-toggle icon-btn sidebar-close rd-bdr grid-ctr colored-txt">
             <i class="fa fa-close" aria-hidden="true"></i>
           </p>
         </h2>
-        <ul class="sidebar-items col-flex">
+        <ul class="sidebar-items no-bullet col-flex">
           <a class="sidebar-item grid-ctr p-2 h3" href="../alert/"><li>Alert</li></a>
           <a class="sidebar-item grid-ctr p-2 h3" href="../avatar/"><li>Avatar</li></a>
           <a class="sidebar-item grid-ctr p-2 h3" href="../badge/"><li>Badge</li></a>
@@ -56,7 +56,7 @@
           <a class="sidebar-item grid-ctr p-2 h3" href="../input/"><li>Input</li></a>
         </ul>
       </div>
-      <main class="docs-content m-b-5">
+      <main class="m-auto docs-content m-b-5">
         <h1 class="title colored-txt h1 m-v-4"><span class="circle"></span>Buttons</h1>
         <h3>
           Buttons are also called as call to action. We have range of buttons and their states. You may use
@@ -71,7 +71,7 @@
             button & button with icon. Just include <code>btn primary-btn</code> to your <code>&lt;a&gt;</code> tag or
             <code>&lt;button&gt;</code> element.
           </p>
-          <div class="container colored-container col-flex">
+          <div class="container colored-container m-v-4 col-flex">
             <div class="demo w-95p row-flex">
               <!-- Primary Buttons-->
               <button class="btn primary-btn m-1">Primary Button</button>
@@ -84,7 +84,7 @@
             </div>
           </div>
           <h3 class="title">Code Snippets</h3>
-          <div class="container code-container colored-container col-flex">
+          <div class="container code-container colored-container m-v-4 col-flex">
             <pre class="code-snipet m-v-1 p-1">
               <code class="html fs-s">
                <!-- Primary Buttons-->
@@ -103,30 +103,31 @@
           <h2 class="title h2 m-v-2 colored-bg">Colored Buttons</h2>
           <p>
             Color of buttons can be changed as well. You need to include class
-            <code>error-btn</code>, <code>info-btn</code>, <code>warning-btn</code>, &<code>success-btn</code> to change
-            color.
+            <code>red-outlined-content</code>, <code>blue-outlined-content</code>, <code>yellow-outlined-content</code>,
+            &<code>green-outlined-content</code>
+            to change color.
           </p>
-          <div class="container colored-container col-flex">
+          <div class="container colored-container m-v-4 col-flex">
             <div class="demo w-95p row-flex">
               <!-- Colored Buttons -->
-              <button class="btn error-btn m-1">Error</button>
-              <button class="btn info-btn m-1">Info</button>
-              <button class="btn warning-btn m-1">Warning</button>
-              <button class="btn success-btn m-1">Success</button>
+              <button class="btn red-outlined-content m-1">Error</button>
+              <button class="btn blue-outlined-content m-1">Info</button>
+              <button class="btn yellow-outlined-content m-1">Warning</button>
+              <button class="btn green-outlined-content m-1">Success</button>
               <button class="btn blue-bg">
                 <span class="p-r-1">Send</span><i class="fa fa-paper-plane" aria-hidden="true"></i>
               </button>
             </div>
           </div>
           <h3 class="title">Code Snippets</h3>
-          <div class="container code-container colored-container col-flex">
+          <div class="container code-container colored-container m-v-4 col-flex">
             <pre class="code-snipet m-v-1 p-1">
               <code class="html fs-s">
                <!-- Colored Buttons -->
-                <button class="btn error-btn m-1">Error</button>
-                <button class="btn info-btn m-1">Info</button>
-                <button class="btn warning-btn m-1">Warning</button>
-                <button class="btn success-btn m-1">Success</button>
+                <button class="btn red-outlined-content m-1">Error</button>
+                <button class="btn blue-outlined-content m-1">Info</button>
+                <button class="btn yellow-outlined-content m-1">Warning</button>
+                <button class="btn green-outlined-content m-1">Success</button>
                 <button class="btn blue-bg">
                   <span class="p-r-1">Send</span><i class="fa fa-paper-plane" aria-hidden="true"></i>
                 </button>
@@ -137,7 +138,7 @@
           <!-- Disabled Buttons -->
           <h2 class="title h2 m-v-2 colored-bg">Disabled Buttons</h2>
           <p>To disable the button, you need to include class <code>disabled-btn</code>.</p>
-          <div class="container colored-container col-flex">
+          <div class="container colored-container m-v-4 col-flex">
             <div class="demo w-95p row-flex">
               <!-- Disabled Buttons -->
               <button class="btn primary-btn disabled-btn m-1">Primary Button</button>
@@ -152,7 +153,7 @@
             </div>
           </div>
           <h3 class="title">Code Snippets</h3>
-          <div class="container code-container colored-container col-flex">
+          <div class="container code-container colored-container m-v-4 col-flex">
             <pre class="code-snipet m-v-1 p-1">
               <code class="html fs-s">
                <!-- Disabled Buttons -->
@@ -175,7 +176,7 @@
             Floating-action buttons can be customized by adding the font-awesome icon of your choice. This button will
             be fixed to right-bottom corner. Just include <code>floating-btn</code> class to you button.
           </p>
-          <div class="container colored-container col-flex">
+          <div class="container colored-container m-v-4 col-flex">
             <div class="demo w-95p row-flex">
               <!-- Floating Action Button -->
               <button class="btn primary-btn floating-btn grid-ctr m-1">
@@ -184,7 +185,7 @@
             </div>
           </div>
           <h3 class="title">Code Snippets</h3>
-          <div class="container code-container colored-container col-flex">
+          <div class="container code-container colored-container m-v-4 col-flex">
             <pre class="code-snipet m-v-1 p-1">
               <code class="html fs-s">
                <!-- Floating Action Button -->
@@ -195,7 +196,7 @@
             </pre>
           </div>
 
-          <div class="row-flex m-t-3">
+          <div class="row-flex m-t-3 m-b-5">
             <a href="../badge/" class="cursor colored-txt bg"
               ><i class="p-h-2 fa fa-arrow-left" aria-hidden="true"></i>Previous</a
             >
