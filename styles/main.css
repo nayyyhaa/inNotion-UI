@@ -18,7 +18,13 @@
   font-size: 1.6rem;
 }
 
-.hljs, .hljs span {
+.container {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.hljs,
+.hljs span {
   font-family: "Inconsolata", sans-serif;
 }
 
