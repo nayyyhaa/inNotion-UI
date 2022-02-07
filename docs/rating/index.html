@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- -------- Highlight JS -----------  -->
+    <link
+      rel="stylesheet"
+      href="	https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/tomorrow-night.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js" defer></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <link rel="stylesheet" href="https://innotion-ui-library.netlify.app/in-notion.css" />
+    <link rel="stylesheet" href="../../in-notion.css" />
+    <link rel="shortcut icon" href="../../assets/favicon.ico" type="image/x-icon" />
+    <script src="../../scripts/app.js" defer></script>
+    <script src="../../scripts/dark-mode.js" defer></script>
+    <script src="../../scripts/rating.js" defer></script>
+    <title>inNotion UI | Docs</title>
+  </head>
+  <body class="content">
+    <div class="grid-sidebar-layout">
+      <div class="header sticky-header">
+        <nav class="navbar row-flex">
+          <div class="docs-hamburger icon-toggle icon-btn rd-bdr grid-ctr colored-text">
+            <i class="fa fa-book" aria-hidden="true"></i>
+          </div>
+          <a href="/"
+            ><h3 id="logo">in.notion <span class="text-stroke text-shd">UI</span></h3></a
+          >
+          <ul class="nav-items row-flex no-bullet">
+            <li class="btn nav-link-btn h3 m-v-2 m-h-3"><a href="/">Installation</a></li>
+            <li class="btn nav-link-btn h3 m-v-2 m-h-3"><a href="index.html">Docs</a></li>
+          </ul>
+          <div class="dark-mode icon-toggle icon-btn rd-bdr grid-ctr colored-text"></div>
+          <div class="hamburger icon-toggle icon-btn rd-bdr grid-ctr colored-text">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+          </div>
+        </nav>
+      </div>
+      <div class="side-bar box-shd">
+        <h2 class="title row-flex p-v-4">
+          Components
+          <p class="icon-toggle icon-btn sidebar-close rd-bdr grid-ctr colored-text">
+            <i class="fa fa-close" aria-hidden="true"></i>
+          </p>
+        </h2>
+        <ul class="sidebar-items no-bullet col-flex">
+          <a class="sidebar-item grid-ctr p-2 h3" href="../alert/"><li>Alert</li></a>
+          <a class="sidebar-item grid-ctr p-2 h3" href="../avatar/"><li>Avatar</li></a>
+          <a class="sidebar-item grid-ctr p-2 h3" href="../badge/"><li>Badge</li></a>
+          <a class="sidebar-item grid-ctr p-2 h3" href="../button/"><li>Buttons</li></a>
+          <a class="sidebar-item grid-ctr p-2 h3" href="../card/"><li>Card</li></a>
+          <a class="sidebar-item grid-ctr p-2 h3" href="../image/"><li>Image</li></a>
+          <a class="sidebar-item grid-ctr p-2 h3" href="../input/"><li>Input</li></a>
+          <a class="sidebar-item grid-ctr p-2 h3" href="../navigation/"><li>Navigation</li></a>
+          <a class="sidebar-item active-sidebar grid-ctr p-2 h3" href="../rating/"><li>Rating</li></a>
+          <a class="sidebar-item grid-ctr p-2 h3" href="../typography/"><li>Typography</li></a>
+        </ul>
+      </div>
+      <main class="m-auto docs-content m-b-5">
+        <h1 class="title colored-text h1 m-v-4"><span class="circle"></span>Rating</h1>
+        <h3>
+          Ratings provide insight regarding others' opinions and experiences, and can allow the user to submit a rating
+          of their own.
+        </h3>
+        <section>
+          <!-- Basic rating -->
+          <h2 class="title h2 m-v-2 colored-bg">Basic rating</h2>
+          <p>
+            Ratings component can be created by using <code>rating</code> class inside <code>&lt;span&gt;</code> tag.
+            For star rating, add <code>rating-star</code> class & for heart rating add <code>rating-heart</code> class
+            along with <code>rating-input</code> class. (e.g. <code>class="rating-input rating-star"</code>)
+          </p>
+          <div class="container colored-container m-v-4 col-flex">
+            <div class="demo w-95p row-flex">
+              <!-- Star Ratings -->
+              <span class="rating">
+                <label>
+                  <input class="rating-input rating-star" type="checkbox" checked />
+                  <i class="fa fa-star rating-icon" aria-hidden="true"></i>
+                </label>
+                <label>
+                  <input class="rating-input rating-star" type="checkbox" checked />
+                  <i class="fa fa-star rating-icon" aria-hidden="true"></i>
+                </label>
+                <label>
+                  <input class="rating-input rating-star" type="checkbox" checked />
+                  <i class="fa fa-star rating-icon" aria-hidden="true"></i>
+                </label>
+                <label>
+                  <input class="rating-input rating-star" type="checkbox" checked />
+                  <i class="fa fa-star rating-icon" aria-hidden="true"></i>
+                </label>
+                <label>
+                  <input class="rating-input rating-star" type="checkbox" />
+                  <i class="fa fa-star rating-icon" aria-hidden="true"></i>
+                </label>
+              </span>
+
+              <!-- Heart Ratings -->
+              <span class="rating">
+                <label>
+                  <input class="rating-input rating-heart" type="checkbox" checked />
+                  <i class="fa fa-heart rating-icon" aria-hidden="true"></i>
+                </label>
+                <label>
+                  <input class="rating-input rating-heart" type="checkbox" checked />
+                  <i class="fa fa-heart rating-icon" aria-hidden="true"></i>
+                </label>
+                <label>
+                  <input class="rating-input rating-heart" type="checkbox" checked />
+                  <i class="fa fa-heart rating-icon" aria-hidden="true"></i>
+                </label>
+                <label>
+                  <input class="rating-input rating-heart" type="checkbox" checked />
+                  <i class="fa fa-heart rating-icon" aria-hidden="true"></i>
+                </label>
+                <label>
+                  <input class="rating-input rating-heart" type="checkbox" />
+                  <i class="fa fa-heart rating-icon" aria-hidden="true"></i>
+                </label>
+              </span>
+            </div>
+          </div>
+          <h3 class="title">Code Snippets</h3>
+          <div class="container code-container colored-container m-v-4 col-flex">
+            <pre class="code-snipet m-v-1 p-1">
+              <code class="html fs-s">
+                <!-- Star Ratings -->
+                <span class="rating">
+                  <label>
+                    <input class="rating-input rating-star" type="checkbox" checked />
+                    <i class="fa fa-star rating-icon" aria-hidden="true"></i>
+                  </label>
+                  <label>
+                    <input class="rating-input rating-star" type="checkbox" checked />
+                    <i class="fa fa-star rating-icon" aria-hidden="true"></i>
+                  </label>
+                  <label>
+                    <input class="rating-input rating-star" type="checkbox" checked />
+                    <i class="fa fa-star rating-icon" aria-hidden="true"></i>
+                  </label>
+                  <label>
+                    <input class="rating-input rating-star" type="checkbox" checked />
+                    <i class="fa fa-star rating-icon" aria-hidden="true"></i>
+                  </label>
+                  <label>
+                    <input class="rating-input rating-star" type="checkbox" />
+                    <i class="fa fa-star rating-icon" aria-hidden="true"></i>
+                  </label>
+                </span>
+
+                <!-- Heart Ratings -->
+                <span class="rating">
+                  <label>
+                    <input class="rating-input rating-heart" type="checkbox" checked />
+                    <i class="fa fa-heart rating-icon" aria-hidden="true"></i>
+                  </label>
+                  <label>
+                    <input class="rating-input rating-heart" type="checkbox" checked />
+                    <i class="fa fa-heart rating-icon" aria-hidden="true"></i>
+                  </label>
+                  <label>
+                    <input class="rating-input rating-heart" type="checkbox" checked />
+                    <i class="fa fa-heart rating-icon" aria-hidden="true"></i>
+                  </label>
+                  <label>
+                    <input class="rating-input rating-heart" type="checkbox" checked />
+                    <i class="fa fa-heart rating-icon" aria-hidden="true"></i>
+                  </label>
+                  <label>
+                    <input class="rating-input rating-heart" type="checkbox" />
+                    <i class="fa fa-heart rating-icon" aria-hidden="true"></i>
+                  </label>
+                </span>
+              </code>
+            </pre>
+          </div>
+
+          <!-- Badge Rating -->
+          <h2 class="title h2 m-v-2 colored-bg">Badge Rating</h2>
+          <p>Badge rating is created by using <code>rating-badge</code> class.</p>
+          <div class="container colored-container m-v-4 col-flex">
+            <div class="demo w-95p row-flex">
+              <div class="rating-badge">
+                <span class="rating-number">5</span>
+                <label>
+                  <i class="fa fa-star rating-icon" aria-hidden="true"></i>
+                </label>
+                <span>|</span>
+                <span class="rating-number">99</span>
+              </div>
+            </div>
+          </div>
+          <h3 class="title">Code Snippets</h3>
+          <div class="container code-container colored-container m-v-4 col-flex">
+            <pre class="code-snipet m-v-1 p-1">
+              <code class="html fs-s">
+              <!-- Badge Rating -->
+                <div class="rating-badge">
+                  <span class="rating-number">5</span>
+                  <label>
+                    <i class="fa fa-star rating-icon" aria-hidden="true"></i>
+                  </label>
+                  <span>|</span>
+                  <span class="rating-number">99</span>
+                </div>
+              </code>
+            </pre>
+          </div>
+
+          <!-- Live Rating Example -->
+          <h2 class="title h2 m-v-2 colored-bg">Live Rating Example</h2>
+          <p>Click on star to see the final rating.</p>
+          <div class="container colored-container m-v-4 col-flex">
+            <div class="demo w-95p row-flex">
+              <span class="rating rating-example">
+                <label>
+                  <input class="rating-input rating-star" type="checkbox" />
+                  <i class="fa fa-star rating-icon" aria-hidden="true"></i>
+                </label>
+                <label>
+                  <input class="rating-input rating-star" type="checkbox" />
+                  <i class="fa fa-star rating-icon" aria-hidden="true"></i>
+                </label>
+                <label>
+                  <input class="rating-input rating-star" type="checkbox" />
+                  <i class="fa fa-star rating-icon" aria-hidden="true"></i>
+                </label>
+                <label>
+                  <input class="rating-input rating-star" type="checkbox" />
+                  <i class="fa fa-star rating-icon" aria-hidden="true"></i>
+                </label>
+                <label>
+                  <input class="rating-input rating-star" type="checkbox" />
+                  <i class="fa fa-star rating-icon" aria-hidden="true"></i>
+                </label>
+                <p class="rating-output"></p>
+              </span>
+            </div>
+          </div>
+          <h3 class="title">Code Snippets</h3>
+          <div class="container colored-container m-v-4 col-flex">
+            <p class="m-v-2"><code>HTML</code> snippet</p>
+            <pre class="code-container code-snipet m-v-1 p-1">
+              <code class="html fs-s">
+                <span class="rating rating-example">
+                  <label>
+                    <input class="rating-input rating-star" type="checkbox" />
+                    <i class="fa fa-star rating-icon" aria-hidden="true"></i>
+                  </label>
+                  <label>
+                    <input class="rating-input rating-star" type="checkbox" />
+                    <i class="fa fa-star rating-icon" aria-hidden="true"></i>
+                  </label>
+                  <label>
+                    <input class="rating-input rating-star" type="checkbox" />
+                    <i class="fa fa-star rating-icon" aria-hidden="true"></i>
+                  </label>
+                  <label>
+                    <input class="rating-input rating-star" type="checkbox" />
+                    <i class="fa fa-star rating-icon" aria-hidden="true"></i>
+                  </label>
+                  <label>
+                    <input class="rating-input rating-star" type="checkbox" />
+                    <i class="fa fa-star rating-icon" aria-hidden="true"></i>
+                  </label>
+                  <p class="rating-output"></p>
+              </span>
+              </code>
+            </pre>
+
+            <p class="m-v-2"><code>JS</code> snippet</p>
+            <pre class="code-container code-snipet m-v-1 p-1">
+              <code class="javascript fs-s">
+                /*-----------RATINGS DEMO---------------------*/
+
+                const ratingInputs = document.querySelectorAll(".rating-example input");
+                let ratingOutput = document.querySelector(".rating-output");
+
+                ratingInputs.forEach((ratingInput, idx) => {
+                  ratingInput.addEventListener("click", () => submitRating(idx));
+                });
+
+                const submitRating = (index) => {
+                  ratingsTotal = 0;
+                  for (let i = 0; i < ratingInputs.length; i++) {
+                    ratingInputs[i].checked = i <= index ? true : false;
+                    if (i <= index) ratingsTotal++;
+                  }
+                  ratingOutput.innerText = `You've given ${ratingsTotal} star rating.`;
+                };
+              </code>
+            </pre>
+          </div>
+
+          <div class="row-flex m-t-3 m-b-5">
+            <a href="../navigation/" class="cursor colored-text bg"
+              ><i class="p-h-2 fa fa-arrow-left" aria-hidden="true"></i>Previous</a
+            >
+            <a href="../typography/" class="cursor colored-text bg"
+              >Next<i class="p-h-2 fa fa-arrow-right" aria-hidden="true"></i
+            ></a>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

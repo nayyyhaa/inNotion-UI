@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- -------- Highlight JS -----------  -->
+    <link
+      rel="stylesheet"
+      href="	https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/tomorrow-night.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js" defer></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <link rel="stylesheet" href="https://innotion-ui-library.netlify.app/in-notion.css" />
+    <link rel="stylesheet" href="../../in-notion.css" />
+    <link rel="shortcut icon" href="../../assets/favicon.ico" type="image/x-icon" />
+    <script src="../../scripts/app.js" defer></script>
+    <script src="../../scripts/dark-mode.js" defer></script>
+    <title>inNotion UI | Docs</title>
+  </head>
+  <body class="content">
+    <div class="grid-sidebar-layout">
+      <div class="header sticky-header">
+        <nav class="navbar row-flex">
+          <div class="docs-hamburger icon-toggle icon-btn rd-bdr grid-ctr colored-text">
+            <i class="fa fa-book" aria-hidden="true"></i>
+          </div>
+          <a href="/"
+            ><h3 id="logo">in.notion <span class="text-stroke text-shd">UI</span></h3></a
+          >
+          <ul class="nav-items row-flex no-bullet">
+            <li class="btn nav-link-btn h3 m-v-2 m-h-3"><a href="/">Installation</a></li>
+            <li class="btn nav-link-btn h3 m-v-2 m-h-3"><a href="index.html">Docs</a></li>
+          </ul>
+          <div class="dark-mode icon-toggle icon-btn rd-bdr grid-ctr colored-text"></div>
+          <div class="hamburger icon-toggle icon-btn rd-bdr grid-ctr colored-text">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+          </div>
+        </nav>
+      </div>
+      <div class="side-bar box-shd">
+        <h2 class="title row-flex p-v-4">
+          Components
+          <p class="icon-toggle icon-btn sidebar-close rd-bdr grid-ctr colored-text">
+            <i class="fa fa-close" aria-hidden="true"></i>
+          </p>
+        </h2>
+        <ul class="sidebar-items no-bullet col-flex">
+          <a class="sidebar-item grid-ctr p-2 h3" href="../alert/"><li>Alert</li></a>
+          <a class="sidebar-item grid-ctr p-2 h3" href="../avatar/"><li>Avatar</li></a>
+          <a class="sidebar-item grid-ctr p-2 h3" href="../badge/"><li>Badge</li></a>
+          <a class="sidebar-item grid-ctr p-2 h3" href="../button/"><li>Buttons</li></a>
+          <a class="sidebar-item grid-ctr p-2 h3" href="../card/"><li>Card</li></a>
+          <a class="sidebar-item grid-ctr p-2 h3" href="../image/"><li>Image</li></a>
+          <a class="sidebar-item grid-ctr p-2 h3" href="../input/"><li>Input</li></a>
+          <a class="sidebar-item active-sidebar grid-ctr p-2 h3" href="../navigation/"><li>Navigation</li></a>
+          <a class="sidebar-item grid-ctr p-2 h3" href="../rating/"><li>Rating</li></a>
+          <a class="sidebar-item grid-ctr p-2 h3" href="../typography/"><li>Typography</li></a>
+        </ul>
+      </div>
+      <main class="m-auto docs-content m-b-5">
+        <h1 class="title colored-text h1 m-v-4"><span class="circle"></span>Navigation</h1>
+        <h3>
+          Navigation bars allow movement between primary destinations in an app. It's reponsive and will show hamburger
+          icon in small devices.
+        </h3>
+        <section>
+          <!-- Fixed NavBar -->
+          <h2 class="title h2 m-v-2 colored-bg">Fixed Nav Bar</h2>
+          <p>Fixed Nav Bar can be created by using <code>header</code> class inside <code>&lt;header&gt;</code> tag.</p>
+          <div class="container colored-container m-v-4 col-flex">
+            <div class="demo w-95p row-flex">
+              <div class="header-wrapper box-shd w-40p h-30rm">
+                <!-- Fixed Header starts here-->
+                <header class="header">
+                  <nav class="navbar row-flex p-05">
+                    <div class="wt-text row-flex">
+                      <i class="fa fa-bars m-r-1" aria-hidden="true"></i>
+                      <span>Nene Store</span>
+                    </div>
+                    <ul class="header-menu row-flex">
+                      <li class="icon-toggle icon-btn rd-bdr grid-ctr wt-text">
+                        <i class="fa fa-inbox" aria-hidden="true"></i>
+                      </li>
+                      <li class="icon-toggle icon-btn rd-bdr grid-ctr wt-text">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                      </li>
+                      <li class="icon-toggle icon-btn rd-bdr grid-ctr wt-text">
+                        <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                      </li>
+                      <li class="icon-toggle icon-btn rd-bdr grid-ctr wt-text">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                      </li>
+                    </ul>
+                  </nav>
+                </header>
+                <!-- Fixed Header ends here-->
+                <div class="text-content p-1">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam incidunt error ut, odio ad est
+                    facere modi at delectus repudiandae, culpa deleniti accusantium aut reprehenderit consequuntur
+                    blanditiis doloribus. Culpa sunt saepe aspernatur impedit exercitationem quos soluta ipsa voluptates
+                    enim quibusdam!
+                  </p>
+
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam incidunt error ut, odio ad est
+                    facere modi at delectus repudiandae, culpa deleniti accusantium aut reprehenderit consequuntur
+                    blanditiis doloribus. Culpa sunt saepe aspernatur impedit exercitationem quos soluta ipsa voluptates
+                    enim quibusdam!
+                  </p>
+
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam incidunt error ut, odio ad est
+                    facere modi at delectus repudiandae, culpa deleniti accusantium aut reprehenderit consequuntur
+                    blanditiis doloribus. Culpa sunt saepe aspernatur impedit exercitationem quos soluta ipsa voluptates
+                    enim quibusdam!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h3 class="title">Code Snippets</h3>
+          <div class="container code-container colored-container m-v-4 col-flex">
+            <pre class="code-snipet m-v-1 p-1">
+              <code class="html fs-s">
+                <!-- Fixed Nav Bar starts here-->
+               <header class="header">
+                  <nav class="navbar row-flex p-05">
+                    <div class="wt-text row-flex">
+                      <i class="fa fa-bars m-r-1" aria-hidden="true"></i>
+                      <span>Nene Store</span>
+                    </div>
+                    <ul class="header-menu row-flex">
+                      <li class="icon-toggle icon-btn rd-bdr grid-ctr">
+                        <i class="fa fa-inbox" aria-hidden="true"></i>
+                      </li>
+                      <li class="icon-toggle icon-btn rd-bdr grid-ctr">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                      </li>
+                      <li class="icon-toggle icon-btn rd-bdr grid-ctr">
+                        <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                      </li>
+                      <li class="icon-toggle icon-btn rd-bdr grid-ctr">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                      </li>
+                    </ul>
+                  </nav>
+                </header>
+              </code>
+            </pre>
+          </div>
+
+          <!-- Sticky NavBar -->
+          <h2 class="title h2 m-v-2 colored-bg">Sticky Nav Bar</h2>
+          <p>
+            Sticky Nav Bar can be created by using <code>header</code> & <code>sticky-header</code> class inside
+            <code>&lt;header&gt;</code> tag. (e.g. <code>class="header sticky-header"</code>)
+          </p>
+          <div class="container colored-container m-v-4 col-flex">
+            <div class="demo w-95p row-flex">
+              <div class="header-wrapper box-shd w-40p h-30rm">
+                <!-- Sticky Nav Bar starts here-->
+                <header class="header sticky-header">
+                  <nav class="navbar row-flex p-05">
+                    <div class="wt-text row-flex">
+                      <i class="fa fa-bars m-r-1" aria-hidden="true"></i>
+                      <span>Nene Store</span>
+                    </div>
+                    <ul class="header-menu row-flex">
+                      <li class="icon-toggle icon-btn rd-bdr grid-ctr wt-text">
+                        <i class="fa fa-inbox" aria-hidden="true"></i>
+                      </li>
+                      <li class="icon-toggle icon-btn rd-bdr grid-ctr wt-text">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                      </li>
+                      <li class="icon-toggle icon-btn rd-bdr grid-ctr wt-text">
+                        <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                      </li>
+                      <li class="icon-toggle icon-btn rd-bdr grid-ctr wt-text">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                      </li>
+                    </ul>
+                  </nav>
+                </header>
+                <!-- Sticky Nav Bar ends here-->
+                <div class="text-content p-1">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam incidunt error ut, odio ad est
+                    facere modi at delectus repudiandae, culpa deleniti accusantium aut reprehenderit consequuntur
+                    blanditiis doloribus. Culpa sunt saepe aspernatur impedit exercitationem quos soluta ipsa voluptates
+                    enim quibusdam!
+                  </p>
+
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam incidunt error ut, odio ad est
+                    facere modi at delectus repudiandae, culpa deleniti accusantium aut reprehenderit consequuntur
+                    blanditiis doloribus. Culpa sunt saepe aspernatur impedit exercitationem quos soluta ipsa voluptates
+                    enim quibusdam!
+                  </p>
+
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam incidunt error ut, odio ad est
+                    facere modi at delectus repudiandae, culpa deleniti accusantium aut reprehenderit consequuntur
+                    blanditiis doloribus. Culpa sunt saepe aspernatur impedit exercitationem quos soluta ipsa voluptates
+                    enim quibusdam!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h3 class="title">Code Snippets</h3>
+          <div class="container code-container colored-container m-v-4 col-flex">
+            <pre class="code-snipet m-v-1 p-1">
+              <code class="html fs-s">
+                <!-- Sticky Nav Bar starts here-->
+               <header class="header sticky-header">
+                  <nav class="navbar row-flex p-05">
+                    <div class="wt-text row-flex">
+                      <i class="fa fa-bars m-r-1" aria-hidden="true"></i>
+                      <span>Nene Store</span>
+                    </div>
+                    <ul class="header-menu row-flex">
+                      <li class="icon-toggle icon-btn rd-bdr grid-ctr">
+                        <i class="fa fa-inbox" aria-hidden="true"></i>
+                      </li>
+                      <li class="icon-toggle icon-btn rd-bdr grid-ctr">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                      </li>
+                      <li class="icon-toggle icon-btn rd-bdr grid-ctr">
+                        <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                      </li>
+                      <li class="icon-toggle icon-btn rd-bdr grid-ctr">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                      </li>
+                    </ul>
+                  </nav>
+                </header>
+              </code>
+            </pre>
+          </div>
+
+          <!-- Navbar Example -->
+          <h2 class="title h2 m-v-2 colored-bg">Responsive Navbar Example</h2>
+          <p>
+            Navbar can include certain categories, search-bar & icon buttons. It is made responsive by hiding categories
+            section & including hamburger bars.
+          </p>
+          <div class="container colored-container m-v-4">
+            <div class="demo full-wd row-flex m-h-1">
+              <!-- Navigation Bar -->
+              <header class="header sticky-header full-wd m-b-5">
+                <nav class="navbar row-flex p-05">
+                  <a href="/"><img class="w-3rm h-3rm" src="../../assets/favicon.ico" /></a>
+                  <ul class="nav-items row-flex no-bullet">
+                    <li class="btn nav-link-btn h3 m-r-1"><a>Men</a></li>
+                    <li class="btn nav-link-btn h3 m-r-1"><a>Women</a></li>
+                  </ul>
+                  <label class="field searchfield" for="search-text">
+                    <span class="search-icon p-05"><i class="fa fa-search" aria-hidden="true"></i></span>
+                    <input
+                      type="search"
+                      class="input search-nav reset-ip p-05"
+                      placeholder="search here"
+                      id="search-text"
+                    />
+                  </label>
+                  <ul class="row-flex no-bullet">
+                    <li class="nav-icon-btn icon-btn rd-bdr grid-ctr wt-text">
+                      <a class="grid-ctr">
+                        <i class="fa fa-heart rating-icon" aria-hidden="true"></i>
+                        <span class="nav-icon-text h6 wt-text">Wishlist</span>
+                      </a>
+                    </li>
+                    <li class="nav-icon-btn icon-btn rd-bdr grid-ctr wt-text">
+                      <a class="grid-ctr">
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                        <span class="nav-icon-text h6 wt-text">Cart</span>
+                      </a>
+                    </li>
+                    <li class="nav-icon-btn icon-btn rd-bdr grid-ctr wt-text">
+                      <a class="grid-ctr">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        <span class="nav-icon-text h6 wt-text">Profile</span>
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="hamburger icon-toggle icon-btn rd-bdr grid-ctr wt-text">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                  </div>
+                </nav>
+              </header>
+            </div>
+          </div>
+          <h3 class="title">Code Snippets</h3>
+          <div class="container code-container colored-container m-v-4 col-flex">
+            <pre class="code-snipet m-v-1 p-1">
+              <code class="html fs-s">
+               <!-- Navigation Bar -->
+                <header class="header sticky-header">
+                  <nav class="navbar row-flex p-05">
+                    <a href="/"
+                      ><h3 id="logo"><em>in.notion</em></h3></a
+                    >
+                    <ul class="nav-items row-flex no-bullet">
+                    <li class="btn nav-link-btn h3 m-r-1"><a>Men</a></li>
+                    <li class="btn nav-link-btn h3 m-r-1"><a>Women</a></li>
+                    </ul>
+                    <label class="field searchfield" for="search-text">
+                      <span class="search-icon p-05"><i class="fa fa-search" aria-hidden="true"></i></span>
+                      <input
+                        type="search"
+                        class="input search-nav reset-ip p-05"
+                        placeholder="search here"
+                        id="search-text"
+                      />
+                    </label>
+                    <ul class="row-flex no-bullet">
+                      <li class="nav-icon-btn icon-btn rd-bdr grid-ctr wt-text">
+                        <a>
+                          <i class="fa fa-heart rating-icon" aria-hidden="true"></i>
+                          <span class="nav-icon-text h6 wt-text">Wishlist</span>
+                        </a>
+                      </li>
+                      <li class="nav-icon-btn icon-btn rd-bdr grid-ctr wt-text">
+                        <a>
+                          <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                          <span class="nav-icon-text h6 wt-text">Cart</span>
+                        </a>
+                      </li>
+                      <li class="nav-icon-btn icon-btn rd-bdr grid-ctr wt-text">
+                        <a>
+                          <i class="fa fa-user" aria-hidden="true"></i>
+                          <span class="nav-icon-text h6 wt-text">Profile</span>
+                        </a>
+                      </li>
+                    </ul>
+                    <div class="hamburger icon-toggle icon-btn rd-bdr grid-ctr wt-text">
+                      <i class="fa fa-bars" aria-hidden="true"></i>
+                    </div>
+                  </nav>
+                </header>
+              </code>
+            </pre>
+          </div>
+
+          <div class="row-flex m-t-3 m-b-5">
+            <a href="../input/" class="cursor colored-text bg"
+              ><i class="p-h-2 fa fa-arrow-left" aria-hidden="true"></i>Previous</a
+            >
+            <a href="../rating/" class="cursor colored-text bg"
+              >Next<i class="p-h-2 fa fa-arrow-right" aria-hidden="true"></i
+            ></a>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
