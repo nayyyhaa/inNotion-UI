@@ -5,7 +5,6 @@
 /* COMPONENTS */
 @import url("./components/blob.css");
 @import url("./components/header.css");
-@import url("./components/side-bar.css");
 @import url("./components/footer.css");
 
 .code-snipet {
@@ -18,9 +17,12 @@
   font-size: 1.6rem;
 }
 
-.container {
-  margin-right: 0;
-  margin-left: 0;
+.demo-height {
+  min-height: 40rem;
+}
+
+.h1 {
+  line-height: 4rem;
 }
 
 .hljs,
@@ -35,15 +37,4 @@
 
 .hljs-attr {
   color: var(--BLUE-XLIGHT);
-}
-
-h1 {
-  line-height: 4.5rem;
-}
-
-/*media queries*/
-@media screen and (max-width: 600px) {
-  .field {
-    width: 100%;
-  }
 }

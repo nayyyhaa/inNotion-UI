@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- -------- Highlight JS -----------  -->
+    <link
+      rel="stylesheet"
+      href="	https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/tomorrow-night.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js" defer></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <link rel="stylesheet" href="https://innotion-ui-library.netlify.app/in-notion.css" />
+    <link rel="stylesheet" href="../../in-notion.css" />
+    <link rel="shortcut icon" href="../../assets/favicon.ico" type="image/x-icon" />
+    <script src="../../scripts/app.js" defer></script>
+    <script src="../../scripts/dark-mode.js" defer></script>
+    <title>inNotion UI | Docs</title>
+  </head>
+  <body class="content">
+    <div class="grid-sidebar-layout">
+      <div class="header fixed-header">
+        <nav class="navbar row-flex">
+          <div class="docs-hamburger icon-toggle icon-btn rd-bdr grid-ctr colored-text">
+            <i class="fa fa-book" aria-hidden="true"></i>
+          </div>
+          <a href="/"
+            ><h3 id="logo">in.notion <span class="text-stroke text-shd">UI</span></h3></a
+          >
+          <ul class="nav-items row-flex no-bullet">
+            <li class="btn nav-link-btn h3 m-v-2 m-h-3"><a href="/">Installation</a></li>
+            <li class="btn nav-link-btn h3 m-v-2 m-h-3"><a href="index.html">Docs</a></li>
+          </ul>
+          <div class="dark-mode icon-toggle icon-btn rd-bdr grid-ctr colored-text"></div>
+          <div class="hamburger icon-toggle icon-btn rd-bdr grid-ctr colored-text">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+          </div>
+        </nav>
+      </div>
+      <div class="side-bar box-shd">
+        <h2 class="title row-flex p-v-4">
+          Components
+          <p class="icon-toggle icon-btn sidebar-close rd-bdr grid-ctr colored-text">
+            <i class="fa fa-close" aria-hidden="true"></i>
+          </p>
+        </h2>
+        <ul class="sidebar-items no-bullet col-flex">
+          <a class="sidebar-item grid-ctr p-2 h3" href="../alert/"><li>Alert</li></a>
+          <a class="sidebar-item grid-ctr p-2 h3" href="../avatar/"><li>Avatar</li></a>
+          <a class="sidebar-item grid-ctr p-2 h3" href="../badge/"><li>Badge</li></a>
+          <a class="sidebar-item grid-ctr p-2 h3" href="../button/"><li>Buttons</li></a>
+          <a class="sidebar-item grid-ctr p-2 h3" href="../card/"><li>Card</li></a>
+          <a class="sidebar-item grid-ctr p-2 h3" href="../image/"><li>Image</li></a>
+          <a class="sidebar-item grid-ctr p-2 h3" href="../input/"><li>Input</li></a>
+          <a class="sidebar-item grid-ctr p-2 h3" href="../navigation/"><li>Navigation</li></a>
+          <a class="sidebar-item grid-ctr p-2 h3" href="../rating/"><li>Rating</li></a>
+          <a class="sidebar-item active-sidebar grid-ctr p-2 h3" href="../typography/"><li>Typography</li></a>
+        </ul>
+      </div>
+      <main class="m-auto docs-content m-b-5">
+        <h1 class="title colored-text h1 m-v-4"><span class="circle"></span>Typography</h1>
+        <h3>Use typography to present your design and content as clearly and efficiently as possible.</h3>
+        <section>
+          <!-- Headings -->
+          <h2 class="title h2 m-v-2 colored-bg">Headings</h2>
+          <p>
+            Headings can be created by using <code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code>,
+            <code>&lt;h4&gt;</code>, <code>&lt;h5&gt;</code>, <code>&lt;h6&gt;</code> tags.
+          </p>
+          <div class="container colored-container m-v-4 col-flex">
+            <div class="demo w-95p h-35rm col-flex align-start">
+              <!-- Headings -->
+              <h1>This is H1 heading</h1>
+              <h2>This is H2 heading</h2>
+              <h3>This is H3 heading</h3>
+              <h4>This is H4 heading</h4>
+              <h5>This is H5 heading</h5>
+              <h6>This is H6 heading</h6>
+            </div>
+          </div>
+          <h3 class="title">Code Snippets</h3>
+          <div class="container code-container colored-container m-v-4 col-flex">
+            <pre class="code-snipet m-v-1 p-1">
+              <code class="html fs-s">
+               <!-- Headings -->
+              <h1>This is H1 heading</h1>
+              <h2>This is H2 heading</h2>
+              <h3>This is H3 heading</h3>
+              <h4>This is H4 heading</h4>
+              <h5>This is H5 heading</h5>
+              <h6>This is H6 heading</h6>
+              </code>
+            </pre>
+          </div>
+
+          <!-- Text Styles -->
+          <h2 class="title h2 m-v-2 colored-bg">Text Styles</h2>
+          <ul class="p-l-1">
+            <li>For extra large text use <code>h1</code> class.</li>
+            <li>For large text use <code>h2</code> class.</li>
+            <li>For medium text use <code>h3</code> class.</li>
+            <li>For small text use <code>&lt;small&gt;</code> tag.</li>
+            <li>For line-through text use <code>&lt;del&gt;</code> tag.</li>
+            <li>For bold text use <code>&lt;strong&gt;</code> tag.</li>
+            <li>For colored text use <code>colored-text</code> class.</li>
+            <li>For colored text with background use <code>colored-text bg</code> class.</li>
+            <li>For grey colored/disabled text use <code>grey-text</code> class.</li>
+          </ul>
+          <div class="container colored-container m-v-4 col-flex">
+            <div class="demo demo-height w-95p col-flex align-start">
+              <p class="h1">This is a xlarge text</p>
+              <p class="h2">This is a large text</p>
+              <p class="h3">This is a medium text</p>
+              <p>This is a default paragraph</p>
+              <p><small>This is relatively &lt;small&gt; text.</small></p>
+              <p><del>This line of text is meant to be treated as no longer accurate.</del></p>
+              <p><strong>This line a bold line.</strong></p>
+              <p class="colored-text">This line a colored line.</p>
+              <p class="colored-text bg">This line a colored line with backgroud.</p>
+              <p class="grey-text">This line is used in disabled container.</p>
+            </div>
+          </div>
+          <h3 class="title">Code Snippets</h3>
+          <div class="container code-container colored-container m-v-4 col-flex">
+            <pre class="code-snipet m-v-1 p-1">
+              <code class="html fs-s">
+              <!-- Text Styles -->
+                <p class="h1">This is a xlarge text</p>
+                <p class="h2">This is a large text</p>
+                <p class="h3">This is a medium text</p>
+                <p>This is a default paragraph</p>
+                <p><small>This is relatively &lt;small&gt; text.</small></p>
+                <p><del>This line of text is meant to be treated as no longer accurate.</del></p>
+                <p><strong>This line a bold line.</strong></p>
+                <p class="colored-text">This line a colored line.</p>
+                <p class="colored-text bg">This line a colored line with backgroud.</p>
+                <p class="grey-text">This line is used in disabled container.</p>
+              </code>
+            </pre>
+          </div>
+
+          <!-- Text Positioning -->
+          <h2 class="title h2 m-v-2 colored-bg">Text Positioning</h2>
+          <ul class="p-l-1">
+            <li>For left aligned text use <code>left-text</code> class.</li>
+            <li>For centered aligned text use <code>centered-text</code> class.</li>
+            <li>For right aligned text use <code>right-text</code> class.</li>
+          </ul>
+          <div class="container colored-container m-v-4 col-flex">
+            <div class="demo full-wd row-flex no-wrap">
+              <p class="left-text">This is left aligned text</p>
+              <p class="centered-text">This is center aligned text</p>
+              <p class="right-text">This is right aligned text</p>
+            </div>
+          </div>
+          <h3 class="title">Code Snippets</h3>
+          <div class="container code-container colored-container m-v-4 col-flex">
+            <pre class="code-snipet m-v-1 p-1">
+              <code class="html fs-s">
+               <!-- Text Positioning -->
+              <p class="left-text">This is left aligned text</p>
+              <p class="centered-text">This is center aligned text</p>
+              <p class="right-text">This is right aligned text</p>
+              </code>
+            </pre>
+          </div>
+
+          <div class="row-flex m-t-3 m-b-5">
+            <a href="../rating/" class="cursor colored-text bg"
+              ><i class="p-h-2 fa fa-arrow-left" aria-hidden="true"></i>Previous</a
+            >
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
