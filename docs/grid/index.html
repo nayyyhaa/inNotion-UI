@@ -52,7 +52,7 @@
           <a class="sidebar-item grid-ctr p-2 h3" href="../badge/"><li>Badge</li></a>
           <a class="sidebar-item grid-ctr p-2 h3" href="../button/"><li>Buttons</li></a>
           <a class="sidebar-item grid-ctr p-2 h3" href="../card/"><li>Card</li></a>
-          <a class="sidebar-item grid-ctr p-2 h3" href="../grid/"><li>Grid</li></a>
+          <a class="sidebar-item active-sidebar grid-ctr p-2 h3" href="../grid/"><li>Grid</li></a>
           <a class="sidebar-item grid-ctr p-2 h3" href="../image/"><li>Image</li></a>
           <a class="sidebar-item grid-ctr p-2 h3" href="../input/"><li>Input</li></a>
           <a class="sidebar-item grid-ctr p-2 h3" href="../list/"><li>List</li></a>
@@ -60,121 +60,100 @@
           <a class="sidebar-item grid-ctr p-2 h3" href="../navigation/"><li>Navigation</li></a>
           <a class="sidebar-item grid-ctr p-2 h3" href="../rating/"><li>Rating</li></a>
           <a class="sidebar-item grid-ctr p-2 h3" href="../toast/"><li>Toast</li></a>
-          <a class="sidebar-item active-sidebar grid-ctr p-2 h3" href="../typography/"><li>Typography</li></a>
+          <a class="sidebar-item grid-ctr p-2 h3" href="../rating/"><li>Rating</li></a>
+          <a class="sidebar-item grid-ctr p-2 h3" href="../typography/"><li>Typography</li></a>
         </ul>
       </div>
       <main class="m-auto docs-content m-b-5">
-        <h1 class="title colored-text h1 m-v-4"><span class="circle"></span>Typography</h1>
-        <h3>Use typography to present your design and content as clearly and efficiently as possible.</h3>
+        <h1 class="title colored-text h1 m-v-4"><span class="circle"></span>Grid Simplified</h1>
+        <h3>
+          The grid creates visual consistency between layouts while allowing flexibility across a wide variety of
+          designs.
+        </h3>
         <section>
-          <!-- Headings -->
-          <h2 class="title h2 m-v-2 colored-bg">Headings</h2>
-          <p>
-            Headings can be created by using <code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code>,
-            <code>&lt;h4&gt;</code>, <code>&lt;h5&gt;</code>, <code>&lt;h6&gt;</code> tags.
-          </p>
+          <!-- 2 Column grid Layout -->
+          <h2 class="title h2 m-v-2 colored-bg">2 Column grid Layout</h2>
           <div class="container colored-container m-v-4 col-flex">
-            <div class="demo w-95p h-35rm col-flex align-start">
-              <!-- Headings -->
-              <h1>This is H1 heading</h1>
-              <h2>This is H2 heading</h2>
-              <h3>This is H3 heading</h3>
-              <h4>This is H4 heading</h4>
-              <h5>This is H5 heading</h5>
-              <h6>This is H6 heading</h6>
+            <div class="demo full-wd">
+              <!-- 2 Column grid Layout -->
+              <div class="grid-2-col">
+                <div class="grid-item-one grid-ctr green-content h-20rm">Grid Item One</div>
+                <div class="grid-item-two grid-ctr blue-content h-20rm">Grid Item Two</div>
+              </div>
             </div>
           </div>
           <h3 class="title">Code Snippets</h3>
           <div class="container code-container colored-container m-v-4 col-flex">
             <pre class="code-snipet m-v-1 p-1">
               <code class="html fs-s">
-               <!-- Headings -->
-              <h1>This is H1 heading</h1>
-              <h2>This is H2 heading</h2>
-              <h3>This is H3 heading</h3>
-              <h4>This is H4 heading</h4>
-              <h5>This is H5 heading</h5>
-              <h6>This is H6 heading</h6>
+              <!-- 2 Column grid Layout -->
+              <div class="grid-2-col">
+                <div class="grid-item-one">Grid Item One</div>
+                <div class="grid-item-two">Grid Item Two</div>
+              </div>
               </code>
             </pre>
           </div>
-
-          <!-- Text Styles -->
-          <h2 class="title h2 m-v-2 colored-bg">Text Styles</h2>
-          <ul class="p-l-1">
-            <li>For extra large text use <code>h1</code> class.</li>
-            <li>For large text use <code>h2</code> class.</li>
-            <li>For medium text use <code>h3</code> class.</li>
-            <li>For small text use <code>&lt;small&gt;</code> tag.</li>
-            <li>For line-through text use <code>&lt;del&gt;</code> tag.</li>
-            <li>For bold text use <code>&lt;strong&gt;</code> tag.</li>
-            <li>For colored text use <code>colored-text</code> class.</li>
-            <li>For colored text with background use <code>colored-text bg</code> class.</li>
-            <li>For grey colored/disabled text use <code>grey-text</code> class.</li>
-          </ul>
+          <!-- 3 Column grid Layout -->
+          <h2 class="title h2 m-v-2 colored-bg">3 Column grid Layout</h2>
           <div class="container colored-container m-v-4 col-flex">
-            <div class="demo demo-height w-95p col-flex align-start">
-              <p class="h1">This is a xlarge text</p>
-              <p class="h2">This is a large text</p>
-              <p class="h3">This is a medium text</p>
-              <p>This is a default paragraph</p>
-              <p><small>This is relatively &lt;small&gt; text.</small></p>
-              <p><del>This line of text is meant to be treated as no longer accurate.</del></p>
-              <p><strong>This line a bold line.</strong></p>
-              <p class="colored-text">This line a colored line.</p>
-              <p class="colored-text bg">This line a colored line with backgroud.</p>
-              <p class="grey-text">This line is used in disabled container.</p>
+            <div class="demo full-wd">
+              <!-- 3 Column grid Layout -->
+              <div class="grid-3-col">
+                <div class="grid-item-one grid-ctr green-content h-20rm">Grid Item One</div>
+                <div class="grid-item-two grid-ctr blue-content h-20rm">Grid Item Two</div>
+                <div class="grid-item-three grid-ctr yellow-content h-20rm">Grid Item Three</div>
+              </div>
             </div>
           </div>
           <h3 class="title">Code Snippets</h3>
           <div class="container code-container colored-container m-v-4 col-flex">
             <pre class="code-snipet m-v-1 p-1">
               <code class="html fs-s">
-              <!-- Text Styles -->
-                <p class="h1">This is a xlarge text</p>
-                <p class="h2">This is a large text</p>
-                <p class="h3">This is a medium text</p>
-                <p>This is a default paragraph</p>
-                <p><small>This is relatively &lt;small&gt; text.</small></p>
-                <p><del>This line of text is meant to be treated as no longer accurate.</del></p>
-                <p><strong>This line a bold line.</strong></p>
-                <p class="colored-text">This line a colored line.</p>
-                <p class="colored-text bg">This line a colored line with backgroud.</p>
-                <p class="grey-text">This line is used in disabled container.</p>
+              <!-- 3 Column grid Layout -->
+              <div class="grid-3-col">
+                <div class="grid-item-one">Grid Item One</div>
+                <div class="grid-item-two">Grid Item Two</div>
+                <div class="grid-item-three">Grid Item Three</div>
+              </div>
               </code>
             </pre>
           </div>
-
-          <!-- Text Positioning -->
-          <h2 class="title h2 m-v-2 colored-bg">Text Positioning</h2>
-          <ul class="p-l-1">
-            <li>For left aligned text use <code>left-text</code> class.</li>
-            <li>For centered aligned text use <code>centered-text</code> class.</li>
-            <li>For right aligned text use <code>right-text</code> class.</li>
-          </ul>
+          <!-- 4 Column grid Layout -->
+          <h2 class="title h2 m-v-2 colored-bg">4 Column grid Layout</h2>
           <div class="container colored-container m-v-4 col-flex">
-            <div class="demo full-wd row-flex no-wrap">
-              <p class="left-text">This is left aligned text</p>
-              <p class="centered-text">This is center aligned text</p>
-              <p class="right-text">This is right aligned text</p>
+            <div class="demo full-wd">
+              <!-- 4 Column grid Layout -->
+              <div class="grid-4-col">
+                <div class="grid-item-one grid-ctr green-content h-20rm">Grid Item One</div>
+                <div class="grid-item-two grid-ctr blue-content h-20rm">Grid Item Two</div>
+                <div class="grid-item-three grid-ctr yellow-content h-20rm">Grid Item Three</div>
+                <div class="grid-item-four grid-ctr red-content h-20rm">Grid Item Four</div>
+              </div>
             </div>
           </div>
           <h3 class="title">Code Snippets</h3>
           <div class="container code-container colored-container m-v-4 col-flex">
             <pre class="code-snipet m-v-1 p-1">
               <code class="html fs-s">
-               <!-- Text Positioning -->
-              <p class="left-text">This is left aligned text</p>
-              <p class="centered-text">This is center aligned text</p>
-              <p class="right-text">This is right aligned text</p>
+              <!-- 4 Column grid Layout -->
+              <div class="grid-4-col">
+                <div class="grid-item-one">Grid Item One</div>
+                <div class="grid-item-two">Grid Item Two</div>
+                <div class="grid-item-three">Grid Item Three</div>
+                <div class="grid-item-four">Grid Item Four</div>
+              </div>
               </code>
             </pre>
           </div>
 
           <div class="row-flex m-t-3 m-b-5">
-            <a href="../rating/" class="cursor colored-text bg"
+            <a href="../card/" class="cursor colored-text bg"
               ><i class="p-h-2 fa fa-arrow-left" aria-hidden="true"></i>Previous</a
             >
+            <a href="../image/" class="cursor colored-text bg"
+              >Next<i class="p-h-2 fa fa-arrow-right" aria-hidden="true"></i
+            ></a>
           </div>
         </section>
       </main>

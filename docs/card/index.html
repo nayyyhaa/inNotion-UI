@@ -20,24 +20,24 @@
   </head>
   <body class="content">
     <div class="grid-sidebar-layout">
-      <div class="header fixed-header">
+      <header class="header header-grid fixed-header">
         <nav class="navbar row-flex">
-          <div class="docs-hamburger icon-toggle icon-btn rd-bdr grid-ctr colored-text">
+          <div class="docs-hamburger icon-toggle icon-btn rd-bdr grid-ctr colored-text m-l-3">
             <i class="fa fa-book" aria-hidden="true"></i>
           </div>
-          <a href="/"
+          <a class="m-l-3" href="/"
             ><h3 id="logo">in.notion <span class="text-stroke text-shd">UI</span></h3></a
           >
           <ul class="nav-items row-flex no-bullet">
             <li class="btn nav-link-btn h3 m-v-2 m-h-3"><a href="/">Installation</a></li>
             <li class="btn nav-link-btn h3 m-v-2 m-h-3"><a href="index.html">Docs</a></li>
           </ul>
-          <div class="dark-mode icon-toggle icon-btn rd-bdr grid-ctr colored-text"></div>
-          <div class="hamburger icon-toggle icon-btn rd-bdr grid-ctr colored-text">
+          <div class="dark-mode icon-toggle icon-btn rd-bdr grid-ctr colored-text m-r-3"></div>
+          <div class="hamburger icon-toggle icon-btn rd-bdr grid-ctr colored-text m-r-3">
             <i class="fa fa-bars" aria-hidden="true"></i>
           </div>
         </nav>
-      </div>
+      </header>
       <div class="side-bar box-shd">
         <h2 class="title row-flex p-v-4">
           Components
@@ -51,10 +51,14 @@
           <a class="sidebar-item grid-ctr p-2 h3" href="../badge/"><li>Badge</li></a>
           <a class="sidebar-item grid-ctr p-2 h3" href="../button/"><li>Buttons</li></a>
           <a class="sidebar-item active-sidebar grid-ctr p-2 h3" href="../card/"><li>Card</li></a>
+          <a class="sidebar-item grid-ctr p-2 h3" href="../grid/"><li>Grid</li></a>
           <a class="sidebar-item grid-ctr p-2 h3" href="../image/"><li>Image</li></a>
           <a class="sidebar-item grid-ctr p-2 h3" href="../input/"><li>Input</li></a>
+          <a class="sidebar-item grid-ctr p-2 h3" href="../list/"><li>List</li></a>
+          <a class="sidebar-item grid-ctr p-2 h3" href="../modal/"><li>Modal</li></a>
           <a class="sidebar-item grid-ctr p-2 h3" href="../navigation/"><li>Navigation</li></a>
           <a class="sidebar-item grid-ctr p-2 h3" href="../rating/"><li>Rating</li></a>
+          <a class="sidebar-item grid-ctr p-2 h3" href="../toast/"><li>Toast</li></a>
           <a class="sidebar-item grid-ctr p-2 h3" href="../typography/"><li>Typography</li></a>
         </ul>
       </div>
@@ -79,7 +83,7 @@
             <div class="demo w-95p row-flex">
               <!-- Horizontal cards -->
               <!-- reader card -->
-              <div class="card hz-card left-text box-shd col-flex w-35rm m-2">
+              <div class="card hz-card left-text col-flex w-35rm m-2">
                 <div class="card-header flex-start row-flex text-wrap full-wd">
                   <img class="card-img sq-img" src="../../assets/dream.jpg" alt="dream state" />
                   <div class="card-header-text p-1">
@@ -87,7 +91,7 @@
                     <sub>Hallucination or reality?</sub>
                   </div>
                 </div>
-                <div class="card-actions row-flex full-wd">
+                <div class="card-actions p-1 row-flex full-wd">
                   <div class="card-btns">
                     <button class="card-btn card-btn-text">READ</button>
                     <button class="card-btn card-btn-text">BOOKMARK</button>
@@ -135,7 +139,7 @@
               <code class="html fs-s">
                <!-- Horizontal cards -->
                 <!-- reader card -->
-                <div class="card hz-card left-text box-shd col-flex w-35rm m-2">
+                <div class="card hz-card left-text col-flex w-35rm m-2">
                   <div class="card-header flex-start row-flex text-wrap full-wd">
                     <img class="card-img sq-img" src="../../assets/dream.jpg" alt="dream state" />
                     <div class="card-header-text p-1">
@@ -143,7 +147,7 @@
                       <sub>Hallucination or reality?</sub>
                     </div>
                   </div>
-                  <div class="card-actions row-flex full-wd">
+                  <div class="card-actions p-1 row-flex full-wd">
                     <div class="card-btns">
                       <button class="card-btn card-btn-text">READ</button>
                       <button class="card-btn card-btn-text">BOOKMARK</button>
@@ -198,7 +202,7 @@
                   <h2 class="card-title h3">Dream State</h2>
                   <sub>Hallucination or reality?</sub>
                 </div>
-                <div class="card-actions row-flex full-wd">
+                <div class="card-actions p-2 row-flex full-wd">
                   <div class="card-btns">
                     <button class="card-btn card-btn-text">READ</button>
                     <button class="card-btn card-btn-text">BOOKMARK</button>
@@ -229,7 +233,7 @@
                     <h2 class="card-title h3">Dream State</h2>
                     <sub>Hallucination or reality?</sub>
                   </div>
-                  <div class="card-actions row-flex full-wd">
+                  <div class="card-actions row-flex full-wd p-2">
                     <div class="card-btns">
                       <button class="card-btn card-btn-text">READ</button>
                       <button class="card-btn card-btn-text">BOOKMARK</button>
@@ -257,14 +261,17 @@
           <div class="container colored-container m-v-4 col-flex">
             <div class="demo w-95p row-flex">
               <!-- Horizontal cards -->
-              <div class="card hz-card media-card left-text row-flex text-wrap box-shd w-40rm h-25rm m-2">
+              <div class="card hz-card media-card left-text row-flex text-wrap w-50rm h-25rm m-2">
                 <img class="card-img h-25rm w-35p" src="../../assets/shirt.png" alt="shirt" />
                 <div class="card-header-text h-25rm col-flex">
                   <h2 class="card-title colored-text h3">Peachtone Shirt</h2>
-                  <p class="h6">Trendy fashion for summer season.<br /><small>Sold by: Nene Stores</small></p>
-                  <sub class="h5 m-v-2">Linen shirt for women.</sub>
-
-                  <div class="card-actions card-btns row-flex full-wd">
+                  <small>Sold by: Nene Stores</small>
+                  <sub class="h5 m-v-1">Linen shirt for women.</sub>
+                  <p class="h3 colored-text">
+                    249₹ <del class="sub-heading-light light-font">499₹ </del>
+                    <span class="green-text light-font"> (50% off)</span>
+                  </p>
+                  <div class="card-actions card-btns row-flex full-wd m-v-2 p-r-2">
                     <button class="btn primary-btn p-1 m-r-1">
                       <i class="fa fa-shopping-cart" aria-hidden="true"></i><span class="p-l-1">Add to cart</span>
                     </button>
@@ -278,17 +285,25 @@
                     </div>
                   </div>
                 </div>
-                <span class="badge md-badge text-badge badge-card-tr wt-text grid-ctr blue-content">NEW</span>
+                <span class="badge text-badge badge-card-tr wt-text blue-content">NEW</span>
               </div>
 
               <!-- Vertical card -->
-              <div class="card vd-card left-text col-flex flex-start box-shd w-30rm m-2">
+              <div class="card vd-card left-text col-flex flex-start w-30rm m-2">
                 <img class="card-img full-wd" src="../../assets/shirt.png" alt="shirt" />
                 <div class="card-header-text text-wrap p-1">
                   <h2 class="card-title colored-text h3">Peachtone Shirt</h2>
+                  <div class="rating-badge card-rating-overlay">
+                    <span class="rating-number">5</span>
+                    <label>
+                      <i class="fa fa-star rating-icon" aria-hidden="true"></i>
+                    </label>
+                    <span>|</span>
+                    <span class="rating-number">299</span>
+                  </div>
                   <sub>Trendy fashion for summer season.</sub>
                 </div>
-                <div class="card-actions row-flex full-wd">
+                <div class="card-actions p-2 row-flex full-wd">
                   <div class="card-btns">
                     <button class="btn primary-btn m-r-1">
                       <i class="fa fa-shopping-cart" aria-hidden="true"></i><span class="p-l-1">Add to cart</span>
@@ -303,7 +318,7 @@
                     </button>
                   </div>
                 </div>
-                <span class="badge md-badge text-badge badge-card-tr wt-text grid-ctr green-content">Most Popular</span>
+                <span class="badge text-badge badge-card-tr wt-text green-content">Most Popular</span>
               </div>
             </div>
           </div>
@@ -312,38 +327,49 @@
             <pre class="code-snipet m-v-1 p-1">
               <code class="html fs-s">
                  <!-- Horizontal cards -->
-                <div class="card hz-card media-card left-text row-flex text-wrap box-shd w-40rm h-25rm m-2">
-                  <img class="card-img h-25rm w-35p" src="../../assets/shirt.png" alt="shirt" />
-                  <div class="card-header-text h-25rm col-flex">
-                    <h2 class="card-title colored-text h3">Peachtone Shirt</h2>
-                    <p class="h6">Trendy fashion for summer season.<br /><small>Sold by: Nene Stores</small></p>
-                    <sub class="h5 m-v-2">Linen shirt for women.</sub>
-
-                    <div class="card-actions card-btns row-flex full-wd">
-                      <button class="btn primary-btn p-1 m-r-1">
-                        <i class="fa fa-shopping-cart" aria-hidden="true"></i><span class="p-l-1">Add to cart</span>
+                <div class="card hz-card media-card left-text row-flex text-wrap w-50rm h-25rm m-2">
+                <img class="card-img h-25rm w-35p" src="shirt.png" alt="shirt" />
+                <div class="card-header-text h-25rm col-flex">
+                  <h2 class="card-title colored-text h3">Peachtone Shirt</h2>
+                  <small>Sold by: Nene Stores</small>
+                  <sub class="h5 m-v-1">Linen shirt for women.</sub>
+                  <p class="h3 colored-text">
+                    249₹ <del class="sub-heading-light light-font">499₹ </del>
+                    <span class="green-text light-font"> (50% off)</span>
+                  </p>
+                  <div class="card-actions card-btns row-flex full-wd m-v-2">
+                    <button class="btn primary-btn p-1 m-r-1">
+                      <i class="fa fa-shopping-cart" aria-hidden="true"></i><span class="p-l-1">Add to cart</span>
+                    </button>
+                    <div class="card-icons">
+                      <button class="card-icon-btn icon-btn rd-bdr">
+                        <i class="fa fa-heart-o" aria-hidden="true"></i>
                       </button>
-                      <div class="card-icons">
-                        <button class="card-icon-btn icon-btn rd-bdr">
-                          <i class="fa fa-heart-o" aria-hidden="true"></i>
-                        </button>
-                        <button class="card-icon-btn icon-btn rd-bdr">
-                          <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-                        </button>
-                      </div>
+                      <button class="card-icon-btn icon-btn rd-bdr">
+                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                      </button>
                     </div>
                   </div>
-                  <span class="badge md-badge text-badge badge-card-tr wt-text grid-ctr blue-content">NEW</span>
                 </div>
+                <span class="badge text-badge badge-card-tr wt-text blue-content">NEW</span>
+              </div>
 
                 <!-- Vertical card -->
-                <div class="card vd-card left-text col-flex flex-start box-shd w-30rm m-2">
-                  <img class="card-img full-wd" src="../../assets/shirt.png" alt="shirt" />
+                <div class="card vd-card left-text col-flex flex-start w-30rm m-2">
+                  <img class="card-img full-wd" src="shirt.png" alt="shirt" />
                   <div class="card-header-text text-wrap p-1">
                     <h2 class="card-title colored-text h3">Peachtone Shirt</h2>
+                    <div class="rating-badge card-rating-overlay">
+                      <span class="rating-number">5</span>
+                      <label>
+                        <i class="fa fa-star rating-icon" aria-hidden="true"></i>
+                      </label>
+                      <span>|</span>
+                      <span class="rating-number">299</span>
+                    </div>
                     <sub>Trendy fashion for summer season.</sub>
                   </div>
-                  <div class="card-actions row-flex full-wd">
+                  <div class="card-actions p-2 row-flex full-wd">
                     <div class="card-btns">
                       <button class="btn primary-btn m-r-1">
                         <i class="fa fa-shopping-cart" aria-hidden="true"></i><span class="p-l-1">Add to cart</span>
@@ -358,7 +384,7 @@
                       </button>
                     </div>
                   </div>
-                  <span class="badge md-badge text-badge badge-card-tr wt-text grid-ctr green-content">Most Popular</span>
+                  <span class="badge text-badge badge-card-tr wt-text green-content">Most Popular</span>
                 </div>
               </code>
             </pre>
@@ -380,7 +406,7 @@
                   <h2 class="card-title h3">Peachtone Shirt</h2>
                   <sub>Linen shirt for women.</sub>
                 </div>
-                <div class="card-actions row-flex full-wd">
+                <div class="card-actions p-2 row-flex full-wd">
                   <div class="card-btns">
                     <button class="btn primary-btn m-r-1">
                       <i class="fa fa-shopping-cart" aria-hidden="true"></i><span class="p-l-1">Add to cart</span>
@@ -404,7 +430,7 @@
                   <h2 class="card-title colored-text h3">Peachtone Shirt</h2>
                   <sub>Linen shirt for women.</sub>
                 </div>
-                <div class="card-actions row-flex full-wd">
+                <div class="card-actions p-2 row-flex full-wd">
                   <div class="card-btns">
                     <button class="btn primary-btn m-r-1">
                       <i class="fa fa-shopping-cart" aria-hidden="true"></i><span class="p-l-1">Add to cart</span>
@@ -434,7 +460,7 @@
                     <h2 class="card-title h3">Peachtone Shirt</h2>
                     <sub>Linen shirt for women.</sub>
                   </div>
-                  <div class="card-actions row-flex full-wd">
+                  <div class="card-actions p-2 row-flex full-wd">
                     <div class="card-btns">
                       <button class="btn primary-btn m-r-1">
                         <i class="fa fa-shopping-cart" aria-hidden="true"></i><span class="p-l-1">Add to cart</span>
@@ -458,7 +484,7 @@
                     <h2 class="card-title colored-text h3">Peachtone Shirt</h2>
                     <sub>Linen shirt for women.</sub>
                   </div>
-                  <div class="card-actions row-flex full-wd">
+                  <div class="card-actions p-2 row-flex full-wd">
                     <div class="card-btns">
                       <button class="btn primary-btn m-r-1">
                         <i class="fa fa-shopping-cart" aria-hidden="true"></i><span class="p-l-1">Add to cart</span>
@@ -486,14 +512,14 @@
             <div class="demo w-95p row-flex">
               <!-- Dismiss Card -->
               <div class="card dismiss-card hz-card left-text box-shd col-flex w-35rm m-2">
-                <div class="card-header card-header-text text-wrap full-wd p-v-1 p-l-2">
-                  <button class="card-icon-btn icon-btn rd-bdr close-btn">
+                <div class="card-header card-header-text text-wrap full-wd p-v-1 p-l-2 m-b-1">
+                  <button class="icon-btn rd-bdr close-btn">
                     <i class="fa fa-times" aria-hidden="true"></i>
                   </button>
                   <h2 class="card-title colored-text h3">Great!</h2>
                   <sub>Your request has been sent.<br />Would you like to contiue?</sub>
                 </div>
-                <div class="card-actions card-btns row-flex full-wd p-0">
+                <div class="card-actions p-2 card-btns row-flex full-wd">
                   <button class="btn card-accept-btn green-outlined-content">Yes, please!</button>
                   <button class="btn card-dismiss-btn red-outlined-content">Dismiss</button>
                 </div>
@@ -501,11 +527,11 @@
 
               <!-- Text only Card -->
               <div class="card hz-card left-text box-shd col-flex w-35rm m-2">
-                <div class="card-header card-header-text text-wrap full-wd p-1">
+                <div class="card-header text-wrap full-wd p-h-2 p-t-2">
                   <h2 class="card-title colored-text h3 m-v-1">Nene Book</h2>
                   <sub>Inspirational book. Dives deep into the questions about human's existence.</sub>
                 </div>
-                <div class="card-actions row-flex full-wd">
+                <div class="card-actions p-h-2 p-2 row-flex full-wd">
                   <div class="card-btns">
                     <button class="card-btn card-btn-text">READ</button>
                     <button class="card-btn card-btn-text">BOOKMARK</button>
@@ -531,14 +557,14 @@
               <code class="html fs-s">
                 <!-- Dismiss Card -->
                 <div class="card dismiss-card hz-card left-text box-shd col-flex w-35rm m-2">
-                  <div class="card-header card-header-text text-wrap full-wd p-v-1 p-l-2">
+                  <div class="card-header card-header-text text-wrap full-wd p-v-1 p-l-2 m-b-1">
                     <button class="card-icon-btn icon-btn rd-bdr close-btn">
                       <i class="fa fa-times" aria-hidden="true"></i>
                     </button>
                     <h2 class="card-title colored-text h3">Great!</h2>
                     <sub>Your request has been sent.<br />Would you like to contiue?</sub>
                   </div>
-                  <div class="card-actions card-btns row-flex full-wd p-0">
+                  <div class="card-actions card-btns row-flex full-wd p-2">
                     <button class="btn card-accept-btn green-outlined-content">Yes, please!</button>
                     <button class="btn card-dismiss-btn red-outlined-content">Dismiss</button>
                   </div>
@@ -546,11 +572,11 @@
 
                 <!-- Text only Card -->
                 <div class="card hz-card left-text box-shd col-flex w-35rm m-2">
-                  <div class="card-header card-header-text text-wrap full-wd p-1">
+                  <div class="card-header text-wrap full-wd p-h-2 p-t-2">
                     <h2 class="card-title colored-text h3 m-v-1">Nene Book</h2>
                     <sub>Inspirational book. Dives deep into the questions about human's existence.</sub>
                   </div>
-                  <div class="card-actions row-flex full-wd">
+                  <div class="card-actions p-2 row-flex full-wd">
                     <div class="card-btns">
                       <button class="card-btn card-btn-text">READ</button>
                       <button class="card-btn card-btn-text">BOOKMARK</button>
@@ -576,7 +602,7 @@
             <a href="../button/" class="cursor colored-text bg"
               ><i class="p-h-2 fa fa-arrow-left" aria-hidden="true"></i>Previous</a
             >
-            <a href="../image/" class="cursor colored-text bg"
+            <a href="../grid/" class="cursor colored-text bg"
               >Next<i class="p-h-2 fa fa-arrow-right" aria-hidden="true"></i
             ></a>
           </div>

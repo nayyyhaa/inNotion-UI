@@ -19,10 +19,14 @@
 - [Badge](https://innotion-ui.netlify.app/docs/badge/)
 - [Button](https://innotion-ui.netlify.app/docs/button/)
 - [Card](https://innotion-ui.netlify.app/docs/card/)
+- [Grid](https://innotion-ui.netlify.app/docs/grid/)
 - [Image](https://innotion-ui.netlify.app/docs/image/)
 - [Input](https://innotion-ui.netlify.app/docs/input/)
+- [List](https://innotion-ui.netlify.app/docs/list/)
+- [Modal](https://innotion-ui.netlify.app/docs/modal/)
 - [Navigation](https://innotion-ui.netlify.app/docs/navigation/)
 - [Rating](https://innotion-ui.netlify.app/docs/rating/)
+- [Toast](https://innotion-ui.netlify.app/docs/toast/)
 - [Typography](https://innotion-ui.netlify.app/docs/typography/)
 
 ## Technologies used

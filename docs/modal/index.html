@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- -------- Highlight JS -----------  -->
+    <link
+      rel="stylesheet"
+      href="	https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/tomorrow-night.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js" defer></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <link rel="stylesheet" href="https://innotion-ui-library.netlify.app/in-notion.css" />
+    <link rel="stylesheet" href="../../in-notion.css" />
+    <link rel="shortcut icon" href="../../assets/favicon.ico" type="image/x-icon" />
+    <script src="../../scripts/app.js" defer></script>
+    <script src="../../scripts/dark-mode.js" defer></script>
+    <script src="../../scripts/modal.js" defer></script>
+    <title>inNotion UI | Docs</title>
+  </head>
+  <body class="content">
+    <div class="grid-sidebar-layout">
+      <header class="header header-grid fixed-header">
+        <nav class="navbar row-flex">
+          <div class="docs-hamburger icon-toggle icon-btn rd-bdr grid-ctr colored-text m-l-3">
+            <i class="fa fa-book" aria-hidden="true"></i>
+          </div>
+          <a class="m-l-3" href="/"
+            ><h3 id="logo">in.notion <span class="text-stroke text-shd">UI</span></h3></a
+          >
+          <ul class="nav-items row-flex no-bullet">
+            <li class="btn nav-link-btn h3 m-v-2 m-h-3"><a href="/">Installation</a></li>
+            <li class="btn nav-link-btn h3 m-v-2 m-h-3"><a href="index.html">Docs</a></li>
+          </ul>
+          <div class="dark-mode icon-toggle icon-btn rd-bdr grid-ctr colored-text m-r-3"></div>
+          <div class="hamburger icon-toggle icon-btn rd-bdr grid-ctr colored-text m-r-3">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+          </div>
+        </nav>
+      </header>
+      <div class="side-bar box-shd">
+        <h2 class="title row-flex p-v-4">
+          Components
+          <p class="icon-toggle icon-btn sidebar-close rd-bdr grid-ctr colored-text">
+            <i class="fa fa-close" aria-hidden="true"></i>
+          </p>
+        </h2>
+        <ul class="sidebar-items no-bullet col-flex">
+          <a class="sidebar-item grid-ctr p-2 h3" href="../alert/"><li>Alert</li></a>
+          <a class="sidebar-item grid-ctr p-2 h3" href="../avatar/"><li>Avatar</li></a>
+          <a class="sidebar-item grid-ctr p-2 h3" href="../badge/"><li>Badge</li></a>
+          <a class="sidebar-item grid-ctr p-2 h3" href="../button/"><li>Buttons</li></a>
+          <a class="sidebar-item grid-ctr p-2 h3" href="../card/"><li>Card</li></a>
+          <a class="sidebar-item grid-ctr p-2 h3" href="../grid/"><li>Grid</li></a>
+          <a class="sidebar-item grid-ctr p-2 h3" href="../image/"><li>Image</li></a>
+          <a class="sidebar-item grid-ctr p-2 h3" href="../input/"><li>Input</li></a>
+          <a class="sidebar-item grid-ctr p-2 h3" href="../list/"><li>List</li></a>
+          <a class="sidebar-item active-sidebar grid-ctr p-2 h3" href="../modal/"><li>Modal</li></a>
+          <a class="sidebar-item grid-ctr p-2 h3" href="../navigation/"><li>Navigation</li></a>
+          <a class="sidebar-item grid-ctr p-2 h3" href="../rating/"><li>Rating</li></a>
+          <a class="sidebar-item grid-ctr p-2 h3" href="../toast/"><li>Toast</li></a>
+          <a class="sidebar-item grid-ctr p-2 h3" href="../rating/"><li>Rating</li></a>
+          <a class="sidebar-item grid-ctr p-2 h3" href="../typography/"><li>Typography</li></a>
+        </ul>
+      </div>
+      <div class="modal-wrapper modal-wrapper-example grid-ctr">
+        <div class="modal grid-ctr">
+          <button class="card-icon-btn icon-btn rd-bdr close-btn modal-close-btn example-modal-close-btn">
+            <i class="fa fa-times" aria-hidden="true"></i>
+          </button>
+          <img class="h-15rm w-15rm" src="../../assets/shopping-cart.png" alt="shopping-cart" />
+          <p>Thanks for shopping!</p>
+          <p class="sub-heading">Your order will take 1-2 hours to get confirmed.</p>
+          <button class="btn primary-btn example-modal-close-btn m-1 w-50p">Back to site</button>
+        </div>
+      </div>
+      <main class="m-auto docs-content m-b-5">
+        <h1 class="title colored-text h1 m-v-4"><span class="circle"></span>Modal</h1>
+        <h3>
+          The modal component provides a basis for creating dialogs, popovers, lightboxes to provide information to
+          user.
+        </h3>
+        <section>
+          <!-- Basic Modal -->
+          <h2 class="title h2 m-v-2 colored-bg">Basic Modal</h2>
+          <p>
+            Modal component can be created by using <code>modal</code> class inside <code>&lt;div&gt;</code> tag. (e.g.
+            <code>class="modal"</code>). For wrapper, use <code>modal-wrapper</code> class & for close button, add
+            <code>modal-close-btn</code> class.
+          </p>
+          <div class="container colored-container m-v-4 col-flex">
+            <div class="demo w-95p row-flex">
+              <!-- Basic Modal -->
+              <div class="modal grid-ctr">
+                <button class="modal-close-btn icon-btn rd-bdr close-btn">
+                  <i class="fa fa-times" aria-hidden="true"></i>
+                </button>
+                <img class="h-15rm w-15rm" src="../../assets/shopping-cart.png" alt="shopping-cart" />
+                <p>Thanks for shopping!</p>
+                <p class="sub-heading">Your order will take 1-2 hours to get confirmed.</p>
+                <button class="btn primary-btn m-1 w-50p">Back to site</button>
+              </div>
+            </div>
+          </div>
+          <h3 class="title">Code Snippets</h3>
+          <div class="container code-container colored-container m-v-4 col-flex">
+            <pre class="code-snipet m-v-1 p-1">
+              <code class="html fs-s">
+                <!-- Basic Modal -->
+                
+              <div class="modal-wrapper">
+                <div class="modal grid-ctr">
+                  <button class="card-icon-btn icon-btn rd-bdr close-btn modal-close-btn">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                  </button>
+                  <img class="h-15rm w-15rm" src="assets/shopping-cart.png" alt="shopping-cart" />
+                  <p>Thanks for shopping!</p>
+                  <p class="sub-heading">Your order will take 1-2 hours to get confirmed.</p>
+                  <button class="btn primary-btn m-1 w-50p">Back to site</button>
+                </div>
+                </div>
+              </code>
+            </pre>
+          </div>
+
+          <!-- Live Modal Example -->
+          <h2 class="title h2 m-v-2 colored-bg">Live Modal Example</h2>
+          <p>Click on button to see the Modal.</p>
+          <div class="container colored-container m-v-4 col-flex">
+            <div class="demo w-95p row-flex">
+              <button class="btn primary-btn m-1 open-modal-btn">Open Modal</button>
+            </div>
+          </div>
+          <h3 class="title">Code Snippets</h3>
+          <div class="container colored-container m-v-4 col-flex">
+            <p class="m-v-2"><code>HTML</code> snippet</p>
+            <pre class="code-container code-snipet m-v-1 p-1">
+              <code class="html fs-s">
+                <div class="modal-wrapper modal-wrapper-example grid-ctr">
+                <div class="modal grid-ctr">
+                  <button class="card-icon-btn icon-btn rd-bdr close-btn modal-close-btn example-modal-close-btn">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                  </button>
+                  <img class="h-15rm w-15rm" src="shopping-cart.png" alt="shopping-cart" />
+                  <p>Thanks for shopping!</p>
+                  <p class="sub-heading">Your order will take 1-2 hours to get confirmed.</p>
+                  <button class="btn primary-btn example-modal-close-btn m-1 w-50p">Back to site</button>
+                </div>
+              </div>
+              </code>
+            </pre>
+
+            <p class="m-v-2"><code>JS</code> snippet</p>
+            <pre class="code-container code-snipet m-v-1 p-1">
+              <code class="javascript fs-s">
+                /*-----------MODAL DEMO---------------------*/
+
+                const openModalBtn = document.querySelector(".open-modal-btn");
+                const closeModalBtn = document.querySelectorAll(".example-modal-close-btn");
+                const modalWrapper = document.querySelector(".modal-wrapper-example");
+
+                const openModal = () => {
+                  modalWrapper.classList.add("show-modal");
+                  document.body.style.overflow = "hidden";
+                };
+
+                const closeModal = () => {
+                  modalWrapper.classList.remove("show-modal");
+                  document.body.style.overflow = "visible";
+                };
+
+                openModalBtn.addEventListener("click", openModal);
+                closeModalBtn.forEach((closeBtn) => closeBtn.addEventListener("click", closeModal));
+              </code>
+            </pre>
+          </div>
+
+          <div class="row-flex m-t-3 m-b-5">
+            <a href="../list/" class="cursor colored-text bg"
+              ><i class="p-h-2 fa fa-arrow-left" aria-hidden="true"></i>Previous</a
+            >
+            <a href="../navigation/" class="cursor colored-text bg"
+              >Next<i class="p-h-2 fa fa-arrow-right" aria-hidden="true"></i
+            ></a>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

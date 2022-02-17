@@ -13,14 +13,13 @@
   background: linear-gradient(transparent, white);
   bottom: 0rem;
   height: 10rem;
-  width:100%;
+  width: 100%;
   z-index: 2;
 }
 
 .introduction {
   margin: 5rem 0;
 }
-
 
 @media screen and (max-width: 500px) {
   .site-header {
@@ -30,3 +29,8 @@
   }
 }
 
+@media screen and (max-width: 370px) {
+  .navbar {
+    justify-content: space-between;
+  }
+}

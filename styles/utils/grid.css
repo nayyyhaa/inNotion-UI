@@ -6,14 +6,14 @@
     "sidebar content .";
 }
 
-.header {
+.header-grid {
   grid-area: header;
-  height: 8rem;
 }
 
 .side-bar {
   grid-area: sidebar;
   min-height: 100vh;
+  top: 10vh;
   z-index: 10;
 }
 
