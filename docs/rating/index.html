@@ -22,24 +22,24 @@
   </head>
   <body class="content">
     <div class="grid-sidebar-layout">
-      <div class="header fixed-header">
+      <header class="header header-grid fixed-header">
         <nav class="navbar row-flex">
-          <div class="docs-hamburger icon-toggle icon-btn rd-bdr grid-ctr colored-text">
+          <div class="docs-hamburger icon-toggle icon-btn rd-bdr grid-ctr colored-text m-l-3">
             <i class="fa fa-book" aria-hidden="true"></i>
           </div>
-          <a href="/"
+          <a class="m-l-3" href="/"
             ><h3 id="logo">in.notion <span class="text-stroke text-shd">UI</span></h3></a
           >
           <ul class="nav-items row-flex no-bullet">
             <li class="btn nav-link-btn h3 m-v-2 m-h-3"><a href="/">Installation</a></li>
             <li class="btn nav-link-btn h3 m-v-2 m-h-3"><a href="index.html">Docs</a></li>
           </ul>
-          <div class="dark-mode icon-toggle icon-btn rd-bdr grid-ctr colored-text"></div>
-          <div class="hamburger icon-toggle icon-btn rd-bdr grid-ctr colored-text">
+          <div class="dark-mode icon-toggle icon-btn rd-bdr grid-ctr colored-text m-r-3"></div>
+          <div class="hamburger icon-toggle icon-btn rd-bdr grid-ctr colored-text m-r-3">
             <i class="fa fa-bars" aria-hidden="true"></i>
           </div>
         </nav>
-      </div>
+      </header>
       <div class="side-bar box-shd">
         <h2 class="title row-flex p-v-4">
           Components
@@ -53,9 +53,14 @@
           <a class="sidebar-item grid-ctr p-2 h3" href="../badge/"><li>Badge</li></a>
           <a class="sidebar-item grid-ctr p-2 h3" href="../button/"><li>Buttons</li></a>
           <a class="sidebar-item grid-ctr p-2 h3" href="../card/"><li>Card</li></a>
+          <a class="sidebar-item grid-ctr p-2 h3" href="../grid/"><li>Grid</li></a>
           <a class="sidebar-item grid-ctr p-2 h3" href="../image/"><li>Image</li></a>
           <a class="sidebar-item grid-ctr p-2 h3" href="../input/"><li>Input</li></a>
+          <a class="sidebar-item grid-ctr p-2 h3" href="../list/"><li>List</li></a>
+          <a class="sidebar-item grid-ctr p-2 h3" href="../modal/"><li>Modal</li></a>
           <a class="sidebar-item grid-ctr p-2 h3" href="../navigation/"><li>Navigation</li></a>
+          <a class="sidebar-item grid-ctr p-2 h3" href="../rating/"><li>Rating</li></a>
+          <a class="sidebar-item grid-ctr p-2 h3" href="../toast/"><li>Toast</li></a>
           <a class="sidebar-item active-sidebar grid-ctr p-2 h3" href="../rating/"><li>Rating</li></a>
           <a class="sidebar-item grid-ctr p-2 h3" href="../typography/"><li>Typography</li></a>
         </ul>
@@ -79,23 +84,23 @@
               <!-- Star Ratings -->
               <span class="rating">
                 <label>
-                  <input class="rating-input rating-star" type="checkbox" checked />
+                  <input class="rating-input rating-star" type="checkbox" checked disabled />
                   <i class="fa fa-star rating-icon" aria-hidden="true"></i>
                 </label>
                 <label>
-                  <input class="rating-input rating-star" type="checkbox" checked />
+                  <input class="rating-input rating-star" type="checkbox" checked disabled />
                   <i class="fa fa-star rating-icon" aria-hidden="true"></i>
                 </label>
                 <label>
-                  <input class="rating-input rating-star" type="checkbox" checked />
+                  <input class="rating-input rating-star" type="checkbox" checked disabled />
                   <i class="fa fa-star rating-icon" aria-hidden="true"></i>
                 </label>
                 <label>
-                  <input class="rating-input rating-star" type="checkbox" checked />
+                  <input class="rating-input rating-star" type="checkbox" checked disabled />
                   <i class="fa fa-star rating-icon" aria-hidden="true"></i>
                 </label>
                 <label>
-                  <input class="rating-input rating-star" type="checkbox" />
+                  <input class="rating-input rating-star" type="checkbox" disabled />
                   <i class="fa fa-star rating-icon" aria-hidden="true"></i>
                 </label>
               </span>
@@ -103,23 +108,23 @@
               <!-- Heart Ratings -->
               <span class="rating">
                 <label>
-                  <input class="rating-input rating-heart" type="checkbox" checked />
+                  <input class="rating-input rating-heart" type="checkbox" checked disabled />
                   <i class="fa fa-heart rating-icon" aria-hidden="true"></i>
                 </label>
                 <label>
-                  <input class="rating-input rating-heart" type="checkbox" checked />
+                  <input class="rating-input rating-heart" type="checkbox" checked disabled />
                   <i class="fa fa-heart rating-icon" aria-hidden="true"></i>
                 </label>
                 <label>
-                  <input class="rating-input rating-heart" type="checkbox" checked />
+                  <input class="rating-input rating-heart" type="checkbox" checked disabled />
                   <i class="fa fa-heart rating-icon" aria-hidden="true"></i>
                 </label>
                 <label>
-                  <input class="rating-input rating-heart" type="checkbox" checked />
+                  <input class="rating-input rating-heart" type="checkbox" checked disabled />
                   <i class="fa fa-heart rating-icon" aria-hidden="true"></i>
                 </label>
                 <label>
-                  <input class="rating-input rating-heart" type="checkbox" />
+                  <input class="rating-input rating-heart" type="checkbox" disabled />
                   <i class="fa fa-heart rating-icon" aria-hidden="true"></i>
                 </label>
               </span>
@@ -127,28 +132,28 @@
           </div>
           <h3 class="title">Code Snippets</h3>
           <div class="container code-container colored-container m-v-4 col-flex">
-            <pre class="code-snipet m-v-1 p-1">
+            <pre class="code-snippet m-v-1 p-1">
               <code class="html fs-s">
                 <!-- Star Ratings -->
                 <span class="rating">
                   <label>
-                    <input class="rating-input rating-star" type="checkbox" checked />
+                    <input class="rating-input rating-star" type="checkbox" checked disabled/>
                     <i class="fa fa-star rating-icon" aria-hidden="true"></i>
                   </label>
                   <label>
-                    <input class="rating-input rating-star" type="checkbox" checked />
+                    <input class="rating-input rating-star" type="checkbox" checked disabled/>
                     <i class="fa fa-star rating-icon" aria-hidden="true"></i>
                   </label>
                   <label>
-                    <input class="rating-input rating-star" type="checkbox" checked />
+                    <input class="rating-input rating-star" type="checkbox" checked disabled/>
                     <i class="fa fa-star rating-icon" aria-hidden="true"></i>
                   </label>
                   <label>
-                    <input class="rating-input rating-star" type="checkbox" checked />
+                    <input class="rating-input rating-star" type="checkbox" checked disabled/>
                     <i class="fa fa-star rating-icon" aria-hidden="true"></i>
                   </label>
                   <label>
-                    <input class="rating-input rating-star" type="checkbox" />
+                    <input class="rating-input rating-star" type="checkbox" disabled/>
                     <i class="fa fa-star rating-icon" aria-hidden="true"></i>
                   </label>
                 </span>
@@ -156,23 +161,23 @@
                 <!-- Heart Ratings -->
                 <span class="rating">
                   <label>
-                    <input class="rating-input rating-heart" type="checkbox" checked />
+                    <input class="rating-input rating-heart" type="checkbox" checked disabled/>
                     <i class="fa fa-heart rating-icon" aria-hidden="true"></i>
                   </label>
                   <label>
-                    <input class="rating-input rating-heart" type="checkbox" checked />
+                    <input class="rating-input rating-heart" type="checkbox" checked disabled/>
                     <i class="fa fa-heart rating-icon" aria-hidden="true"></i>
                   </label>
                   <label>
-                    <input class="rating-input rating-heart" type="checkbox" checked />
+                    <input class="rating-input rating-heart" type="checkbox" checked disabled/>
                     <i class="fa fa-heart rating-icon" aria-hidden="true"></i>
                   </label>
                   <label>
-                    <input class="rating-input rating-heart" type="checkbox" checked />
+                    <input class="rating-input rating-heart" type="checkbox" checked disabled/>
                     <i class="fa fa-heart rating-icon" aria-hidden="true"></i>
                   </label>
                   <label>
-                    <input class="rating-input rating-heart" type="checkbox" />
+                    <input class="rating-input rating-heart" type="checkbox" disabled/>
                     <i class="fa fa-heart rating-icon" aria-hidden="true"></i>
                   </label>
                 </span>
@@ -185,7 +190,7 @@
           <p>Badge rating is created by using <code>rating-badge</code> class.</p>
           <div class="container colored-container m-v-4 col-flex">
             <div class="demo w-95p row-flex">
-              <div class="rating-badge">
+              <div class="rating-badge box-shd">
                 <span class="rating-number">5</span>
                 <label>
                   <i class="fa fa-star rating-icon" aria-hidden="true"></i>
@@ -197,7 +202,7 @@
           </div>
           <h3 class="title">Code Snippets</h3>
           <div class="container code-container colored-container m-v-4 col-flex">
-            <pre class="code-snipet m-v-1 p-1">
+            <pre class="code-snippet m-v-1 p-1">
               <code class="html fs-s">
               <!-- Badge Rating -->
                 <div class="rating-badge">
@@ -216,7 +221,7 @@
           <h2 class="title h2 m-v-2 colored-bg">Live Rating Example</h2>
           <p>Click on star to see the final rating.</p>
           <div class="container colored-container m-v-4 col-flex">
-            <div class="demo w-95p row-flex">
+            <div class="demo w-95p col-flex">
               <span class="rating rating-example">
                 <label>
                   <input class="rating-input rating-star" type="checkbox" />
@@ -238,14 +243,14 @@
                   <input class="rating-input rating-star" type="checkbox" />
                   <i class="fa fa-star rating-icon" aria-hidden="true"></i>
                 </label>
-                <p class="rating-output"></p>
               </span>
+              <p class="rating-output"></p>
             </div>
           </div>
           <h3 class="title">Code Snippets</h3>
           <div class="container colored-container m-v-4 col-flex">
             <p class="m-v-2"><code>HTML</code> snippet</p>
-            <pre class="code-container code-snipet m-v-1 p-1">
+            <pre class="code-container code-snippet m-v-1 p-1">
               <code class="html fs-s">
                 <span class="rating rating-example">
                   <label>
@@ -274,7 +279,7 @@
             </pre>
 
             <p class="m-v-2"><code>JS</code> snippet</p>
-            <pre class="code-container code-snipet m-v-1 p-1">
+            <pre class="code-container code-snippet m-v-1 p-1">
               <code class="javascript fs-s">
                 /*-----------RATINGS DEMO---------------------*/
 
@@ -301,7 +306,7 @@
             <a href="../navigation/" class="cursor colored-text bg"
               ><i class="p-h-2 fa fa-arrow-left" aria-hidden="true"></i>Previous</a
             >
-            <a href="../typography/" class="cursor colored-text bg"
+            <a href="../toast/" class="cursor colored-text bg"
               >Next<i class="p-h-2 fa fa-arrow-right" aria-hidden="true"></i
             ></a>
           </div>

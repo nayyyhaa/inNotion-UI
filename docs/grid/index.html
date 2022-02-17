@@ -52,78 +52,106 @@
           <a class="sidebar-item grid-ctr p-2 h3" href="../badge/"><li>Badge</li></a>
           <a class="sidebar-item grid-ctr p-2 h3" href="../button/"><li>Buttons</li></a>
           <a class="sidebar-item grid-ctr p-2 h3" href="../card/"><li>Card</li></a>
-          <a class="sidebar-item grid-ctr p-2 h3" href="../grid/"><li>Grid</li></a>
-          <a class="sidebar-item active-sidebar grid-ctr p-2 h3" href="../image/"><li>Image</li></a>
+          <a class="sidebar-item active-sidebar grid-ctr p-2 h3" href="../grid/"><li>Grid</li></a>
+          <a class="sidebar-item grid-ctr p-2 h3" href="../image/"><li>Image</li></a>
           <a class="sidebar-item grid-ctr p-2 h3" href="../input/"><li>Input</li></a>
           <a class="sidebar-item grid-ctr p-2 h3" href="../list/"><li>List</li></a>
           <a class="sidebar-item grid-ctr p-2 h3" href="../modal/"><li>Modal</li></a>
           <a class="sidebar-item grid-ctr p-2 h3" href="../navigation/"><li>Navigation</li></a>
           <a class="sidebar-item grid-ctr p-2 h3" href="../rating/"><li>Rating</li></a>
           <a class="sidebar-item grid-ctr p-2 h3" href="../toast/"><li>Toast</li></a>
+          <a class="sidebar-item grid-ctr p-2 h3" href="../rating/"><li>Rating</li></a>
           <a class="sidebar-item grid-ctr p-2 h3" href="../typography/"><li>Typography</li></a>
         </ul>
       </div>
       <main class="m-auto docs-content m-b-5">
-        <h1 class="title colored-text h1 m-v-4"><span class="circle"></span>Images</h1>
-        <h3>Images can be responsive to fit the parent's width, and also can be customised to be round shaped.</h3>
+        <h1 class="title colored-text h1 m-v-4"><span class="circle"></span>Grid Simplified</h1>
+        <h3>
+          The grid creates visual consistency between layouts while allowing flexibility across a wide variety of
+          designs.
+        </h3>
         <section>
-          <!-- Round Images -->
-          <h2 class="title h2 m-v-2 colored-bg">Round & Curved Border Images</h2>
-          <p>
-            Images can be made round by using <code>img-round</code> class inside <code>&lt;img&gt;</code> tag. For
-            curved border images, add <code>img-border-curve</code> class. (e.g. <code>class="img-border-curve"</code>)
-          </p>
-          <p>Don't forget to add Responsive Image class names for img element.</p>
+          <!-- 2 Column grid Layout -->
+          <h2 class="title h2 m-v-2 colored-bg">2 Column grid Layout</h2>
           <div class="container colored-container m-v-4 col-flex">
-            <div class="demo w-95p row-flex">
-              <!-- Round images -->
-              <img class="img-round h-10rm w-10rm m-1" src="../../assets/ocean.png" alt="ocean" />
-              <img class="img-round h-15rm w-15rm m-1" src="../../assets/night.png" alt="night" />
-              <!-- Curved bordered images -->
-              <img class="img-border-curve h-10rm w-10rm m-1" src="../../assets/ocean.png" alt="ocean" />
-              <img class="img-border-curve h-15rm w-15rm m-1" src="../../assets/night.png" alt="night" />
+            <div class="demo full-wd">
+              <!-- 2 Column grid Layout -->
+              <div class="grid-2-col">
+                <div class="grid-item green-content h-20rm">Grid Item One</div>
+                <div class="grid-item blue-content h-20rm">Grid Item Two</div>
+              </div>
             </div>
           </div>
           <h3 class="title">Code Snippets</h3>
           <div class="container code-container colored-container m-v-4 col-flex">
             <pre class="code-snippet m-v-1 p-1">
               <code class="html fs-s">
-               <!-- Round images -->
-                <img class="img-round h-10rm w-10rm m-1" src="ocean.png" alt="ocean" />
-                <img class="img-round h-15rm w-15rm m-1" src="night.png" alt="night" />
-                <!-- Curved bordered images -->
-                <img class="img-border-curve h-10rm w-10rm m-1" src="ocean.png" alt="ocean" />
-                <img class="img-border-curve h-15rm w-15rm m-1" src="night.png" alt="night" />
+              <!-- 2 Column grid Layout -->
+              <div class="grid-2-col">
+                <div class="grid-item">Grid Item One</div>
+                <div class="grid-item">Grid Item Two</div>
+              </div>
               </code>
             </pre>
           </div>
-
-          <!-- Responsive Image -->
-          <h2 class="title h2 m-v-2 colored-bg">Responsive Image</h2>
-          <p>
-            Images can be made responsive by using <code>responsive-img</code> class inside
-            <code>&lt;img&gt;</code> tag.
-          </p>
+          <!-- 3 Column grid Layout -->
+          <h2 class="title h2 m-v-2 colored-bg">3 Column grid Layout</h2>
           <div class="container colored-container m-v-4 col-flex">
-            <div class="demo w-95p row-flex">
-              <img class="responsive-img" src="../../assets/scene.jpg" alt="scene" />
+            <div class="demo full-wd">
+              <!-- 3 Column grid Layout -->
+              <div class="grid-3-col">
+                <div class="grid-item green-content h-20rm">Grid Item One</div>
+                <div class="grid-item blue-content h-20rm">Grid Item Two</div>
+                <div class="grid-item yellow-content h-20rm">Grid Item Three</div>
+              </div>
             </div>
           </div>
           <h3 class="title">Code Snippets</h3>
           <div class="container code-container colored-container m-v-4 col-flex">
             <pre class="code-snippet m-v-1 p-1">
               <code class="html fs-s">
-              <!-- Responsive Image -->
-                <img class="responsive-img" src="scene.jpg" alt="scene" />
+              <!-- 3 Column grid Layout -->
+              <div class="grid-3-col">
+                <div class="grid-item">Grid Item One</div>
+                <div class="grid-item">Grid Item Two</div>
+                <div class="grid-item">Grid Item Three</div>
+              </div>
+              </code>
+            </pre>
+          </div>
+          <!-- 4 Column grid Layout -->
+          <h2 class="title h2 m-v-2 colored-bg">4 Column grid Layout</h2>
+          <div class="container colored-container m-v-4 col-flex">
+            <div class="demo full-wd">
+              <!-- 4 Column grid Layout -->
+              <div class="grid-4-col">
+                <div class="grid-item green-content h-20rm">Grid Item One</div>
+                <div class="grid-item blue-content h-20rm">Grid Item Two</div>
+                <div class="grid-item yellow-content h-20rm">Grid Item Three</div>
+                <div class="grid-item red-content h-20rm">Grid Item Four</div>
+              </div>
+            </div>
+          </div>
+          <h3 class="title">Code Snippets</h3>
+          <div class="container code-container colored-container m-v-4 col-flex">
+            <pre class="code-snippet m-v-1 p-1">
+              <code class="html fs-s">
+              <!-- 4 Column grid Layout -->
+              <div class="grid-4-col">
+                <div class="grid-item">Grid Item One</div>
+                <div class="grid-item">Grid Item Two</div>
+                <div class="grid-item">Grid Item Three</div>
+                <div class="grid-item">Grid Item Four</div>
+              </div>
               </code>
             </pre>
           </div>
 
           <div class="row-flex m-t-3 m-b-5">
-            <a href="../grid/" class="cursor colored-text bg"
+            <a href="../card/" class="cursor colored-text bg"
               ><i class="p-h-2 fa fa-arrow-left" aria-hidden="true"></i>Previous</a
             >
-            <a href="../input/" class="cursor colored-text bg"
+            <a href="../image/" class="cursor colored-text bg"
               >Next<i class="p-h-2 fa fa-arrow-right" aria-hidden="true"></i
             ></a>
           </div>

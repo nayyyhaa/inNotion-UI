@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- -------- Highlight JS -----------  -->
+    <link
+      rel="stylesheet"
+      href="	https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/tomorrow-night.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js" defer></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <link rel="stylesheet" href="https://innotion-ui-library.netlify.app/in-notion.css" />
+    <link rel="stylesheet" href="../../in-notion.css" />
+    <link rel="shortcut icon" href="../../assets/favicon.ico" type="image/x-icon" />
+    <script src="../../scripts/app.js" defer></script>
+    <script src="../../scripts/dark-mode.js" defer></script>
+    <title>inNotion UI | Docs</title>
+  </head>
+  <body class="content">
+    <div class="grid-sidebar-layout">
+      <header class="header header-grid fixed-header">
+        <nav class="navbar row-flex">
+          <div class="docs-hamburger icon-toggle icon-btn rd-bdr grid-ctr colored-text m-l-3">
+            <i class="fa fa-book" aria-hidden="true"></i>
+          </div>
+          <a class="m-l-3" href="/"
+            ><h3 id="logo">in.notion <span class="text-stroke text-shd">UI</span></h3></a
+          >
+          <ul class="nav-items row-flex no-bullet">
+            <li class="btn nav-link-btn h3 m-v-2 m-h-3"><a href="/">Installation</a></li>
+            <li class="btn nav-link-btn h3 m-v-2 m-h-3"><a href="index.html">Docs</a></li>
+          </ul>
+          <div class="dark-mode icon-toggle icon-btn rd-bdr grid-ctr colored-text m-r-3"></div>
+          <div class="hamburger icon-toggle icon-btn rd-bdr grid-ctr colored-text m-r-3">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+          </div>
+        </nav>
+      </header>
+      <div class="side-bar box-shd">
+        <h2 class="title row-flex p-v-4">
+          Components
+          <p class="icon-toggle icon-btn sidebar-close rd-bdr grid-ctr colored-text">
+            <i class="fa fa-close" aria-hidden="true"></i>
+          </p>
+        </h2>
+        <ul class="sidebar-items no-bullet col-flex">
+          <a class="sidebar-item grid-ctr p-2 h3" href="../alert/"><li>Alert</li></a>
+          <a class="sidebar-item grid-ctr p-2 h3" href="../avatar/"><li>Avatar</li></a>
+          <a class="sidebar-item grid-ctr p-2 h3" href="../badge/"><li>Badge</li></a>
+          <a class="sidebar-item grid-ctr p-2 h3" href="../button/"><li>Buttons</li></a>
+          <a class="sidebar-item grid-ctr p-2 h3" href="../card/"><li>Card</li></a>
+          <a class="sidebar-item grid-ctr p-2 h3" href="../grid/"><li>Grid</li></a>
+          <a class="sidebar-item grid-ctr p-2 h3" href="../image/"><li>Image</li></a>
+          <a class="sidebar-item grid-ctr p-2 h3" href="../input/"><li>Input</li></a>
+          <a class="sidebar-item active-sidebar grid-ctr p-2 h3" href="../list/"><li>List</li></a>
+          <a class="sidebar-item grid-ctr p-2 h3" href="../modal/"><li>Modal</li></a>
+          <a class="sidebar-item grid-ctr p-2 h3" href="../navigation/"><li>Navigation</li></a>
+          <a class="sidebar-item grid-ctr p-2 h3" href="../rating/"><li>Rating</li></a>
+          <a class="sidebar-item grid-ctr p-2 h3" href="../toast/"><li>Toast</li></a>
+          <a class="sidebar-item grid-ctr p-2 h3" href="../rating/"><li>Rating</li></a>
+          <a class="sidebar-item grid-ctr p-2 h3" href="../typography/"><li>Typography</li></a>
+        </ul>
+      </div>
+      <main class="m-auto docs-content m-b-5">
+        <h1 class="title colored-text h1 m-v-4"><span class="circle"></span>List</h1>
+        <h3>
+          Lists are a continuous group of text, or images containing information. They can compose icons, texts or both.
+          Basic list are of two types, unordered & ordered lists.
+        </h3>
+        <section>
+          <!-- Unordered list -->
+          <h2 class="title h2 m-v-2 colored-bg">Unordered list</h2>
+          <p>
+            Unordered lists comes in various styles. Default unordered lists comes with filled circle. For hollow
+            circle, add <code>list-style-circle</code> class & for square list add <code>list-style-square</code> class
+            inside <code>&lt;ul&gt;</code> tag. (e.g. <code>class="list-style-circle"</code>)
+          </p>
+          <div class="container colored-container m-v-4 col-flex">
+            <div class="demo w-95p row-flex">
+              <!-- Unordered List -->
+              <ul class="p-2">
+                <li>list item 1</li>
+                <li>list item 2</li>
+                <li>list item 3</li>
+              </ul>
+              <ul class="list-style-circle p-2">
+                <li>list item 1</li>
+                <li>list item 2</li>
+                <li>list item 3</li>
+              </ul>
+              <ul class="list-style-square p-2">
+                <li>list item 1</li>
+                <li>list item 2</li>
+                <li>list item 3</li>
+              </ul>
+            </div>
+          </div>
+          <h3 class="title">Code Snippets</h3>
+          <div class="container code-container colored-container m-v-4 col-flex">
+            <pre class="code-snippet m-v-1 p-1">
+              <code class="html fs-s">
+                <!-- Unordered List -->
+              <ul>
+                <li>list item 1</li>
+                <li>list item 2</li>
+                <li>list item 3</li>
+              </ul>
+              <ul class="list-style-circle">
+                <li>list item 1</li>
+                <li>list item 2</li>
+                <li>list item 3</li>
+              </ul>
+              <ul class="list-style-square">
+                <li>list item 1</li>
+                <li>list item 2</li>
+                <li>list item 3</li>
+              </ul>
+              </code>
+            </pre>
+          </div>
+          <!-- Ordered list -->
+          <h2 class="title h2 m-v-2 colored-bg">Ordered list</h2>
+          <p>
+            Ordered lists comes in various styles. Default unordered lists comes with numbered list. For alpha list, add
+            <code>list-style-alpha</code> class , for roman numeric list add <code>list-style-roman</code> class inside
+            <code>&lt;ol&gt;</code> tag. (e.g. <code>class="list-style-roman"</code>).
+          </p>
+          <p>Reversed list can be created by including <code>reversed</code> attribute.</p>
+          <div class="container colored-container m-v-4 col-flex">
+            <div class="demo w-95p row-flex">
+              <!-- Ordered List -->
+              <ol class="p-2">
+                <li>list item 1</li>
+                <li>list item 2</li>
+                <li>list item 3</li>
+              </ol>
+              <ol class="list-style-alpha p-2">
+                <li>list item 1</li>
+                <li>list item 2</li>
+                <li>list item 3</li>
+              </ol>
+              <ol class="list-style-roman p-2">
+                <li>list item 1</li>
+                <li>list item 2</li>
+                <li>list item 3</li>
+              </ol>
+              <ol class="list-style-roman p-2" reversed>
+                <li>Reversed list item 1</li>
+                <li>Reversed list item 2</li>
+                <li>Reversed list item 3</li>
+              </ol>
+            </div>
+          </div>
+          <h3 class="title">Code Snippets</h3>
+          <div class="container code-container colored-container m-v-4 col-flex">
+            <pre class="code-snippet m-v-1 p-1">
+              <code class="html fs-s">
+                <!-- Ordered List -->
+              <ol>
+                <li>list item 1</li>
+                <li>list item 2</li>
+                <li>list item 3</li>
+              </ol>
+              <ol class="list-style-alpha">
+                <li>list item 1</li>
+                <li>list item 2</li>
+                <li>list item 3</li>
+              </ol>
+              <ol class="list-style-roman">
+                <li>list item 1</li>
+                <li>list item 2</li>
+                <li>list item 3</li>
+              </ol>
+              <ol class="list-style-roman" reversed>
+                <li>Reversed list item 1</li>
+                <li>Reversed list item 2</li>
+                <li>Reversed list item 3</li>
+              </ol>
+              </code>
+            </pre>
+          </div>
+
+          <!-- Simple list -->
+          <h2 class="title h2 m-v-2 colored-bg">Simple list</h2>
+          <p>
+            Simple lists can be created by including icon & informational text. Add <code>list-content</code> to
+            container tag. For list items add <code>list-content-item</code> class in <code>&lt;li&gt;</code> tag.
+          </p>
+          <p>
+            Bullets can be removed from list by including <code>no-bullet</code> class inside
+            <code>&lt;ul&gt;</code> tag.
+          </p>
+          <div class="container colored-container m-v-4 col-flex">
+            <div class="demo w-95p row-flex">
+              <div class="list-content sm-container w-20rm p-1 box-shd">
+                <ul class="no-bullet left-text full-wd">
+                  <li class="list-content-item p-1">
+                    <i class="fa fa-inbox m-r-1" aria-hidden="true"></i><span>Inbox</span>
+                  </li>
+                  <li class="list-content-item p-1"><i class="fa fa-star m-r-1"></i><span>Star</span></li>
+                  <li class="list-content-item p-1"><i class="fa fa-paper-plane m-r-1"></i><span>Send Mail</span></li>
+                  <li class="list-content-item p-1"><i class="fa fa-envelope m-r-1"></i><span>Drafts</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <h3 class="title">Code Snippets</h3>
+          <div class="container code-container colored-container m-v-4 col-flex">
+            <pre class="code-snippet m-v-1 p-1">
+              <code class="html fs-s">
+               <!-- Simple list -->
+             <div class="list-content sm-container w-20rm p-1 box-shd">
+                <ul class="no-bullet left-text full-wd">
+                  <li class="list-content-item p-1">
+                    <i class="fa fa-inbox m-r-1" aria-hidden="true"></i><span>Inbox</span>
+                  </li>
+                  <li class="list-content-item p-1"><i class="fa fa-star m-r-1"></i><span>Star</span></li>
+                  <li class="list-content-item p-1"><i class="fa fa-paper-plane m-r-1"></i><span>Send Mail</span></li>
+                  <li class="list-content-item p-1"><i class="fa fa-envelope m-r-1"></i><span>Drafts</span></li>
+                </ul>
+              </div>
+              </code>
+            </pre>
+          </div>
+
+          <!-- Stacked list -->
+          <h2 class="title h2 m-v-2 colored-bg">Stacked list</h2>
+          <p>
+            Stacked lists can be created by including avatar, image & informational text. Add
+            <code>list-stacked-content</code> to container tag. For list items add <code>list-content-item</code> class
+            in <code>&lt;li&gt;</code> tag.
+          </p>
+          <div class="container colored-container m-v-4 col-flex">
+            <div class="demo full-wd row-flex">
+              <div class="list-stacked-content sm-container p-1 w-25p box-shd">
+                <ul class="no-bullet left-text full-wd">
+                  <li class="list-content-item p-v-1 row-flex no-wrap">
+                    <div class="avatar sm-avatar">
+                      <img src="../../assets/user1.png" alt="user" />
+                    </div>
+                    <div>
+                      <p>Neha</p>
+                      <p class="sub-heading">nehagupta@gmail.com</p>
+                    </div>
+                  </li>
+                  <li class="line-decoration"></li>
+                  <li class="list-content-item p-v-1 row-flex no-wrap">
+                    <div class="avatar sm-avatar">
+                      <img src="../../assets/user2.png" alt="user" />
+                    </div>
+                    <div>
+                      <p>Neha</p>
+                      <p class="sub-heading">nehagupta@gmail.com</p>
+                    </div>
+                  </li>
+                  <li class="line-decoration"></li>
+                  <li class="list-content-item p-v-1 row-flex no-wrap">
+                    <div class="avatar sm-avatar">
+                      <img src="../../assets/user3.png" alt="user" />
+                    </div>
+                    <div>
+                      <p>Neha</p>
+                      <p class="sub-heading">nehagupta@gmail.com</p>
+                    </div>
+                  </li>
+                  <li class="line-decoration"></li>
+                  <li class="list-content-item p-v-1 row-flex no-wrap">
+                    <div class="avatar sm-avatar">
+                      <img src="../../assets/user4.png" alt="user" />
+                    </div>
+                    <div>
+                      <p>Neha</p>
+                      <p class="sub-heading">nehagupta@gmail.com</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <h3 class="title">Code Snippets</h3>
+          <div class="container code-container colored-container m-v-4 col-flex">
+            <pre class="code-snippet m-v-1 p-1">
+              <code class="html fs-s">
+               <!-- Stacked list -->
+             <div class="list-stacked-content sm-container p-1 w-25p box-shd">
+              <ul class="no-bullet left-text full-wd">
+                <li class="list-content-item p-v-1 row-flex no-wrap">
+                  <div class="avatar sm-avatar">
+                    <img src="assets/user1.jpg" alt="user" />
+                  </div>
+                  <div>
+                    <p>Neha</p>
+                    <p class="sub-heading">nehagupta@gmail.com</p>
+                  </div>
+                </li>
+                <li class="line-decoration"></li>
+                <li class="list-content-item p-v-1 row-flex no-wrap">
+                  <div class="avatar sm-avatar">
+                    <img src="assets/user1.jpg" alt="user" />
+                  </div>
+                  <div>
+                    <p>Neha</p>
+                    <p class="sub-heading">nehagupta@gmail.com</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+              </code>
+            </pre>
+          </div>
+
+          <div class="row-flex m-t-3 m-b-5">
+            <a href="../input/" class="cursor colored-text bg"
+              ><i class="p-h-2 fa fa-arrow-left" aria-hidden="true"></i>Previous</a
+            >
+            <a href="../modal/" class="cursor colored-text bg"
+              >Next<i class="p-h-2 fa fa-arrow-right" aria-hidden="true"></i
+            ></a>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
