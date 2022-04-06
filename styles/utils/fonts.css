@@ -1,6 +1,6 @@
 #logo {
   font-family: "Great Vibes", cursive;
-  color: white;
+  color: var(--COLOR-WHITE);
   font-size: 3rem;
 }
 
