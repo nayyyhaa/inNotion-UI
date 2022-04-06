@@ -17,6 +17,7 @@
     <link rel="shortcut icon" href="../../assets/favicon.ico" type="image/x-icon" />
     <script src="../../scripts/app.js" defer></script>
     <script src="../../scripts/dark-mode.js" defer></script>
+    <script src="../../scripts/slider.js"" defer></script>
     <title>inNotion UI | Docs</title>
   </head>
   <body class="content">
@@ -52,106 +53,91 @@
           <a class="sidebar-item grid-ctr p-2 h3" href="../badge/"><li>Badge</li></a>
           <a class="sidebar-item grid-ctr p-2 h3" href="../button/"><li>Buttons</li></a>
           <a class="sidebar-item grid-ctr p-2 h3" href="../card/"><li>Card</li></a>
-          <a class="sidebar-item active-sidebar grid-ctr p-2 h3" href="../grid/"><li>Grid</li></a>
+          <a class="sidebar-item grid-ctr p-2 h3" href="../grid/"><li>Grid</li></a>
           <a class="sidebar-item grid-ctr p-2 h3" href="../image/"><li>Image</li></a>
           <a class="sidebar-item grid-ctr p-2 h3" href="../input/"><li>Input</li></a>
           <a class="sidebar-item grid-ctr p-2 h3" href="../list/"><li>List</li></a>
           <a class="sidebar-item grid-ctr p-2 h3" href="../modal/"><li>Modal</li></a>
           <a class="sidebar-item grid-ctr p-2 h3" href="../navigation/"><li>Navigation</li></a>
           <a class="sidebar-item grid-ctr p-2 h3" href="../rating/"><li>Rating</li></a>
-          <a class="sidebar-item grid-ctr p-2 h3" href="../slider/"><li>Slider</li></a>
+          <a class="sidebar-item active-sidebar grid-ctr p-2 h3" href="../slider/"><li>Slider</li></a>
           <a class="sidebar-item grid-ctr p-2 h3" href="../toast/"><li>Toast</li></a>
           <a class="sidebar-item grid-ctr p-2 h3" href="../typography/"><li>Typography</li></a>
         </ul>
       </div>
-      <main class="m-auto docs-content m-b-5">
-        <h1 class="title colored-text h1 m-v-4"><span class="circle"></span>Grid Simplified</h1>
-        <h3>
-          The grid creates visual consistency between layouts while allowing flexibility across a wide variety of
-          designs.
-        </h3>
+     <main class="m-auto docs-content m-b-5">
+        <h1 class="title colored-text h1 m-v-4"><span class="circle"></span>Slider</h1>
+        <h3>Sliders allow users to make selections from a range of values.</h3>
         <section>
-          <!-- 2 Column grid Layout -->
-          <h2 class="title h2 m-v-2 colored-bg">2 Column grid Layout</h2>
+          <!-- Basic Slider -->
+          <h2 class="title h2 m-v-2 colored-bg">Basic Slider</h2>
+          <p>
+            The Slider element can be used inside a wrapper-element with <code>slider-track</code> class. 
+            For input component add <code>slider</code> class to it with min/max range.
+          </p>
           <div class="container colored-container m-v-4 col-flex">
-            <div class="demo full-wd">
-              <!-- 2 Column grid Layout -->
-              <div class="grid-2-col">
-                <div class="grid-item green-content h-20rm">Grid Item One</div>
-                <div class="grid-item blue-content h-20rm">Grid Item Two</div>
-              </div>
+            <div class="demo w-95p col-flex">
+                <div class="slider-track w-80p m-auto">
+                    <input type="range" name="slider" class="slider" min="0" max="100" />
+                </div>
+                <div class="m-t-3">Value: <span class="output-slider-value"></span></div>
             </div>
           </div>
           <h3 class="title">Code Snippets</h3>
-          <div class="container code-container colored-container m-v-4 col-flex">
-            <pre class="code-snippet m-v-1 p-1">
+          <div class="container colored-container m-v-4 col-flex">
+            <p class="m-v-2"><code>HTML</code> snippet</p>
+            <pre class="code-container code-snippet m-v-1 p-1">
               <code class="html fs-s">
-              <!-- 2 Column grid Layout -->
-              <div class="grid-2-col">
-                <div class="grid-item">Grid Item One</div>
-                <div class="grid-item">Grid Item Two</div>
+              <div class="slider-track w-80p m-auto">
+                <input type="range" name="slider" class="slider" min="0" max="100" />
               </div>
+                <div class="m-t-3">Value: <span class="output-slider-value"></span></div>
+              </code>
+            </pre>
+
+            <p class="m-v-2"><code>JS</code> snippet</p>
+            <pre class="code-container code-snippet m-v-1 p-1">
+              <code class="javascript fs-s">
+            const slider = document.querySelector(".slider");
+            const output = document.querySelector(".output-slider-value");
+            output.innerHTML = slider.value; // Display the default slider value
+
+            slider.addEventListener("input", (e) => {
+            output.innerHTML = e.target.value;
+            });
               </code>
             </pre>
           </div>
-          <!-- 3 Column grid Layout -->
-          <h2 class="title h2 m-v-2 colored-bg">3 Column grid Layout</h2>
+
+          <!-- Disabled Slider -->
+          <h2 class="title h2 m-v-2 colored-bg">Disabled Slider</h2>
+          <p>
+            Disabled Slider can be created by adding <code>disabled</code> attribute inside <code>&lt;input&gt;</code> element.
+          </p>
           <div class="container colored-container m-v-4 col-flex">
-            <div class="demo full-wd">
-              <!-- 3 Column grid Layout -->
-              <div class="grid-3-col">
-                <div class="grid-item green-content h-20rm">Grid Item One</div>
-                <div class="grid-item blue-content h-20rm">Grid Item Two</div>
-                <div class="grid-item yellow-content h-20rm">Grid Item Three</div>
-              </div>
+            <div class="demo w-95p row-flex">
+              <div class="slider-track w-80p m-auto">
+            <input type="range" name="slider" class="slider" min="0" max="100" disabled="true" />
+          </div>
             </div>
           </div>
           <h3 class="title">Code Snippets</h3>
-          <div class="container code-container colored-container m-v-4 col-flex">
-            <pre class="code-snippet m-v-1 p-1">
-              <code class="html fs-s">
-              <!-- 3 Column grid Layout -->
-              <div class="grid-3-col">
-                <div class="grid-item">Grid Item One</div>
-                <div class="grid-item">Grid Item Two</div>
-                <div class="grid-item">Grid Item Three</div>
-              </div>
-              </code>
-            </pre>
-          </div>
-          <!-- 4 Column grid Layout -->
-          <h2 class="title h2 m-v-2 colored-bg">4 Column grid Layout</h2>
           <div class="container colored-container m-v-4 col-flex">
-            <div class="demo full-wd">
-              <!-- 4 Column grid Layout -->
-              <div class="grid-4-col">
-                <div class="grid-item green-content h-20rm">Grid Item One</div>
-                <div class="grid-item blue-content h-20rm">Grid Item Two</div>
-                <div class="grid-item yellow-content h-20rm">Grid Item Three</div>
-                <div class="grid-item red-content h-20rm">Grid Item Four</div>
-              </div>
-            </div>
-          </div>
-          <h3 class="title">Code Snippets</h3>
-          <div class="container code-container colored-container m-v-4 col-flex">
-            <pre class="code-snippet m-v-1 p-1">
+            <p class="m-v-2"><code>HTML</code> snippet</p>
+            <pre class="code-container code-snippet m-v-1 p-1">
               <code class="html fs-s">
-              <!-- 4 Column grid Layout -->
-              <div class="grid-4-col">
-                <div class="grid-item">Grid Item One</div>
-                <div class="grid-item">Grid Item Two</div>
-                <div class="grid-item">Grid Item Three</div>
-                <div class="grid-item">Grid Item Four</div>
-              </div>
+               <div class="slider-track w-80p m-auto">
+                    <input type="range" name="slider" class="slider" min="0" max="100" disabled="true" />
+                </div>
               </code>
             </pre>
           </div>
 
           <div class="row-flex m-t-3 m-b-5">
-            <a href="../card/" class="cursor colored-text bg"
+            <a href="../rating/" class="cursor colored-text bg"
               ><i class="p-h-2 fa fa-arrow-left" aria-hidden="true"></i>Previous</a
             >
-            <a href="../image/" class="cursor colored-text bg"
+            <a href="../toast/" class="cursor colored-text bg"
               >Next<i class="p-h-2 fa fa-arrow-right" aria-hidden="true"></i
             ></a>
           </div>

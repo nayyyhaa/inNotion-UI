@@ -10,7 +10,7 @@
 .site-header::after {
   content: "";
   position: absolute;
-  background: linear-gradient(transparent, white);
+  background: linear-gradient(transparent, var(--COLOR-WHITE));
   bottom: 0rem;
   height: 10rem;
   width: 100%;

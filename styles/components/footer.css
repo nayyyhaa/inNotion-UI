@@ -1,6 +1,6 @@
 #connect {
   min-height: 30vh;
-  color: white;
+  color: var(--COLOR-WHITE);
   background: var(--COLOR-PRIMARY);
   text-align: center;
 }
