@@ -26,6 +26,7 @@
 - [Modal](https://innotion-ui.netlify.app/docs/modal/)
 - [Navigation](https://innotion-ui.netlify.app/docs/navigation/)
 - [Rating](https://innotion-ui.netlify.app/docs/rating/)
+- [Slider](https://innotion-ui.netlify.app/docs/slider/)
 - [Toast](https://innotion-ui.netlify.app/docs/toast/)
 - [Typography](https://innotion-ui.netlify.app/docs/typography/)
 
